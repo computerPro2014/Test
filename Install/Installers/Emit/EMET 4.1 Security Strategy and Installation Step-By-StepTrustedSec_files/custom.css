@@ -1,0 +1,61 @@
+/* custom css file for modifying default theme settings non-destructively - remove changes here to revert to defaults from style.css */
+
+/* blue button
+.button-style {
+ -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;
+ align-content: stretch; align-items: stretch; align-self: stretch;
+ background-attachment: scroll; background-clip: border-box; background-color: #278AB7; 
+ background-image: linear-gradient(to bottom, #2E9FD2, #21759B);
+ background-origin: padding-box; background-position: 0% 0%; background-repeat: repeat; background-size: auto;
+ border-bottom-color: #0E3950; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #0E3950; border-left-style: solid; border-left-width: 1px; border-right-color: #0E3950; border-right-style: solid; border-right-width: 1px; border-top-color: #0E3950; border-top-left-radius: 3px;
+ border-top-right-radius: 3px; border-top-style: solid; border-top-width: 1px;
+ -moz-box-shadow: rgba(120, 200, 230, 0.600) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.400) 1px 1px 2px 0px; -webkit-box-shadow: rgba(120, 200, 230, 0.600) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.400) 1px 1px 2px 0px; box-shadow: rgba(120, 200, 230, 0.600) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.400) 1px 1px 2px 0px;
+ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ color: #FFFFFF;
+ cursor: pointer; display: table; width:auto; flex: 0 1 auto; flex-basis: auto; flex-direction: row; flex-flow: row; flex-grow: 0; flex-shrink: 1; flex-wrap: nowrap; 
+ font-family: Arial; font-size: 18px; text-transform:uppercase; font-weight: 400; justify-content: flex-start; 
+ line-height: 23px; margin:auto; order: 0; padding: 10px 20px; resize: none; text-align: center; text-decoration: none;
+ -webkit-text-shadow: rgba(0, 0, 0, 0.298) 0px -1px 0px; -moz-text-shadow: rgba(0, 0, 0, 0.298) 0px -1px 0px; text-shadow: rgba(0, 0, 0, 0.298) 0px -1px 0px; white-space: nowrap;
+ }
+
+ .button-style:hover {
+ color:#fff;
+ text-decoration:none;
+ background-image: linear-gradient(to top, #2E9FD2, #21759B);
+ }
+ 
+ */
+
+.button-style { /* Default blue fancy link css buttons in style.css - this is a Green one for TS site */
+-webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px;
+align-content: stretch; align-items: stretch; align-self: stretch;
+background-attachment: scroll; background-clip: border-box; 
+background-color: #429e34; 
+background-image: linear-gradient(to bottom, #6cbe5c, #429e34);
+background-origin: padding-box; background-position: 0% 0%; background-repeat: repeat; background-size: auto;
+border-bottom-color: #0E3950;
+border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #0E3950; border-left-style: solid; border-left-width: 1px; border-right-color: #0E3950; border-right-style: solid; border-right-width: 1px; border-top-color: #0E3950; border-top-left-radius: 3px;
+border-top-right-radius: 3px; border-top-style: solid; border-top-width: 1px;
+-moz-box-shadow: rgba(120, 200, 230, 0.600) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.400) 1px 1px 2px 0px; -webkit-box-shadow: rgba(120, 200, 230, 0.600) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.400) 1px 1px 2px 0px; box-shadow: rgba(120, 200, 230, 0.600) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.400) 1px 1px 2px 0px;
+-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer; display: table; width:auto; flex: 0 1 auto; flex-basis: auto; flex-direction: row; flex-flow: row; flex-grow: 0; flex-shrink: 1; flex-wrap: nowrap; 
+font-family: Arial; 
+font-size: 13pt; text-transform:uppercase; font-weight: bold; justify-content: flex-start; 
+line-height: 23px; margin:auto; order: 0; padding: 10px 20px; resize: none; text-align: center; 
+text-decoration: none;
+-webkit-text-shadow: rgba(0, 0, 0, 0.398) 0px -1px 0px; 
+-moz-text-shadow: rgba(0, 0, 0, 0.398) 0px -1px 0px; 
+text-shadow: rgba(0, 0, 0, 0.398) 0px -1px 0px; 
+white-space: nowrap;
+position:relative;
+z-index:999;
+}
+
+.button-style:hover {
+color:#fff;
+text-decoration:none;
+background-color: #6cbe5c; 
+background-image: linear-gradient(to top, #6cbe5c, #429e34);
+}
+

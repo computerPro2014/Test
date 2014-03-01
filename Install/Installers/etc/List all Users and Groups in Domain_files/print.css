@@ -1,0 +1,67 @@
+body {
+	background: white;
+	font-size: 10pt;
+	color: black;
+	font-family:Verdana,Arial,Helvetica,sans-serif;color:#000;
+}
+
+h1 {
+	font-size: 14pt;
+	border-bottom: solid 1px #999;
+	margin:0;
+}
+
+h2 {
+	font-size: 13pt;
+}
+
+p {
+	font-size: 10pt;
+}
+code {
+	display: block;
+	border: solid 1px gray;
+	background: white;
+}
+
+.ss {
+	border: solid 1px #efefef;
+	padding: 3pt;
+	
+}
+a:link, a:visited {
+	color: blue;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.authored {
+	font-size: 10pt;
+	color: gray;
+}
+
+#wrap, #content {
+	width: auto;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	float: none !important;
+	background:white;
+}
+
+
+a img {
+	border: 0;
+}
+
+
+#footer {
+	font-size: 9pt;
+	color: #999;
+}
+
+#menu, .adkit, .sidebar, .sidebar, .optin, #edit, .push, #footer.links {
+	display: none;
+}
+

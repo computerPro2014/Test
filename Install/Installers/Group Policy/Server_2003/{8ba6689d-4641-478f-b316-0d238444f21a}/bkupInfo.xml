@@ -1,0 +1,10 @@
+<BackupInst xmlns="http://www.microsoft.com/GroupPolicy/GPOOperations/Manifest">
+  <GPOGuid><![CDATA[{96BB1CBE-E589-4397-B3B8-738257D66897}]]></GPOGuid>
+  <GPODomain><![CDATA[contoso.com]]></GPODomain>
+  <GPODomainGuid><![CDATA[{970dc492-9663-4ce1-ba13-2ce7e1ef72d7}]]></GPODomainGuid>
+  <GPODomainController><![CDATA[SASC-WS08-DC01.sasc.contoso.com]]></GPODomainController>
+  <BackupTime>2014-03-01T00:31:32</BackupTime>
+  <ID>{8ba6689d-4641-478f-b316-0d238444f21a}</ID>
+  <Comment>The Domain Controller baseline contains most of the settings included in the corresponding Member Server baseline. However, it also contains some settings specific to the domain controller server role.</Comment>
+  <GPODisplayName>Server 2003 Domain</GPODisplayName>
+</BackupInst>

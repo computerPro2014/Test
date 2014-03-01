@@ -1,0 +1,316 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   .gitattributes
+#	new file:   .gitignore
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec.htm
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/cb=gapi.loaded_0
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/cb=gapi.loaded_1
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/count.json
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/crayon.min.css
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/crayon.min.js
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/custom.css
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_1.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_10.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_2.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_3.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_4.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_5.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_6.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_7.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_8.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_9.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/fastbutton.htm
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-rss.gif
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/jquery-migrate.min.js
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/jquery.cycle.all.latest.js
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/jquery.js
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/jquery.min.js
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/logo.png
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/plusone.js
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/style.css
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/tweet_button.1392079123.htm
+#	new file:   Install/Installers/Emit/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/widgets.js
+#	new file:   Install/Installers/Emit/EMET Setup.msi
+#	new file:   Install/Installers/Emit/EMET User's Guide.pdf
+#	new file:   Install/Installers/Firewall_Client/Firewall.htm
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/22665_100445766656627_100000736118084_10712_3802159_n.jpg
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/725X1342.skimlinks.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/ad516503a11cd5ca435acc9bb6523536
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/amzn_ads.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/bid
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/blk.jpg
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/cb=gapi.loaded_0
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/cb=gapi.loaded_1
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/client-plusone.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/css
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/devicepx.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/filtering.jpg
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/form.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/g(1).gif
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/g.gif
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/ga.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/global-print.css
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/google_ads.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/google_service.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/gprofiles.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/jed.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/jquery(1).js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/jquery.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/jquery.wpcom-proxy-request.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/likes-rest.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/master.htm
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/notification.jpg
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/outbound.jpg
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/postmessage(1).js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/postmessage.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/postmessageRelay.htm
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/saved_resource
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/saved_resource(1)
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/saved_resource(2)
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/saved_resource(3)
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/saved_resource(4)
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/saved_resource(5).htm
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/saved_resource.htm
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/style.css
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/underscore.min.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/untitled.jpg
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/w.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/wfc1.jpg
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/wfn2.jpg
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/widgets.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/windows-firewall.jpg
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/windows_firewall_vista_icon.png
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/wpgroho.js
+#	new file:   Install/Installers/Firewall_Client/Firewall_files/wplogo.png
+#	new file:   Install/Installers/Firewall_Client/wfc4setup.exe
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO.htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/1264737910-widget_css_2_bundle.css
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/1618667077-postmessagerelay.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/2259541978-widgets.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/2493480322-cmt__en_gb.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/335733004-cmtfp.css
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/609529517-comment_from_post_iframe.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/all.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/authorization.css
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/blank.gif
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/blank.htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/bscexp.blogspot.com--thumb-dots.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/bscexp.blogspot.com--thumb-text.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/cb=gapi(1).loaded_1
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/cb=gapi(2).loaded_0
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/cb=gapi.loaded_0
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/cb=gapi.loaded_1
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/cb=gapi.loaded_2
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/cb=gapi.loaded_3
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/cb=gapi.loaded_4
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/chart
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/clip_image002_thumb%255B2%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/clip_image003_thumb%255B2%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/clip_image004_thumb%255B3%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/clip_image005_thumb%255B3%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/clip_image006_thumb%255B3%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/clip_image007_thumb.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/clip_image008_thumb%255B2%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/clip_image009_thumb%255B2%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/close.gif
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/comment-iframe.htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/core-rpc-shindig.random-shindig.sha1.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/default+en_GB.I.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/default+en_GB.css
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/dynamic.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/fastbutton.htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/google_top_exp.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/gsearch.css
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/icon18_edit_allbkg.gif
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/icon18_wrench_allbkg.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/image_thumb%255B1%255D(1).png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/image_thumb%255B1%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/image_thumb%255B2%255D(1).png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/image_thumb%255B2%255D(2).png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/image_thumb%255B2%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/image_thumb%255B29%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/image_thumb%255B3%255D(1).png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/image_thumb%255B3%255D.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/image_thumb.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/inj_tf.css
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/jsapi
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/like(1).htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/like.htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/map.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/navbar.htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/ox7Cf-pCB1pSFcek-ptPALGKH6uK4nYCWuj6RoQcsyI.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/photo.jpg
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/platform-gapi.iframes.style.common.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/plusone.js
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/postmessageRelay(1).htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/postmessageRelay.htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/rs=AItRSTOClEExw7EgTIpXR8NBhfa6OlUvHw
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/rs=AItRSTOV9sqxjvrj7RDo-baqueV_WTfP-g
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/saved_resource
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/saved_resource(1)
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/saved_resource(2)
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/sharebutton.htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/small-logo.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/smallyellow.png
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/xd_arbiter(1).htm
+#	new file:   Install/Installers/Group Policy/Ben's System Center Experience  Backup and restore the Local GPO_files/xd_arbiter.htm
+#	new file:   Install/Installers/Group Policy/LocalGPO.msi
+#	new file:   Install/Installers/Group Policy/Server_2003/{8ba6689d-4641-478f-b316-0d238444f21a}/Backup.xml
+#	new file:   Install/Installers/Group Policy/Server_2003/{8ba6689d-4641-478f-b316-0d238444f21a}/DomainSysvol/GPO/Machine/microsoft/windows nt/SecEdit/GptTmpl.inf
+#	new file:   Install/Installers/Group Policy/Server_2003/{8ba6689d-4641-478f-b316-0d238444f21a}/DomainSysvol/GPO/Machine/registry.pol
+#	new file:   Install/Installers/Group Policy/Server_2003/{8ba6689d-4641-478f-b316-0d238444f21a}/bkupInfo.xml
+#	new file:   Install/Installers/Group Policy/Server_2008_Windows_7/GroupPolicy_Stig.zip
+#	new file:   Install/Installers/Group Policy/Windows_XP/{ca2d72bd-d0cd-4281-b227-0629e44fa631}/Backup.xml
+#	new file:   Install/Installers/Group Policy/Windows_XP/{ca2d72bd-d0cd-4281-b227-0629e44fa631}/DomainSysvol/GPO/Machine/microsoft/windows nt/SecEdit/GptTmpl.inf
+#	new file:   Install/Installers/Group Policy/Windows_XP/{ca2d72bd-d0cd-4281-b227-0629e44fa631}/DomainSysvol/GPO/Machine/registry.pol
+#	new file:   Install/Installers/Group Policy/Windows_XP/{ca2d72bd-d0cd-4281-b227-0629e44fa631}/DomainSysvol/GPO/User/registry.pol
+#	new file:   Install/Installers/Group Policy/Windows_XP/{ca2d72bd-d0cd-4281-b227-0629e44fa631}/bkupInfo.xml
+#	new file:   Install/Installers/Network/NwInvestigatorSetup.exe
+#	new file:   Install/Installers/Network/Wireshark-win32-1.10.5.exe
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain.htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/00a38e7662a311df35e22c9afe3c9120.css
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/1310_bap_160x160.jpg
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/160x160_CloudOS_HyperV_EN_US1.gif
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/1618667077-postmessagerelay.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/2359962149071502250.gif
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/3217.gif
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/3391.gif
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/3694.gif
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/75204103.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/7b2c79f0617c5ad4542775d41c4bcbed37bec155.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/ads
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/ajs.php
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/alfie.f51946af45e0b561c60f768335c9eb79.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/all.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/cb=gapi.loaded_0
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/cb=gapi.loaded_1
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/common.6c0c51396b2188d052e835123fe3bb74.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/config.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/core-rpc-shindig.random-shindig.sha1.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/count.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/count.json
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/css
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/discovery.bc4d6abf53a1446bf080fc7499350a6c.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/dyMFxT5dn3L.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/embed.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/event(1).js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/event(2).js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/event(3).js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/event.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/fastbutton(1).htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/fastbutton.htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/feed.png
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/ga.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/global.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/gpt.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/handheld.css
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/in.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/jquery.min.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/jquery.validate.min.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/lidar.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/like(1).htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/like.htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/list_all_users_and_groups_in_domain.htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/lounge.671432537f35d28624ae029334152277.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/lounge.load.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/noavatar92.d1dee965677e7cc8d58afe004a6d8282.png
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/nonSecureAnonymousFramework
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/osd.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/petrimainlogo.gif
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/plusone.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/postmessageRelay.htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/print.css
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/pubads_impl_32.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/saved_resource.htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/search.png
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/style.css
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/tweet_button.1392079123(1).htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/tweet_button.1392079123.htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/widgets.js
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/xd_arbiter(1).htm
+#	new file:   Install/Installers/etc/List all Users and Groups in Domain_files/xd_arbiter.htm
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations.htm
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/1450575064375229940
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/1618667077-postmessagerelay.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/2-002136271-00001j;size=1;tag_id=2548
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/36a3d0d2-55d9-11e3-b314-22000a249aab.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/36a3d0d2-55d9-11e3-b314-22000a249aab.scroll.en.htm
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/4022600.0011000.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/ANX_async_usersync.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(1)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(10)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(2)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(3)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(4)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(5)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(6)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(7)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(8)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/a_usersync(9)
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/ads
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/analytics.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/bd
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/cb=gapi.loaded_0
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/cb=gapi.loaded_1
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/cm
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/common.6c0c51396b2188d052e835123fe3bb74.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/config.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/core-rpc-shindig.random-shindig.sha1.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/count.json
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/dpixel
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/embed.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/event(1).js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/event.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/fastbutton.htm
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/flashwrite_1_2(1).js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/flashwrite_1_2.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/ga.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/generic-settings-s.png
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/gr
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/hijackthis.png
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/img
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/in.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/installed-virus.png
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/jquery.min.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/jquery.simplemodal.1.4.4.min.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/lidar.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/like.htm
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/lounge.671432537f35d28624ae029334152277.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/lounge.load.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/mbam-30-banner-horiz.png
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/new-bc.css
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/noavatar92.d1dee965677e7cc8d58afe004a6d8282.png
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/noavatar92.png
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/nonSecureAnonymousFramework
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/osd.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/pixel
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/plusone.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/postmessageRelay.htm
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/print.png
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/registry.jpg
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/safe-s.jpg
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/saved_resource
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/saved_resource.htm
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/show_ads.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/show_ads_impl.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/ttj
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/tutorials.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/tutorials;ppos=atf;kw=;tile=1;sz=970x90,728x90
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/tutorials;ppos=atf;kw=;tile=2;sz=300x250,300x600
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/tweet_button.1392079123.htm
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/user
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/usersync.aspx
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/widgets.js
+#	new file:   Install/Installers/etc/Windows Program Automatic Startup Locations_files/xrefid.xgi
+#
+

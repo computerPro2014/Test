@@ -1,0 +1,69 @@
+body {
+	background: white;
+	font-size: 12pt;
+	color: black;
+	font-family:Verdana,Arial,Helvetica,sans-serif;color:#000;
+}
+
+h1 {
+	font-size: 15pt;
+}
+
+h2 {
+	font-size: 14pt;
+}
+
+code {
+	display: block;
+	border: solid 1px gray;
+	background: white;
+}
+
+a:link, a:visited {
+	color: blue;
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.authored {
+	font-size: 10px;
+	color: gray;
+}
+.adkit {
+	display:none;
+}
+
+#wrap, #content {
+	width: auto;
+	border: 0;
+	margin: 0 5%;
+	padding: 0;
+	float: none !important;
+	background:white;
+}
+
+#content {
+	font-size: 11pt;
+}
+
+a img {
+	border: 0;
+}
+
+.sidebar {
+	display:none;
+}
+.adkit {
+	display:none;
+}
+
+#footer {
+	font-size: 9pt;
+	color: #999;
+}
+
+#menu, .sidebar, .optin, .admin, .push {
+	display: none;
+}
+

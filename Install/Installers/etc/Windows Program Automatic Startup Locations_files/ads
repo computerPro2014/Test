@@ -1,0 +1,29 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CVRRAGTAQU5WLG-rewQH79YCoD8PS_7IG2_awi4UB45We_vgBEAEgx4P8AVC8_tK8-P____8BYMm2iYfMo8AXoAHNk4bWA8gBAagDAaoEsgFP0NcARwaNMKT168UxQ1H-Pl2oAXkxNRD_BCbpBmK3itNSNkMjkvdhTn56WbO-8uUmQM_pSgq3N5l1cwGB_D5RC3sTZ15NGuKVvO_R_4mc7Dd5yFoQ4cbrEgMlF4WRBIbEy8kflIJbXF3LMWZ_Bsd3Pjj7Kxp0R2XmZr1P2TuP_pTQ0--z45ajdeViz5rTDfBdhZi_Btk6IeYEcQ3tEqG156oW4u6qNulvep9_haZzeiwRiAYBgAeb7Pkp&amp;num=1&amp;cid=5GjQBoNL-04qzeqimdqQxap-&amp;sig=AOD64_3bcEJVPNMIMPxaHlG-aylqtsvG_A&amp;client=ca-pub-0920899300397823&amp;adurl=http://web.emc.com/trust-grc%3Fcmp%3Dknc-trusted_IT-GRC-Remarketing-USA%26activity_id%3D285727%26division%3Drsa"; 
+google_ad.visible_url = "emc.com/RSA-GRC"; 
+google_ad.line1 = "RSA\x26#174; - GRC Software"; 
+google_ad.line2 = "Reduce Risk \x26amp; Ensure Compliance."; 
+google_ad.line3 = "Free Guide To Top 10 GRC Challenges"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.bleepingcomputer.com/tutorials/windows-program-automatic-startup-locations/%26gl%3DUS%26hl%3Den%26client%3Dca-pub-0920899300397823%26ai0%3DCVRRAGTAQU5WLG-rewQH79YCoD8PS_7IG2_awi4UB45We_vgBEAEgx4P8AVC8_tK8-P____8BYMm2iYfMo8AXoAHNk4bWA8gBAagDAaoEsgFP0NcARwaNMKT168UxQ1H-Pl2oAXkxNRD_BCbpBmK3itNSNkMjkvdhTn56WbO-8uUmQM_pSgq3N5l1cwGB_D5RC3sTZ15NGuKVvO_R_4mc7Dd5yFoQ4cbrEgMlF4WRBIbEy8kflIJbXF3LMWZ_Bsd3Pjj7Kxp0R2XmZr1P2TuP_pTQ0--z45ajdeViz5rTDfBdhZi_Btk6IeYEcQ3tEqG156oW4u6qNulvep9_haZzeiwRiAYBgAeb7Pkp\x26usg\x3dAFQjCNEEvR6XkbaGZDLM5g1Iwnwvfm9APA";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

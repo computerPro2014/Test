@@ -1,0 +1,1120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0086)http://www.bleepingcomputer.com/tutorials/windows-program-automatic-startup-locations/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>Windows Program Automatic Startup Locations</title>
+<meta name="Description" content="Many programs that you install are automatically run when you start your computer and load Windows. For the majority of cases, this type of behavior is fine. Unfortunately, there are programs that are not legitimate, such as spyware, hijackers, Trojans, worms, viruses, that load in this manner as well. It is therefore important that you check regularly your startup registry keys regularly. Windows does offer a program that will list programs that are automatically started from SOME of these locations. This program, Msconfig.exe, unfortunately, though, only lists programs from a limited amount of startup keys.">
+<meta name="Abstract" content="Many programs that you install are automatically run when you start your computer and load Windows. For the majority of cases, this type of behavior is fine. Unfortunately, there are programs that are not legitimate, such as spyware, hijackers, Trojans, worms, viruses, that load in this manner as well. It is therefore important that you check regularly your startup registry keys regularly. Windows does offer a program that will list programs that are automatically started from SOME of these locations. This program, Msconfig.exe, unfortunately, though, only lists programs from a limited amount of startup keys.">
+<meta name="Keywords" content="tutorials, guides, how-to,virus removal, malware removal, computer help, technical support">
+<link rel="canonical" href="./Windows Program Automatic Startup Locations_files/Windows Program Automatic Startup Locations.htm">
+<link rel="stylesheet" type="text/css" href="./Windows Program Automatic Startup Locations_files/new-bc.css">
+
+<style type="text/css" media="all">@import 'http://www.bleepstatic.com/css/tutorials.css';</style>
+<meta name="Owner" content="Lawrence Abrams/BleepingComputer.com">
+<link rel="shortcut icon" href="http://www.bleepstatic.com/favicon/bleeping.ico">
+<meta http-equiv="Pragma" content="no-cache">
+<link rel="alternate" title="Bleeping Computer Tutorials" href="http://www.bleepingcomputer.com/tutorials/feed/" type="application/rss+xml">
+<meta name="ROBOTS" content="NOODP">
+
+<script type="text/javascript" async="" src="./Windows Program Automatic Startup Locations_files/4022600.0011000.js"></script><script type="text/javascript" async="" src="./Windows Program Automatic Startup Locations_files/lidar.js"></script><script src="./Windows Program Automatic Startup Locations_files/cb=gapi.loaded_1" async=""></script><script src="./Windows Program Automatic Startup Locations_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Windows Program Automatic Startup Locations_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" async="" src="./Windows Program Automatic Startup Locations_files/ga.js"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-91740-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<link href="https://plus.google.com/112790257026281352252" rel="publisher">
+<script src="./Windows Program Automatic Startup Locations_files/nonSecureAnonymousFramework"></script><script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/osd.js"></script><style type="text/css">* html #li_ui_li_gen_1393659771927_0 a#li_ui_li_gen_1393659771927_0-link{height:1% !important;}#li_ui_li_gen_1393659771927_0{position:relative !important;overflow:visible !important;display:block !important;}#li_ui_li_gen_1393659771927_0 a#li_ui_li_gen_1393659771927_0-link{border:0 !important;height:20px !important;text-decoration:none !important;padding:0 !important;margin:0 !important;display:inline-block !important;}#li_ui_li_gen_1393659771927_0 a#li_ui_li_gen_1393659771927_0-link:link, #li_ui_li_gen_1393659771927_0 a#li_ui_li_gen_1393659771927_0-link:visited, #li_ui_li_gen_1393659771927_0 a#li_ui_li_gen_1393659771927_0-link:hover, #li_ui_li_gen_1393659771927_0 a#li_ui_li_gen_1393659771927_0-link:active{border:0 !important;text-decoration:none !important;}#li_ui_li_gen_1393659771927_0 a#li_ui_li_gen_1393659771927_0-link:after{content:"." !important;display:block !important;clear:both !important;visibility:hidden !important;line-height:0 !important;height:0 !important;}#li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-logo{background:url(http://s.c.lnkd.licdn.com/scds/common/u/img/sprite/sprite_connect_v13.png) 0px -276px no-repeat !important;cursor:pointer !important;border:0 !important;text-indent:-9999em !important;overflow:hidden !important;padding:0 !important;margin:0 !important;position:absolute !important;left:0px !important;top:0px !important;display:block !important;width:20px !important;height:20px !important;float:right !important;}#li_ui_li_gen_1393659771927_0.hovered #li_ui_li_gen_1393659771927_0-logo{background-position:-20px -276px !important;}#li_ui_li_gen_1393659771927_0.clicked #li_ui_li_gen_1393659771927_0-logo, #li_ui_li_gen_1393659771927_0.down #li_ui_li_gen_1393659771927_0-logo{background-position:-40px -276px !important;}.IN-shadowed #li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-logo{}#li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title{color:#333 !important;cursor:pointer !important;display:block !important;white-space:nowrap !important;float:left !important;margin-left:1px !important;vertical-align:top !important;overflow:hidden !important;text-align:center !important;height:18px !important;padding:0 4px 0 23px !important;border:1px solid #000 !important;border-top-color:#E2E2E2 !important;border-right-color:#BFBFBF !important;border-bottom-color:#B9B9B9 !important;border-left-color:#E2E2E2 !important;border-left:0 !important;text-shadow:#FFFFFF -1px 1px 0 !important;line-height:20px !important;border-radius:0 !important;-webkit-border-radius:0 !important;border-top-right-radius:2px !important;border-bottom-right-radius:2px !important;-webkit-border-top-right-radius:2px !important;-webkit-border-bottom-right-radius:2px !important;background-color:#ECECEC !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#ECECEC)) !important; background-image: -webkit-linear-gradient(top, #FEFEFE 0%, #ECECEC 100%) !important;}#li_ui_li_gen_1393659771927_0.hovered #li_ui_li_gen_1393659771927_0-title{border:1px solid #000 !important;border-top-color:#ABABAB !important;border-right-color:#9A9A9A !important;border-bottom-color:#787878 !important;border-left-color:#04568B !important;border-left:0 !important;background-color:#EDEDED !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDEDED), color-stop(100%,#DEDEDE)) !important; background-image: -webkit-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%) !important;}#li_ui_li_gen_1393659771927_0.clicked #li_ui_li_gen_1393659771927_0-title, #li_ui_li_gen_1393659771927_0.down #li_ui_li_gen_1393659771927_0-title{color:#666 !important;border:1px solid #000 !important;border-top-color:#B6B6B6 !important;border-right-color:#B3B3B3 !important;border-bottom-color:#9D9D9D !important;border-left-color:#49627B !important;border-left:0 !important;background-color:#DEDEDE !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3E3E3), color-stop(100%,#EDEDED)) !important; background-image: -webkit-linear-gradient(top, #E3E3E3 0%, #EDEDED 100%) !important;}.IN-shadowed #li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title{}.IN-shadowed #li_ui_li_gen_1393659771927_0.hovered #li_ui_li_gen_1393659771927_0-title{}.IN-shadowed #li_ui_li_gen_1393659771927_0.clicked #li_ui_li_gen_1393659771927_0-title, .IN-shadowed #li_ui_li_gen_1393659771927_0.down #li_ui_li_gen_1393659771927_0-title{}#li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title-text, #li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title-text *{color:#333 !important;font-size:11px !important;font-family:Arial, sans-serif !important;font-weight:bold !important;font-style:normal !important;display:inline-block !important;background:transparent none !important;vertical-align:top !important;height:18px !important;line-height:20px !important;float:none !important;}#li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title-text strong{font-weight:bold !important;}#li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title-text em{font-style:italic !important;}#li_ui_li_gen_1393659771927_0.hovered #li_ui_li_gen_1393659771927_0-title-text, #li_ui_li_gen_1393659771927_0.hovered #li_ui_li_gen_1393659771927_0-title-text *{color:#000 !important;}#li_ui_li_gen_1393659771927_0.clicked #li_ui_li_gen_1393659771927_0-title-text, #li_ui_li_gen_1393659771927_0.down #li_ui_li_gen_1393659771927_0-title-text, #li_ui_li_gen_1393659771927_0.clicked #li_ui_li_gen_1393659771927_0-title-text *, #li_ui_li_gen_1393659771927_0.down #li_ui_li_gen_1393659771927_0-title-text *{color:#666 !important;}#li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title #li_ui_li_gen_1393659771927_0-mark{display:inline-block !important;width:0px !important;overflow:hidden !important;}.success #li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title{color:#333 !important;border-top-color:#E2E2E2 !important;border-right-color:#BFBFBF !important;border-bottom-color:#B9B9B9 !important;border-left-color:#E2E2E2 !important;background-color:#ECECEC !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#FEFEFE), color-stop(100%,#ECECEC)) !important; background-image: -webkit-linear-gradient(top, #FEFEFE 0%, #ECECEC 100%) !important;}.success #li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title-text, .success #li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title-text *{color:#333 !important;}.IN-shadowed .success #li_ui_li_gen_1393659771927_0 #li_ui_li_gen_1393659771927_0-title{}.success #li_ui_li_gen_1393659771927_0.hovered #li_ui_li_gen_1393659771927_0-title{color:#000 !important;border-top-color:#ABABAB !important;border-right-color:#9A9A9A !important;border-bottom-color:#787878 !important;border-left-color:#04568B !important;background-color:#EDEDED !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#EDEDED), color-stop(100%,#DEDEDE)) !important; background-image: -webkit-linear-gradient(top, #EDEDED 0%, #DEDEDE 100%) !important;}.success #li_ui_li_gen_1393659771927_0.hovered #li_ui_li_gen_1393659771927_0-title-text, .success #li_ui_li_gen_1393659771927_0.hovered #li_ui_li_gen_1393659771927_0-title-text *{color:#000 !important;}.success #li_ui_li_gen_1393659771927_0.clicked #li_ui_li_gen_1393659771927_0-title, .success #li_ui_li_gen_1393659771927_0.down #li_ui_li_gen_1393659771927_0-title{color:#666 !important;border-top-color:#B6B6B6 !important;border-right-color:#B3B3B3 !important;border-bottom-color:#9D9D9D !important;border-left-color:#49627B !important;background-color:#DEDEDE !important;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#E3E3E3), color-stop(100%,#EDEDED)) !important; background-image: -webkit-linear-gradient(top, #E3E3E3 0%, #EDEDED 100%) !important;}.success #li_ui_li_gen_1393659771927_0.clicked #li_ui_li_gen_1393659771927_0-title-text, .success #li_ui_li_gen_1393659771927_0.down #li_ui_li_gen_1393659771927_0-title-text, .success #li_ui_li_gen_1393659771927_0.clicked #li_ui_li_gen_1393659771927_0-title-text *, .success #li_ui_li_gen_1393659771927_0.down #li_ui_li_gen_1393659771927_0-title-text *{color:#666 !important;}.IN-shadowed .success #li_ui_li_gen_1393659771927_0.clicked #li_ui_li_gen_1393659771927_0-title, .IN-shadowed .success #li_ui_li_gen_1393659771927_0.down #li_ui_li_gen_1393659771927_0-title{}#li_ui_li_gen_1393659771946_1-container.IN-right {display:inline-block !important;float:left !important;overflow:visible !important;position:relative !important;height:18px !important;padding-left:2px !important;line-height:1px !important;cursor:pointer !important;}#li_ui_li_gen_1393659771946_1.IN-right {display:block !important;float:left !important;height:18px !important;margin-right:4px !important;padding-right:4px !important;background:url(http://s.c.lnkd.licdn.com/scds/common/u/img/sprite/sprite_connect_v13.png) right -100px no-repeat !important;}#li_ui_li_gen_1393659771946_1-inner.IN-right {display:block !important;float:left !important;padding-left:8px !important;text-align:center !important;background:url(http://s.c.lnkd.licdn.com/scds/common/u/img/sprite/sprite_connect_v13.png) 0px -60px no-repeat !important;}#li_ui_li_gen_1393659771946_1-content.IN-right {display:inline !important;font-size:11px !important;color:#04558B !important;font-weight:bold !important;font-family:Arial, sans-serif !important;line-height:18px !important;padding:0 5px 0 5px !important;}#li_ui_li_gen_1393659771946_1-container.IN-hovered #li_ui_li_gen_1393659771946_1.IN-right, #li_ui_li_gen_1393659771946_1-container.IN-clicked #li_ui_li_gen_1393659771946_1.IN-right, #li_ui_li_gen_1393659771946_1-container.IN-down #li_ui_li_gen_1393659771946_1.IN-right {background-position-y:-120px !important;}#li_ui_li_gen_1393659771946_1-container.IN-hovered #li_ui_li_gen_1393659771946_1-inner.IN-right, #li_ui_li_gen_1393659771946_1-container.IN-clicked #li_ui_li_gen_1393659771946_1-inner.IN-right, #li_ui_li_gen_1393659771946_1-container.IN-down #li_ui_li_gen_1393659771946_1-inner.IN-right {background-position-y:-80px !important;}#li_ui_li_gen_1393659771946_1-container.IN-empty {display:none !important;}#li_ui_li_gen_1393659771946_1-container.IN-hidden #li_ui_li_gen_1393659771946_1 {display:none !important;}</style><script type="text/javascript" async="" src="./Windows Program Automatic Startup Locations_files/embed.js"></script><style type="text/css" media="print">.hide_from_print{display:none}</style></head>                 
+<body data-twttr-rendered="true">
+
+ 
+<div id="bcwrapper">
+
+      <div id="nav-wrap">
+      <div id="logo-text">bleepingcomputer.com</div>
+        <ul id="nav">
+             <li><a href="http://www.bleepingcomputer.com/" title="Tech Support and Virus Removal"><span>Home</span></a></li>
+             <li><a href="http://www.bleepingcomputer.com/forums/" title="Tech Support and Virus Removal Forums"><span>Forums</span></a></li>
+             <li><a href="http://www.bleepingcomputer.com/download/" title="Computer Downloads"><span>Downloads</span></a></li>
+             <li><a href="http://www.bleepingcomputer.com/tutorials/" title="Computer Tutorials" class="active"><span>Tutorials</span></a></li>
+             <li><a href="http://www.bleepingcomputer.com/startups/" title="Windows Startup Programs Database"><span>Startup List</span></a></li>
+             <li><a href="http://www.bleepingcomputer.com/virus-removal/" title="Virus, Spyware, and Malware Removal Guides"><span>Virus Removal</span></a></li>
+             <li><a href="http://www.bleepingcomputer.com/uninstall/" title="Uninstall Database"><span>Uninstall List</span></a></li>
+             <li><a href="http://www.bleepingcomputer.com/filedb/" title="File Database"><span>File Database</span></a></li>
+             <li><a href="http://www.bleepingcomputer.com/glossary/" title="Computer Glossary"><span>Glossary</span></a></li>
+        </ul>
+      </div>
+      
+      <div id="head-meta">
+        <div id="meta-top">
+                    <div class="bcnav_left">
+            Welcome Guest (<a href="http://www.bleepingcomputer.com/forums/index.php?app=core&module=global&section=login&return=http://www.bleepingcomputer.com">Log In</a> | <a href="http://www.bleepingcomputer.com/forums/index.php?app=core&module=global&section=register">Create Account</a>)
+          </div>
+             
+          <div class="bcnav_right">
+            New Member? <a href="http://www.bleepingcomputer.com/forums/index.php?app=core&module=global&section=register">Join for free.</a>
+          </div>
+
+	</div>
+        <div id="submenu">
+          <ul>
+            <li><a href="http://www.bleepingcomputer.com/welcome-guide/">Welcome Guide</a></li>
+            <li><a href="http://www.bleepingcomputer.com/chat/">Chat</a></li>
+            <li><a href="http://www.bleepingcomputer.com/forums/index.php?app=core&module=help">Help</a></li>
+            <li><a href="http://www.bleepingcomputer.com/forums/index.php?app=core&module=search&search_in=forums">Search</a></li>
+            <li><a href="http://www.bleepingcomputer.com/rss-feeds/">RSS</a></li>
+          </ul>
+          &nbsp;
+        </div>
+      </div>
+
+  <div class="ban_cont">
+  <center>
+   <div id="top_ban">
+    <center>
+<script type="text/javascript"> 
+//<![CDATA[
+ord = window.ord || Math.floor(Math.random()*1E16);
+document.write('<script type="text/javascript" src="http://ad4.netshelter.net/adj/ns.bleepingcomputer/tutorials;ppos=atf;kw=;tile=1;sz=970x90,728x90;ord=' + ord + '?"><\/script>');
+//]]>
+</script><script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/tutorials;ppos=atf;kw=;tile=1;sz=970x90,728x90"></script><!-- Copyright 2008 DoubleClick, a division of Google Inc. All rights reserved. -->
+<!-- Code auto-generated on Tue Feb 25 20:17:16 EST 2014 -->
+<script src="./Windows Program Automatic Startup Locations_files/flashwrite_1_2.js"></script>
+<script language="JavaScript">
+<!--
+function DCFlash(id,pVM){
+var swf = "http://s0.2mdn.net/4365864/728x90.swf";
+var gif = "http://s0.2mdn.net/4365864/DDoS_Static_728x90.jpg";
+var minV = 9;
+var FWH = ' width="728" height="90" ';
+var url = escape("http://adclick.g.doubleclick.net/aclk?sa=L&ai=CjnFRGDAQU52GMMHAlQeYuICoAaTo768GAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9CotJ4ydCOg_eVX_pcMCRy5oSY0egB-XcoSXXT5bdkTSc1xLlC1KCYoYt9kJgwh0ih-oolcNutI32KVxe3orwZv-RTD9l3ljV1S2vtFYyw6fewVlp_Kjy0TeXMTGYH_8uQc4TPyJo6mOr6LOJURdfZqhykme7CYGoaYQ5d4UdWrI4CIhGa8inVb0VQ0NBqoISr-eU-dFIZFKKBZnSHcS0rdjYPXprrwJWq8D4Mlvvfo07PUn-qkO7hmd8q7ynfBEIVVX47gBAGgBh4&num=0&sig=AOD64_1czlyfHVK9RzzrA9YeDz6oS52n6w&client=ca-pub-5505905579599905&adurl=http%3A%2F%2Fad.doubleclick.net/click%3Bh%3Dv8/3f04/3/0/%2a/i%3B279546764%3B0-0%3B0%3B106629884%3B3454-728/90%3B57210883/57100082/2%3B%3B%7Esscs%3D%3fhttp://www.ddosbestdefense.com?utm_source=Ziff_Davis&utm_medium=display&utm_term=Tech_DM_Security_Content_Targeting_on_Tech_Sites_728&utm_content=Locked_Loaded&utm_campaign=NIA_DDoS");
+var fscUrl = url;
+var fscUrlClickTagFound = false;
+var wmode = "opaque";
+var bg = "";
+var dcallowscriptaccess = "never";
+
+var openWindow = "false";
+var winW = 0;
+var winH = 0;
+var winL = 0;
+var winT = 0;
+
+var moviePath=swf.substring(0,swf.lastIndexOf("/"));
+var sm=new Array();
+
+
+var defaultCtVal = escape("http://adclick.g.doubleclick.net/aclk?sa=L&ai=CjnFRGDAQU52GMMHAlQeYuICoAaTo768GAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9CotJ4ydCOg_eVX_pcMCRy5oSY0egB-XcoSXXT5bdkTSc1xLlC1KCYoYt9kJgwh0ih-oolcNutI32KVxe3orwZv-RTD9l3ljV1S2vtFYyw6fewVlp_Kjy0TeXMTGYH_8uQc4TPyJo6mOr6LOJURdfZqhykme7CYGoaYQ5d4UdWrI4CIhGa8inVb0VQ0NBqoISr-eU-dFIZFKKBZnSHcS0rdjYPXprrwJWq8D4Mlvvfo07PUn-qkO7hmd8q7ynfBEIVVX47gBAGgBh4&num=0&sig=AOD64_1czlyfHVK9RzzrA9YeDz6oS52n6w&client=ca-pub-5505905579599905&adurl=http%3A%2F%2Fad.doubleclick.net/click%3Bh%3Dv8/3f04/3/0/%2a/i%3B279546764%3B0-0%3B0%3B106629884%3B3454-728/90%3B57210883/57100082/2%3B%3B%7Esscs%3D%3fhttp://www.ddosbestdefense.com?utm_source=Ziff_Davis&utm_medium=display&utm_term=Tech_DM_Security_Content_Targeting_on_Tech_Sites_728&utm_content=Locked_Loaded&utm_campaign=NIA_DDoS");
+var ctp=new Array();
+var ctv=new Array();
+ctp[0] = "clickTag";
+ctv[0] = "";
+
+
+var fv='"moviePath='+moviePath+'/'+'&moviepath='+moviePath+'/';
+for(i=1;i<sm.length;i++){if(sm[i]!=""){fv+="&submovie"+i+"="+escape(sm[i]);}}
+for(var ctIndex = 0; ctIndex < ctp.length; ctIndex++) {
+  var ctParam = ctp[ctIndex];
+  var ctVal = ctv[ctIndex];
+  if(ctVal != null && typeof(ctVal) == 'string') {
+    if(ctVal == "") {
+      ctVal = defaultCtVal;
+    }
+    else {
+      ctVal = escape("http://adclick.g.doubleclick.net/aclk?sa=L&ai=CjnFRGDAQU52GMMHAlQeYuICoAaTo768GAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9CotJ4ydCOg_eVX_pcMCRy5oSY0egB-XcoSXXT5bdkTSc1xLlC1KCYoYt9kJgwh0ih-oolcNutI32KVxe3orwZv-RTD9l3ljV1S2vtFYyw6fewVlp_Kjy0TeXMTGYH_8uQc4TPyJo6mOr6LOJURdfZqhykme7CYGoaYQ5d4UdWrI4CIhGa8inVb0VQ0NBqoISr-eU-dFIZFKKBZnSHcS0rdjYPXprrwJWq8D4Mlvvfo07PUn-qkO7hmd8q7ynfBEIVVX47gBAGgBh4&num=0&sig=AOD64_1czlyfHVK9RzzrA9YeDz6oS52n6w&client=ca-pub-5505905579599905&adurl=http%3A%2F%2Fad.doubleclick.net/click%3Bh%3Dv8/3f04/3/0/%2a/i%3B279546764%3B0-0%3B0%3B106629884%3B3454-728/90%3B57210883/57100082/2%3B%3B%7Esscs%3D%3f" + ctVal);
+    }
+    if(ctParam.toLowerCase() == "clicktag") {
+      fscUrl = ctVal;
+      fscUrlClickTagFound = true;
+    }
+    else if(!fscUrlClickTagFound) {
+      fscUrl = ctVal;
+    }
+    fv += "&" + ctParam + "=" + ctVal;
+  }
+}
+fv+='"';
+var bgo=(bg=="")?"":'<param name="bgcolor" value="#'+bg+'">';
+var bge=(bg=="")?"":' bgcolor="#'+bg+'"';
+function FSWin(){if((openWindow=="false")&&(id=="DCF0"))alert('openWindow is wrong.');
+var dcw = 800;
+var dch = 600;
+// IE
+if(!window.innerWidth)
+{
+  // strict mode
+  if(!(document.documentElement.clientWidth == 0))
+  {
+    dcw = document.documentElement.clientWidth;
+    dch = document.documentElement.clientHeight;
+  }
+  // quirks mode
+  else if(document.body)
+  {
+    dcw = document.body.clientWidth;
+    dch = document.body.clientHeight;
+  }
+}
+// w3c
+else
+{
+  dcw = window.innerWidth;
+  dch = window.innerHeight;
+}
+if(openWindow=="center"){winL=Math.floor((dcw-winW)/2);winT=Math.floor((dch-winH)/2);}window.open(unescape(fscUrl),id,"width="+winW+",height="+winH+",top="+winT+",left="+winL+",status=no,toolbar=no,menubar=no,location=no");}this.FSWin = FSWin;
+ua=navigator.userAgent;
+if(minV<=pVM&&(openWindow=="false"||(ua.indexOf("Mac")<0&&ua.indexOf("Opera")<0))){
+  var adcode='<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="'+id+'"'+FWH+'>'+
+    '<param name="movie" value="'+swf+'"><param name="flashvars" value='+fv+'><param name="quality" value="high"><param name="wmode" value="'+wmode+'"><param name="base" value="'+swf.substring(0,swf.lastIndexOf("/"))+'"><PARAM NAME="AllowScriptAccess" VALUE="'+dcallowscriptaccess+'">'+bgo+
+    '<embed src="'+swf+'" flashvars='+fv+bge+FWH+' type="application/x-shockwave-flash" quality="high" swliveconnect="true" wmode="'+wmode+'" name="'+id+'" base="'+swf.substring(0,swf.lastIndexOf("/"))+'" AllowScriptAccess="'+dcallowscriptaccess+'"></embed></object>';
+  if(('x'!="j")&&(typeof dclkFlashWrite!="undefined")){dclkFlashWrite(adcode);}else{document.write(adcode);}
+}else{
+  document.write('<a target="_blank" href="'+unescape(url)+'"><img src="'+gif+'"'+FWH+'border="0" alt="Advertisement" galleryimg="no"></a>');
+}}
+function getFlashVersion(){
+// code derived from SWFObject (http://code.google.com/p/swfobject/)
+ var vfv = "0,0,0";
+  try {
+ try {
+   var axo = new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+     try {axo.AllowScriptAccess = "always"; }catch(e) {return "6";}
+  }catch(e) {}
+ vfv = new ActiveXObject("ShockwaveFlash.ShockwaveFlash").GetVariable("$version");}
+ catch(e) {
+   try {if(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){vfv= navigator.plugins["Shockwave Flash"].description;}}
+   catch(e) {}
+}
+ return vfv.replace(/\D+/g, ",").match(/^,?(.+),?$/)[1].split(',').shift();
+}
+var DCid=(isNaN("279546764"))?"DCF2":"DCF279546764";
+var pVM=getFlashVersion();
+eval("function "+DCid+"_DoFSCommand(c,a){if(c=='openWindow')o"+DCid+".FSWin();}o"+DCid+"=new DCFlash('"+DCid+"',pVM);");
+//-->
+</script><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="DCF279546764" width="728" height="90"><param name="movie" value="http://s0.2mdn.net/4365864/728x90.swf"><param name="flashvars" value="moviePath=http://s0.2mdn.net/4365864/&amp;moviepath=http://s0.2mdn.net/4365864/&amp;clickTag=http%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCjnFRGDAQU52GMMHAlQeYuICoAaTo768GAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9CotJ4ydCOg_eVX_pcMCRy5oSY0egB-XcoSXXT5bdkTSc1xLlC1KCYoYt9kJgwh0ih-oolcNutI32KVxe3orwZv-RTD9l3ljV1S2vtFYyw6fewVlp_Kjy0TeXMTGYH_8uQc4TPyJo6mOr6LOJURdfZqhykme7CYGoaYQ5d4UdWrI4CIhGa8inVb0VQ0NBqoISr-eU-dFIZFKKBZnSHcS0rdjYPXprrwJWq8D4Mlvvfo07PUn-qkO7hmd8q7ynfBEIVVX47gBAGgBh4%26num%3D0%26sig%3DAOD64_1czlyfHVK9RzzrA9YeDz6oS52n6w%26client%3Dca-pub-5505905579599905%26adurl%3Dhttp%253A%252F%252Fad.doubleclick.net/click%253Bh%253Dv8/3f04/3/0/%252a/i%253B279546764%253B0-0%253B0%253B106629884%253B3454-728/90%253B57210883/57100082/2%253B%253B%257Esscs%253D%253fhttp%3A//www.ddosbestdefense.com%3Futm_source%3DZiff_Davis%26utm_medium%3Ddisplay%26utm_term%3DTech_DM_Security_Content_Targeting_on_Tech_Sites_728%26utm_content%3DLocked_Loaded%26utm_campaign%3DNIA_DDoS"><param name="quality" value="high"><param name="wmode" value="opaque"><param name="base" value="http://s0.2mdn.net/4365864"><param name="AllowScriptAccess" value="never"><embed src="http://s0.2mdn.net/4365864/728x90.swf" flashvars="moviePath=http://s0.2mdn.net/4365864/&amp;moviepath=http://s0.2mdn.net/4365864/&amp;clickTag=http%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCjnFRGDAQU52GMMHAlQeYuICoAaTo768GAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9CotJ4ydCOg_eVX_pcMCRy5oSY0egB-XcoSXXT5bdkTSc1xLlC1KCYoYt9kJgwh0ih-oolcNutI32KVxe3orwZv-RTD9l3ljV1S2vtFYyw6fewVlp_Kjy0TeXMTGYH_8uQc4TPyJo6mOr6LOJURdfZqhykme7CYGoaYQ5d4UdWrI4CIhGa8inVb0VQ0NBqoISr-eU-dFIZFKKBZnSHcS0rdjYPXprrwJWq8D4Mlvvfo07PUn-qkO7hmd8q7ynfBEIVVX47gBAGgBh4%26num%3D0%26sig%3DAOD64_1czlyfHVK9RzzrA9YeDz6oS52n6w%26client%3Dca-pub-5505905579599905%26adurl%3Dhttp%253A%252F%252Fad.doubleclick.net/click%253Bh%253Dv8/3f04/3/0/%252a/i%253B279546764%253B0-0%253B0%253B106629884%253B3454-728/90%253B57210883/57100082/2%253B%253B%257Esscs%253D%253fhttp%3A//www.ddosbestdefense.com%3Futm_source%3DZiff_Davis%26utm_medium%3Ddisplay%26utm_term%3DTech_DM_Security_Content_Targeting_on_Tech_Sites_728%26utm_content%3DLocked_Loaded%26utm_campaign%3DNIA_DDoS" width="728" height="90" type="application/x-shockwave-flash" quality="high" swliveconnect="true" wmode="opaque" name="DCF279546764" base="http://s0.2mdn.net/4365864" allowscriptaccess="never"></object>
+<noscript>&lt;a target="_blank" href="http://adclick.g.doubleclick.net/aclk?sa=L&amp;ai=CjnFRGDAQU52GMMHAlQeYuICoAaTo768GAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9CotJ4ydCOg_eVX_pcMCRy5oSY0egB-XcoSXXT5bdkTSc1xLlC1KCYoYt9kJgwh0ih-oolcNutI32KVxe3orwZv-RTD9l3ljV1S2vtFYyw6fewVlp_Kjy0TeXMTGYH_8uQc4TPyJo6mOr6LOJURdfZqhykme7CYGoaYQ5d4UdWrI4CIhGa8inVb0VQ0NBqoISr-eU-dFIZFKKBZnSHcS0rdjYPXprrwJWq8D4Mlvvfo07PUn-qkO7hmd8q7ynfBEIVVX47gBAGgBh4&amp;num=0&amp;sig=AOD64_1czlyfHVK9RzzrA9YeDz6oS52n6w&amp;client=ca-pub-5505905579599905&amp;adurl=http%3A%2F%2Fad.doubleclick.net/click%3Bh%3Dv8/3f04/3/0/%2a/i%3B279546764%3B0-0%3B0%3B106629884%3B3454-728/90%3B57210883/57100082/2%3B%3B%7Esscs%3D%3fhttp://www.ddosbestdefense.com?utm_source=Ziff_Davis&amp;utm_medium=display&amp;utm_term=Tech_DM_Security_Content_Targeting_on_Tech_Sites_728&amp;utm_content=Locked_Loaded&amp;utm_campaign=NIA_DDoS"&gt;&lt;img src="http://s0.2mdn.net/4365864/DDoS_Static_728x90.jpg" width="728" height="90" border="0" alt="Advertisement" galleryimg="no"&gt;&lt;/a&gt;</noscript>
+
+<noscript>&lt;a href="http://ad4.netshelter.net/jump/ns.bleepingcomputer/tutorials;ppos=atf;kw=;tile=1;sz=970x90,728x90;ord=123456789?" target="_blank" &gt;&lt;img src="http://ad4.netshelter.net/ad/ns.bleepingcomputer/tutorials;ppos=atf;kw=;tile=1;sz=970x90,728x90;ord=123456789?" border="0" alt="" /&gt;&lt;/a&gt;</noscript>
+</center>
+   </div>
+  </center>
+ </div>
+
+<script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/jquery.min.js"></script>
+<script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/jquery.simplemodal.1.4.4.min.js"></script>
+
+<script type="text/javascript">
+jQuery(function ($) {
+        // Load dialog on page load
+        $("#mbam-promo").modal({
+         opacity:50,
+         containerCss:{
+                backgroundColor:"#BBC8DC", 
+                borderColor:"#5983C3", 
+                height:420, 
+                padding:5, 
+                width:775,
+        },
+        });
+});
+</script>
+
+<style>
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#CECECE;}
+
+/* Container */
+#simplemodal-container {color:#0C326A; border:4px solid #444; font-weight: bold;}
+#simplemodal-container a.modalCloseImg {background:url(http://www.bleepstatic.com/js/jquery/modal-images/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+</style>
+
+<div id="mbam-promo" style="display:none; text-align: left;">
+ <div align="center">
+  <h2 style="font-size: 18px;">Celebrating 5 years of partnering with Malwarebytes to crush malware!</h2>
+  <h3 style="font-size: 16px;"><u>Malwarebytes Anti-Malware Professional for only $17.46 USD!</u></h3>
+ </div>
+ <div align="center">
+  <a href="https://store.malwarebytes.org/342/purl-BLEEPING30" rel="nofollow" target="_blank"><img src="./Windows Program Automatic Startup Locations_files/mbam-30-banner-horiz.png"></a>
+ </div>
+ <div style="font-size: 13px;">
+  <p>We are happy to announce an exlusive promotion of 30% off the price of Malwarebytes Anti-Malware Professional for visitors of BleepingComputer.com. With this promotion a life-time professional license is only <strong>$17.46</strong> USD!</p>
+ <p>While the free version has the same cleaning capabilities as the paid version, only the professional version provides real-time malware detection and removal.
+ </p>
+ <p>Malwarebytes has been a goto program for our virus removal guides as it shares many of the same principals as BleepingComputer.com. It is easy to use, reliable, and created by people who have a passion for helping others with their computer security. For these reasons we are very excited to offer you this promotion. To take advantage of this special offer just click on the banner above!</p>
+ <p align="center">This promotion will only be shown to you once! You can press escape or click on the X to close this box.</p>
+ </div>
+</div>
+<div id="breadcrumb" align="left">
+ <a href="http://www.bleepingcomputer.com/">Home</a> &gt; <a href="http://www.bleepingcomputer.com/tutorials/">Computer Tutorials</a> &gt; <a href="http://www.bleepingcomputer.com/tutorials/windows-xp/">Windows XP Tutorials</a> &gt; Windows Program Automatic Startup Locations
+</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" align="center">
+	<tbody><tr>
+	<!-- Begin Middle Column -->
+
+	<td valign="top" width="" style="min-width: 600px">
+	 <div class="tutorial_wrap">
+ 
+<script type="text/javascript">
+function printDiv() {
+ var divToPrint = document.getElementById('tute_cont');
+ newWin= window.open();
+ newWin.document.write("<div class='easy_print'"+divToPrint.innerHTML+"</div>");
+ newWin.document.close();
+ newWin.focus();
+ newWin.print();
+ newWin.close();
+}
+
+</script>
+
+ <div id="tute2">
+  <div id="tute_head">
+   <div id="tute_info">
+    <h1>Windows Program Automatic Startup Locations</h1>
+    By <a rel="author" href="http://www.bleepingcomputer.com/author/lawrence-abrams/">Lawrence Abrams</a> on April 1, 2004 | Last Updated: December 13, 2012 | Read 745,621 times.
+   </div>
+   <div id="tute_share">
+    
+<ul id="share">
+ <li>
+  <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1393659771678" name="I0_1393659771678" src="./Windows Program Automatic Startup Locations_files/fastbutton.htm" data-gapiattached="true" title="+1"></iframe></div>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+ </li>
+ <li>
+<iframe src="./Windows Program Automatic Startup Locations_files/like.htm" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowtransparency="true"></iframe>
+ </li>
+ <li>
+  <script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/in.js"></script><span class="IN-widget" style="line-height: 1; vertical-align: baseline; display: inline-block; text-align: center;"><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1393659771927_0"><a id="li_ui_li_gen_1393659771927_0-link" href="javascript:void(0);"><span id="li_ui_li_gen_1393659771927_0-logo">in</span><span id="li_ui_li_gen_1393659771927_0-title"><span id="li_ui_li_gen_1393659771927_0-mark"></span><span id="li_ui_li_gen_1393659771927_0-title-text">Share</span></span></a></span></span><span style="padding: 0px !important; margin: 0px !important; text-indent: 0px !important; display: inline-block !important; vertical-align: baseline !important; font-size: 1px !important;"><span id="li_ui_li_gen_1393659771946_1-container" class="IN-right IN-hidden"><span id="li_ui_li_gen_1393659771946_1" class="IN-right"><span id="li_ui_li_gen_1393659771946_1-inner" class="IN-right"><span id="li_ui_li_gen_1393659771946_1-content" class="IN-right">0</span></span></span></span></span></span><script type="in/share+init" data-counter="right"></script>
+ </li>
+ <li>
+  <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./Windows Program Automatic Startup Locations_files/tweet_button.1392079123.htm" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 110px; height: 20px;"></iframe><script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/widgets.js"></script>
+ </li>
+ <li style="width: 20px;"><a href="JavaScript:printDiv();"><img src="./Windows Program Automatic Startup Locations_files/print.png" alt="Print this page" title="Print this page"></a></li>
+</ul>
+
+   </div>
+  </div>
+  <div id="tute_cont">
+   
+   <p align="left">
+	<!--GoogleAd-->Many programs that you install are automatically run when you start your computer and load Windows. For the majority of cases, this type of behavior is fine. Unfortunately, there are programs that are not legitimate, such as spyware, hijackers, trojans, worms, viruses, that load in this manner as well. It is therefore important that you check regularly your startup registry keys regularly. Windows does offer a program that will list programs that are automatically started from <strong>SOME </strong> of these locations. This program, Msconfig.exe, unfortunately, though, only lists programs from a limited amount of startup keys.</p>
+<p align="left">
+	Below are the various list of registry keys that can start a program when Windows boots. I have tried to keep the keys in the exact order that they load. Keep in mind, that some of the keys are set to load at the same time, so it is possible that the order will change on each boot up. These keys generally apply to Windows 95, 98, ME, NT, XP, 2000, Windows Vista, and Windows 7, and I will note when it is otherwise.</p>
+<p align="left">
+	Upon turning on the computer the following autostart locations are processed in the following order:</p>
+<blockquote>
+	<p align="left">
+		<strong>Windows Boot Device Drivers</strong> - These drivers are loaded first as they are required for the proper operation of hardware such as storage devices. Boot device drivers will be located under the following key and have a <strong>Start</strong> value equal to 0.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Keys:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<p align="left">
+	<strong>Windows will now perform various tasks and then start the Winlogon process. Winlogon eventually starts the service control manager that loads services and drivers that are set for auto-start.</strong></p>
+<blockquote>
+	<p align="left">
+		<strong>Windows Auto-start Services &amp; Drivers</strong> -The Service Control Manager (SCM) process (\Windows\System32\services.exe), will now launch any services or drivers that are marked with a <strong>Start</strong> value of 2.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Keys:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<blockquote>
+	<p align="left">
+		&nbsp;</p>
+	<p align="left">
+		<strong>RunServicesOnce - </strong>This key is designed to start services when a computer boots up. These entries can also continue running even after you log on, but must be completed before the HKEY_LOCAL_MACHINE\...\RunOnce registry can start loading its programs.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Keys:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce</div>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					&nbsp;</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServicesOnce</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<blockquote>
+	<p align="left">
+		&nbsp;</p>
+	<p align="left">
+		<strong>RunServices - </strong>This key is designed to start services as well. These entries can also continue running even after you log on, but must be completed before the HKEY_LOCAL_MACHINE\...\RunOnce registry can start loading its programs.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Keys:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunServices</div>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					&nbsp;</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunServices</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<p align="left">
+	<strong>The Windows logon prompt is shown on the Screen. After a user logs in the rest of the keys continue.</strong></p>
+<blockquote>
+	<p align="left">
+		<strong>Notify - </strong>This key is used to add a program that will run when a particular event occurs. Events include logon, logoff, startup, shutdown, startscreensaver, and stopscreensaver. When Winlogon.exe generates an event such as the ones listed, Windows will look in the Notify registry key for a DLL that will handle this event. Malware has been known to use this method to load itself when a user logs on to their computer. Loading in such a way allows the malware program to load in such a way that it is not easy to stop.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Key:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Notify</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>UserInit Key - </strong>This key specifies what program should be launched right after a user logs into Windows. The default program for this key is C:\windows\system32\userinit.exe. Userinit.exe is a program that restores your profile, fonts, colors, etc for your user name. It is possible to add further programs that will launch from this key by separating the programs with a comma. For example:</p>
+	<p align="center">
+		HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit =C:\windows\system32\userinit.exe,c:\windows\badprogram.exe.</p>
+	<p align="left">
+		This will make both programs launch when you log in and is a common place for trojans, hijackers, and spyware to launch from.</p>
+	<table align="center" border="0" width="75%">
+		<tbody>
+			<tr>
+				<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+					<div align="left">
+						Registry Key:</div>
+				</td>
+				<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+					<div align="left">
+						HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\Userinit</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</blockquote>
+<blockquote>
+	<p align="left">
+		&nbsp;</p>
+	<p align="left">
+		<strong>Shell Value </strong>- This value contains a list of comma separated values that Userinit.exe will launch. The default shell for Windows is <strong>explorer.exe</strong>, though there are legitimate replacements that have been made. When userinit.exe starts the shell, it will first launch the Shell value found in HKEY_CURRENT_USER. If this value is not present, it will then launch the value found in HKEY_LOCAL_MACHINE.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Key:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\\Shell</div>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				&nbsp;</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\\Shell</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<p align="left">
+	<strong>The rest of the Autostart locations will now be processed.</strong></p>
+<blockquote>
+	<p align="left">
+		<strong>RunOnce Local Machine Key - </strong>These keys are designed to be used primarily by Setup programs. Entries in these keys are started once and then are deleted from the key. If there is an- exclamation point preceding the value of the key, the entry will not be deleted until after the program completes, otherwise it will be deleted before the program runs. This is important, because if the exclamation point is not used, and the program referenced in this key fails to complete, it will not run again as it will have already been deleted. All entries in this key are started synchronously in an undefined order. Due to this, all programs in this key must be finished before any entries in HKEY_LOCAL_MACHINE\...\Run, HKEY_CURRENT_USER\...\Run, HKEY_CURRENT_USER\...\RunOnce, and Startup Folders can be loaded. The RunOnce keys are ignored under Windows 2000 and Windows XP in Safe Mode. The RunOnce keys are not supported by Windows NT 3.51.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Keys:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnce</div>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					&nbsp;</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\RunOnceEx</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>Run - </strong>These are the most common startup locations for programs to install auto start from. By default these keys are not executed in Safe mode. If you prefix the value of these keys with an asterisk, *, it will run in Safe Mode.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Keys:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run</div>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					&nbsp;</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>All Users Startup Folder -</strong> For Windows XP, 2000, and NT, this folder is used for programs that should be auto started for all users who will login to this computer. It is generally found at:</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr bgcolor="#CCCCCC">
+			<td width="20%">
+				Windows XP</td>
+			<td width="80%">
+				C:\Documents and Settings\All Users\Start Menu\Programs\Startup</td>
+		</tr>
+		<tr bgcolor="#CCCCCC">
+			<td>
+				Windows NT</td>
+			<td>
+				C:\wont\Profiles\All Users\Start Menu\Programs\Startup</td>
+		</tr>
+		<tr bgcolor="#CCCCCC">
+			<td>
+				Windows 2000</td>
+			<td>
+				C:\Documents and Settings\All Users\Start Menu\Programs\Startup</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>User Profile Startup Folder - </strong>This folder will be executed for the particular user who logs in. This folder is usually found in:</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr bgcolor="#CCCCCC">
+			<td>
+				Win 9X, ME</td>
+			<td>
+				c:\windows\start menu\programs\startup</td>
+		</tr>
+		<tr bgcolor="#CCCCCC">
+			<td width="20%">
+				Windows XP</td>
+			<td width="80%">
+				C:\Documents and Settings\LoginName\Start Menu\Programs\Startup</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>RunOnce Current User Key - </strong>These keys are designed to be used primarily by Setup programs. Entries in these keys are started once and then are deleted from the key. If there is an exclamation point preceding the value of the key, the entry will not be deleted until after the program completes, otherwise it will be deleted before the program runs. This is important, because if the exclamation point is not used, and the program referenced in this key fails to complete, it will not run again as it will have already been deleted. The RunOnce keys are ignored under Windows 2000 and Windows XP in Safe Mode. The RunOnce keys are not supported by Windows NT 3.51.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Key:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>Explorer Run - </strong>These keys are generally used to load programs as part of a policy set in place on the computer or user.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Keys:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run</div>
+			</td>
+		</tr>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					&nbsp;</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF">
+				<div align="left">
+					HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\Run</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>Load Key - </strong>This key is not commonly used anymore, but can be used to auto start programs.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Key:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\Windows\load</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>AppInit_DLLs</strong> - This value corresponds to files being loaded through the AppInit_DLLs Registry value. The AppInit_DLLs registry value contains a list of dlls that will be loaded when user32.dll is loaded. As most Windows executables use the user32.dll, that means that any DLL that is listed in the AppInit_DLLs registry key will be loaded also. This makes it very difficult to remove the DLL as it will be loaded within multiple processes, some of which can not be stopped without causing system instability. The user32.dll file is also used by processes that are automatically started by the system when you log on. This means that the files loaded in the AppInit_DLLs value will be loaded very early in the Windows startup routine allowing the DLL to hide itself or protect itself before we have access to the system.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Key:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>ShellServiceObjectDelayLoad</strong> - This Registry value contains values in a similar way as the Run key does. The difference is that instead of pointing to the file itself, it points to the CLSID's InProcServer, which contains the information about the particular DLL file that is being used.</p>
+	<p align="left">
+		The files under this key are loaded automatically by Explorer.exe when your computer starts. Because Explorer.exe is the shell for your computer, it will always start, thus always loading the files under this key. These files are therefore loaded early in the startup process before any human intervention occurs.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Key:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\ShellServiceObjectDelayLoad</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<blockquote>
+	<p align="left">
+		<strong>SharedTaskScheduler - </strong>This section corresponds to files being loaded through the SharedTaskScheduler registry value for XP, NT, 2000 machines. The entries in this registry value run automatically when you start windows.</p>
+</blockquote>
+<table align="center" border="0" width="75%">
+	<tbody>
+		<tr>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="10%">
+				<div align="left">
+					Registry Key:</div>
+			</td>
+			<td bgcolor="#CCCCCC" bordercolor="#FFFFFF" width="90%">
+				<div align="left">
+					HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\SharedTaskScheduler</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p align="left">
+	&nbsp;</p>
+<p align="left">
+	<strong>The following are files that programs can autostart from on bootup: </strong></p>
+<p align="left">
+	1. c:\autoexec.bat<br>
+	2. c:\config.sys<br>
+	3 . windir\wininit.ini - Usually used by setup programs to have a file run once and then get deleted.<br>
+	4. windir\winstart.bat<br>
+	5. windir\win.ini - [windows] "load"<br>
+	6. windir\win.ini - [windows] "run"<br>
+	7. windir\system.ini - [boot] "shell"<br>
+	8 . windir\system.ini - [boot] "scrnsave.exe"<br>
+	9. windir\dosstart.bat - Used in Win95 or 98 when you select the "Restart in MS-DOS mode" in the shutdown menu.<br>
+	10. windir\system\autoexec.nt<br>
+	11. windir\system\config.nt</p>
+<p align="left">
+	Though it is good to know these details, if you just need a program to quickly scan these keys and produce a list for you, you can use <a href="http://technet.microsoft.com/en-us/sysinternals/bb963902" rel="nofollow" target="_blank">Sysinternals Autoruns</a> program. While you are at that site, you should browse some of the other excellent utilities.</p>
+<p align="left">
+	<strong>--<br>
+	Lawrence Abrams<br>
+	Bleeping Computer Microsoft Concepts Series<br>
+	<a href="http://www.bleepingcomputer.com/" target="_blank">BleepingComputer.com: Computer Support &amp; Tutorials for the beginning computer user.</a></strong></p>
+  </div>
+  
+ <div style="margin-left: 10px;">
+   <script language="JavaScript" src="./Windows Program Automatic Startup Locations_files/tutorials.js"></script>
+
+   <script type="text/javascript">
+        google_ad_client = "pub-0920899300397823"; google_ad_channel = '5063087600'; google_ad_output = 'js'; google_max_num_ads = '1'; google_ad_type = 'text'; google_image_size = '728x90'; google_feedback = 'on'; google_skip = google_adnum; bc_ad_unit = 'banner';
+   // -->
+   </script>
+   <script language="JavaScript" src="./Windows Program Automatic Startup Locations_files/show_ads.js"></script><script src="./Windows Program Automatic Startup Locations_files/show_ads_impl.js"></script><script>google_protectAndRun("ads_core.google_render_ad", google_handleError, google_render_ad, google_eid);</script><script language="JavaScript1.1" src="./Windows Program Automatic Startup Locations_files/ads"></script><div style="color: black;font-weight: normal;font-size: 12px; padding-bottom: 10px;"><a href="https://www.google.com/url?ct=abg&q=https://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.bleepingcomputer.com/tutorials/windows-program-automatic-startup-locations/%26gl%3DUS%26hl%3Den%26client%3Dca-pub-0920899300397823%26ai0%3DCVRRAGTAQU5WLG-rewQH79YCoD8PS_7IG2_awi4UB45We_vgBEAEgx4P8AVC8_tK8-P____8BYMm2iYfMo8AXoAHNk4bWA8gBAagDAaoEsgFP0NcARwaNMKT168UxQ1H-Pl2oAXkxNRD_BCbpBmK3itNSNkMjkvdhTn56WbO-8uUmQM_pSgq3N5l1cwGB_D5RC3sTZ15NGuKVvO_R_4mc7Dd5yFoQ4cbrEgMlF4WRBIbEy8kflIJbXF3LMWZ_Bsd3Pjj7Kxp0R2XmZr1P2TuP_pTQ0--z45ajdeViz5rTDfBdhZi_Btk6IeYEcQ3tEqG156oW4u6qNulvep9_haZzeiwRiAYBgAeb7Pkp&usg=AFQjCNEEvR6XkbaGZDLM5g1Iwnwvfm9APA">Ads by Google</a></div><a href="http://www.googleadservices.com/pagead/aclk?sa=L&ai=CVRRAGTAQU5WLG-rewQH79YCoD8PS_7IG2_awi4UB45We_vgBEAEgx4P8AVC8_tK8-P____8BYMm2iYfMo8AXoAHNk4bWA8gBAagDAaoEsgFP0NcARwaNMKT168UxQ1H-Pl2oAXkxNRD_BCbpBmK3itNSNkMjkvdhTn56WbO-8uUmQM_pSgq3N5l1cwGB_D5RC3sTZ15NGuKVvO_R_4mc7Dd5yFoQ4cbrEgMlF4WRBIbEy8kflIJbXF3LMWZ_Bsd3Pjj7Kxp0R2XmZr1P2TuP_pTQ0--z45ajdeViz5rTDfBdhZi_Btk6IeYEcQ3tEqG156oW4u6qNulvep9_haZzeiwRiAYBgAeb7Pkp&num=1&cid=5GjQBoNL-04qzeqimdqQxap-&sig=AOD64_3bcEJVPNMIMPxaHlG-aylqtsvG_A&client=ca-pub-0920899300397823&adurl=http://web.emc.com/trust-grc%3Fcmp%3Dknc-trusted_IT-GRC-Remarketing-USA%26activity_id%3D285727%26division%3Drsa" onmouseout="window.status=&#39;&#39;" onmouseover="window.status=&#39;go to emc.com/RSA-GRC&#39;;return true"><span style="font-size: 14px;">RSA® - GRC Software</span></a> &nbsp;<span style="font-size: 12px">Reduce Risk &amp; Ensure Compliance. Free Guide To Top 10 GRC Challenges</span>&nbsp;&nbsp;<a href="http://www.googleadservices.com/pagead/aclk?sa=L&ai=CVRRAGTAQU5WLG-rewQH79YCoD8PS_7IG2_awi4UB45We_vgBEAEgx4P8AVC8_tK8-P____8BYMm2iYfMo8AXoAHNk4bWA8gBAagDAaoEsgFP0NcARwaNMKT168UxQ1H-Pl2oAXkxNRD_BCbpBmK3itNSNkMjkvdhTn56WbO-8uUmQM_pSgq3N5l1cwGB_D5RC3sTZ15NGuKVvO_R_4mc7Dd5yFoQ4cbrEgMlF4WRBIbEy8kflIJbXF3LMWZ_Bsd3Pjj7Kxp0R2XmZr1P2TuP_pTQ0--z45ajdeViz5rTDfBdhZi_Btk6IeYEcQ3tEqG156oW4u6qNulvep9_haZzeiwRiAYBgAeb7Pkp&num=1&cid=5GjQBoNL-04qzeqimdqQxap-&sig=AOD64_3bcEJVPNMIMPxaHlG-aylqtsvG_A&client=ca-pub-0920899300397823&adurl=http://web.emc.com/trust-grc%3Fcmp%3Dknc-trusted_IT-GRC-Remarketing-USA%26activity_id%3D285727%26division%3Drsa" onmouseout="window.status=&#39;&#39;" onmouseover="window.status=&#39;go to emc.com/RSA-GRC&#39;;return true"><span style="color: #568eea;font-weight: normal;font-size: 12px;">emc.com/RSA-GRC</span></a>
+ </div>
+  <div id="related_content">
+ <div id="related_content_title">
+  Users who read this also read:
+ </div>
+  <div class="rtb_list">
+  <div class="rtb_list_image"><img src="./Windows Program Automatic Startup Locations_files/hijackthis.png" width="64px" height="64px" alt=" Image"></div>
+  <div class="rtb_list_cont">
+   <div class="rtb_list_title"><h2><a href="http://www.bleepingcomputer.com/tutorials/how-to-use-hijackthis/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;tutorials_rt&#39;, &#39;bottom&#39;, &#39;how-to-use-hijackthis&#39;]);">HijackThis Tutorial - How to use HijackThis to remove Browser Hijackers &amp; Spyware</a></h2></div>
+   <div class="rtb_list_summ">HijackThis is a utility that produces a listing of certain settings found in your computer. HijackThis will scan your registry and various other files for entries that are similar to what a Spyware or Hijacker program would leave behind. Interpreting these results can be tricky as there are many legitimate programs that are installed in your operating system in a similar manner that Hijackers get  ...</div>
+  </div>
+  
+ </div>
+ <div class="rtb_list">
+  <div class="rtb_list_image"><img src="./Windows Program Automatic Startup Locations_files/installed-virus.png" width="64px" height="64px" alt=" Image"></div>
+  <div class="rtb_list_cont">
+   <div class="rtb_list_title"><h2><a href="http://www.bleepingcomputer.com/tutorials/how-malware-hides-as-a-service/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;tutorials_rt&#39;, &#39;bottom&#39;, &#39;how-malware-hides-as-a-service&#39;]);">How Malware hides and is installed as a Service</a></h2></div>
+   <div class="rtb_list_summ">A common misconception when working on removing malware from a computer is that the only place an infection will start from is in one of the entries enumerated by HijackThis. For the most part these entries are the most common, but it is not always the case. Lately there are more infections installing a part of themselves as a service. Some examples are Ssearch.biz and Home Search Assistant.</div>
+  </div>
+  
+ </div>
+ <div class="rtb_list">
+  <div class="rtb_list_image"><img src="./Windows Program Automatic Startup Locations_files/registry.jpg" width="64px" height="64px" alt=" Image"></div>
+  <div class="rtb_list_cont">
+   <div class="rtb_list_title"><h2><a href="http://www.bleepingcomputer.com/tutorials/demystifying-the-windows-registry/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;tutorials_rt&#39;, &#39;bottom&#39;, &#39;demystifying-the-windows-registry&#39;]);">Demystifying the Windows Registry</a></h2></div>
+   <div class="rtb_list_summ">Ever since Windows 95, the Windows operating system has been using a centralized hierarchical database to store system settings, hardware configurations, and user preferences. This database is called the Windows Registry or more commonly known as the Registry. When new hardware is installed in the computer, a user changes a settings such as their desktop background, or a new software is installed, ...</div>
+  </div>
+  
+ </div>
+ <div class="rtb_list">
+  <div class="rtb_list_image"><img src="./Windows Program Automatic Startup Locations_files/safe-s.jpg" width="64px" height="64px" alt=" Image"></div>
+  <div class="rtb_list_cont">
+   <div class="rtb_list_title"><h2><a href="http://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;tutorials_rt&#39;, &#39;bottom&#39;, &#39;how-to-start-windows-in-safe-mode&#39;]);">How to start Windows in Safe Mode</a></h2></div>
+   <div class="rtb_list_summ">Windows Safe Mode is a way of booting up your Windows operating system in order to run administrative and diagnostic tasks on your installation. When you boot into Safe Mode the operating system only loads the bare minimum of software that is required for the operating system to work. This mode of operating is designed to let you troubleshoot and run diagnostics on your computer. Windows Safe Mode ...</div>
+  </div>
+  
+ </div>
+ <div class="rtb_list">
+  <div class="rtb_list_image"><img src="./Windows Program Automatic Startup Locations_files/generic-settings-s.png" width="64px" height="64px" alt=" Image"></div>
+  <div class="rtb_list_cont">
+   <div class="rtb_list_title"><h2><a href="http://www.bleepingcomputer.com/tutorials/list-services-running-under-svchostexe-process/" onclick="_gaq.push([&#39;_trackEvent&#39;, &#39;tutorials_rt&#39;, &#39;bottom&#39;, &#39;list-services-running-under-svchostexe-process&#39;]);">How to determine what services are running under  a SVCHOST.EXE process</a></h2></div>
+   <div class="rtb_list_summ">A very common question we see here at Bleeping Computer involves people concerned that there are too many SVCHOST.EXE processes running on their computer. The confusion typically stems from a lack of knowledge about SVCHOST.EXE, its purpose, and Windows services in general. This tutorial will clear up this confusion and provide information as to what these processes are and how to find out more  ...</div>
+  </div>
+  
+ </div>
+
+</div>
+  <div id="tute_comments">
+<p>&nbsp;</p>
+<h3>Comments:</h3>
+<div id="disqus_thread"><iframe id="dsq-2" data-disqus-uid="2" allowtransparency="true" frameborder="0" tabindex="0" title="Disqus" width="100%" src="./Windows Program Automatic Startup Locations_files/saved_resource.htm" scrolling="no" horizontalscrolling="no" verticalscrolling="no" style="width: 100% !important; border: none !important; overflow: hidden !important; height: 595px !important;"></iframe></div>
+<script type="text/javascript">
+    var disqus_shortname = 'bleepingcomputer'; // required: replace example with your forum shortname
+    var disqus_identifier = 't44';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+
+</div>
+  <div id="tute_footer">
+   
+ <hr>
+ <p>This article is published and created for http://www.bleepingcomputer.com/, otherwise known as <strong>Bleeping Computer®</strong>, and is covered by all copyright laws.  All articles on this website are copyright ©&nbsp; 2003-2014 by Bleeping Computer, LLC.  All right reserved.  Use of these articles is limited to viewing and printing for personal use only.  If you would like to use this material or portions of this material for other purposes you must receive explicit <a href="http://www.bleepingcomputer.com/contact/" target="_blank">permission</a> from Bleeping Computer before reprinting or redistributing this article in any medium.
+ </p>
+  </div>
+ </div>
+</div>
+
+	</td>
+
+	<!-- End of Middle Column -->
+		<!-- Begin Right Column -->
+
+		<td valign="top" width="320px">
+		 <div id="r_sidebar">
+ 
+ 
+ <div class="side_box">
+  <span class="side_box_title">Search for a Tutorial</span>
+  <div class="side_box_cont">
+   <form action="http://www.bleepingcomputer.com/tutorials/search/" method="get">
+    <input type="hidden" name="act" value="search">
+    <input type="text" maxlength="60" size="30" class="forminput" name="keyword">
+    <p><input type="submit" value="Search" class="forminput"> </p>
+   </form>
+  </div>
+ </div>
+
+
+ <div class="side_box">
+  <span class="side_box_title">Tutorials Navigation</span>
+  <div class="side_box_cont">
+   <ul class="sb_ul bul_list">
+    <li><a href="http://www.bleepingcomputer.com/tutorials/">Tutorials Home</a></li>
+    <li><a href="http://www.bleepingcomputer.com/tutorials/new/">New Tutorials</a></li>
+    <li><a href="http://www.bleepingcomputer.com/tutorials/popular/">Popular Tutorials</a></li>
+    <li><a href="http://www.bleepingcomputer.com/rss-feeds/">RSS Feed</a></li>
+   </ul>
+  </div>
+ </div>
+
+ 
+
+ 
+<div class="side_box">
+ <div class="side_box_ad">
+<script type="text/javascript">
+//<![CDATA[
+ord = window.ord || Math.floor(Math.random()*1E16);
+document.write('<script type="text/javascript" src="http://ad4.netshelter.net/adj/ns.bleepingcomputer/tutorials;ppos=atf;kw=;tile=2;sz=300x250,300x600;ord=' + ord + '?"><\/script>');
+//]]>
+</script><script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/tutorials;ppos=atf;kw=;tile=2;sz=300x250,300x600"></script><div class="GoogleActiveViewClass" id="DfaVisibilityIdentifier_730366121742794423"><!-- Copyright 2014 DoubleClick, a division of Google Inc. All rights reserved. -->
+<!-- Code auto-generated on Tue Feb 04 09:37:30 PST 2014 -->
+<script src="./Windows Program Automatic Startup Locations_files/flashwrite_1_2(1).js"></script>
+<script language="JavaScript">
+<!--
+function DCFlash(id,pVM){
+var swf = "http://s1.2mdn.net/3569326/1-UCS_Intel_App-new_300x250_Standard_Flash.swf";
+var gif = "http://s1.2mdn.net/3569326/4-UCS_Intel_App-new_300x250_Standard_Gif.jpg";
+var minV = 9;
+var FWH = ' width="300" height="250" ';
+var url = escape("http://adclick.g.doubleclick.net/aclk?sa=L&ai=CIGzCGjAQU4nwE8rIlwen9IHQBITNk6gGAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9C8W64AAqzI40jdRHwwh3pWUK2wPxyuZFRuWfD3KezE3h1gGN-0b8LPW0u8MbmSr4lo9SebPJB15ChsihYqenvE5tUrNDMg0sAgY27fynRo1aXCn-XP8MsMi6ydEQrbiwAOgpBlKOTS5Tilzg91fLq1NZEBv733os70CQJTQCUYFn1vseKVKaaFTgeDMOO0nDUqxLtTPRXjC7Pq-GAajUopAM5RIuqlxVBQwlerxas9lgvVoaZSnQwrEzMA7Rq9VhKG-hLgBAGgBh4&num=0&sig=AOD64_3GME0sd0RrghsDMPW-tr6c0-bIng&client=ca-pub-5505905579599905&adurl=http://adclick.g.doubleclick.net/aclk?sa=L&ai=B266xGjAQU7jPFNCblQe75YC4BgAAAAAQASAAOABQu726vQVY-Y-fG2DJtomHzKPAF4IBCWNhLWdvb2dsZbIBGHd3dy5ibGVlcGluZ2NvbXB1dGVyLmNvbcgBCdoBVmh0dHA6Ly93d3cuYmxlZXBpbmdjb21wdXRlci5jb20vdHV0b3JpYWxzL3dpbmRvd3MtcHJvZ3JhbS1hdXRvbWF0aWMtc3RhcnR1cC1sb2NhdGlvbnMvqAMB4AQCmgUZCJrwTRDDneIyGOegnYUBIPmPnxsoru3ZAdoFAggBoAYf4Aau7dkB&num=0&sig=AOD64_04ryWRwu7lUWxxwVYpKcoG4Q30ZQ&client=&adurl=http://d.agkn.com/pixel/2389/%3Fche%3D2493687064%26col%3D8008525,1275930,106467011,279400551,57133049%26l0%3Dhttp://www.cisco.com/web/solutions/data_center/ucs_servers.html%3FPOSITION%3D3rd%252bparty%252bbanner%26COUNTRY_SITE%3Dus%26CAMPAIGN%3Ducs_servers%26CREATIVE%3D106467011%7C279400551%7C57133049%26REFERRING_SITE%3DN7442.8256.ZIFFDAVISMEDIANETWORK%26CID%3D8008525%26KEYCODE%3D");
+var fscUrl = url;
+var fscUrlClickTagFound = false;
+var wmode = "opaque";
+var bg = "";
+var dcallowscriptaccess = "always";
+
+var openWindow = "false";
+var winW = 0;
+var winH = 0;
+var winL = 0;
+var winT = 0;
+
+var moviePath=swf.substring(0,swf.lastIndexOf("/"));
+var sm=new Array();
+
+
+var defaultCtVal = escape("http://adclick.g.doubleclick.net/aclk?sa=L&ai=CIGzCGjAQU4nwE8rIlwen9IHQBITNk6gGAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9C8W64AAqzI40jdRHwwh3pWUK2wPxyuZFRuWfD3KezE3h1gGN-0b8LPW0u8MbmSr4lo9SebPJB15ChsihYqenvE5tUrNDMg0sAgY27fynRo1aXCn-XP8MsMi6ydEQrbiwAOgpBlKOTS5Tilzg91fLq1NZEBv733os70CQJTQCUYFn1vseKVKaaFTgeDMOO0nDUqxLtTPRXjC7Pq-GAajUopAM5RIuqlxVBQwlerxas9lgvVoaZSnQwrEzMA7Rq9VhKG-hLgBAGgBh4&num=0&sig=AOD64_3GME0sd0RrghsDMPW-tr6c0-bIng&client=ca-pub-5505905579599905&adurl=http://adclick.g.doubleclick.net/aclk?sa=L&ai=B266xGjAQU7jPFNCblQe75YC4BgAAAAAQASAAOABQu726vQVY-Y-fG2DJtomHzKPAF4IBCWNhLWdvb2dsZbIBGHd3dy5ibGVlcGluZ2NvbXB1dGVyLmNvbcgBCdoBVmh0dHA6Ly93d3cuYmxlZXBpbmdjb21wdXRlci5jb20vdHV0b3JpYWxzL3dpbmRvd3MtcHJvZ3JhbS1hdXRvbWF0aWMtc3RhcnR1cC1sb2NhdGlvbnMvqAMB4AQCmgUZCJrwTRDDneIyGOegnYUBIPmPnxsoru3ZAdoFAggBoAYf4Aau7dkB&num=0&sig=AOD64_04ryWRwu7lUWxxwVYpKcoG4Q30ZQ&client=&adurl=http://d.agkn.com/pixel/2389/%3Fche%3D2493687064%26col%3D8008525,1275930,106467011,279400551,57133049%26l0%3Dhttp://www.cisco.com/web/solutions/data_center/ucs_servers.html%3FPOSITION%3D3rd%252bparty%252bbanner%26COUNTRY_SITE%3Dus%26CAMPAIGN%3Ducs_servers%26CREATIVE%3D106467011%7C279400551%7C57133049%26REFERRING_SITE%3DN7442.8256.ZIFFDAVISMEDIANETWORK%26CID%3D8008525%26KEYCODE%3D");
+var ctp=new Array();
+var ctv=new Array();
+ctp[0] = "clickTag";
+ctv[0] = "";
+
+
+var fv='"moviePath='+moviePath+'/'+'&moviepath='+moviePath+'/';
+for(i=1;i<sm.length;i++){if(sm[i]!=""){fv+="&submovie"+i+"="+escape(sm[i]);}}
+for(var ctIndex = 0; ctIndex < ctp.length; ctIndex++) {
+  var ctParam = ctp[ctIndex];
+  var ctVal = ctv[ctIndex];
+  if(ctVal != null && typeof(ctVal) == 'string') {
+    if(ctVal == "") {
+      ctVal = defaultCtVal;
+    }
+    else {
+      ctVal = escape("http://adclick.g.doubleclick.net/aclk?sa=L&ai=CIGzCGjAQU4nwE8rIlwen9IHQBITNk6gGAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9C8W64AAqzI40jdRHwwh3pWUK2wPxyuZFRuWfD3KezE3h1gGN-0b8LPW0u8MbmSr4lo9SebPJB15ChsihYqenvE5tUrNDMg0sAgY27fynRo1aXCn-XP8MsMi6ydEQrbiwAOgpBlKOTS5Tilzg91fLq1NZEBv733os70CQJTQCUYFn1vseKVKaaFTgeDMOO0nDUqxLtTPRXjC7Pq-GAajUopAM5RIuqlxVBQwlerxas9lgvVoaZSnQwrEzMA7Rq9VhKG-hLgBAGgBh4&num=0&sig=AOD64_3GME0sd0RrghsDMPW-tr6c0-bIng&client=ca-pub-5505905579599905&adurl=http://adclick.g.doubleclick.net/aclk?sa=L&ai=B266xGjAQU7jPFNCblQe75YC4BgAAAAAQASAAOABQu726vQVY-Y-fG2DJtomHzKPAF4IBCWNhLWdvb2dsZbIBGHd3dy5ibGVlcGluZ2NvbXB1dGVyLmNvbcgBCdoBVmh0dHA6Ly93d3cuYmxlZXBpbmdjb21wdXRlci5jb20vdHV0b3JpYWxzL3dpbmRvd3MtcHJvZ3JhbS1hdXRvbWF0aWMtc3RhcnR1cC1sb2NhdGlvbnMvqAMB4AQCmgUZCJrwTRDDneIyGOegnYUBIPmPnxsoru3ZAdoFAggBoAYf4Aau7dkB&num=0&sig=AOD64_04ryWRwu7lUWxxwVYpKcoG4Q30ZQ&client=&adurl=" + ctVal);
+    }
+    if(ctParam.toLowerCase() == "clicktag") {
+      fscUrl = ctVal;
+      fscUrlClickTagFound = true;
+    }
+    else if(!fscUrlClickTagFound) {
+      fscUrl = ctVal;
+    }
+    fv += "&" + ctParam + "=" + ctVal;
+  }
+}
+fv+='"';
+var bgo=(bg=="")?"":'<param name="bgcolor" value="#'+bg+'">';
+var bge=(bg=="")?"":' bgcolor="#'+bg+'"';
+function FSWin(){if((openWindow=="false")&&(id=="DCF0"))alert('openWindow is wrong.');
+var dcw = 800;
+var dch = 600;
+// IE
+if(!window.innerWidth)
+{
+  // strict mode
+  if(!(document.documentElement.clientWidth == 0))
+  {
+    dcw = document.documentElement.clientWidth;
+    dch = document.documentElement.clientHeight;
+  }
+  // quirks mode
+  else if(document.body)
+  {
+    dcw = document.body.clientWidth;
+    dch = document.body.clientHeight;
+  }
+}
+// w3c
+else
+{
+  dcw = window.innerWidth;
+  dch = window.innerHeight;
+}
+if(openWindow=="center"){winL=Math.floor((dcw-winW)/2);winT=Math.floor((dch-winH)/2);}window.open(unescape(fscUrl),id,"width="+winW+",height="+winH+",top="+winT+",left="+winL+",status=no,toolbar=no,menubar=no,location=no");}this.FSWin = FSWin;
+ua=navigator.userAgent;
+if(minV<=pVM&&(openWindow=="false"||(ua.indexOf("Mac")<0&&ua.indexOf("Opera")<0))){
+  var adcode='<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="'+id+'"'+FWH+'>'+
+    '<param name="movie" value="'+swf+'"><param name="flashvars" value='+fv+'><param name="quality" value="high"><param name="wmode" value="'+wmode+'"><param name="base" value="'+swf.substring(0,swf.lastIndexOf("/"))+'"><PARAM NAME="AllowScriptAccess" VALUE="'+dcallowscriptaccess+'">'+bgo+
+    '<embed src="'+swf+'" flashvars='+fv+bge+FWH+' type="application/x-shockwave-flash" quality="high" swliveconnect="true" wmode="'+wmode+'" name="'+id+'" base="'+swf.substring(0,swf.lastIndexOf("/"))+'" AllowScriptAccess="'+dcallowscriptaccess+'"></embed></object>';
+  if(('x'!="j")&&(typeof dclkFlashWrite!="undefined")){dclkFlashWrite(adcode);}else{document.write(adcode);}
+}else{
+  document.write('<a target="_blank" href="'+unescape(url)+'"><img src="'+gif+'"'+FWH+'border="0" alt="Advertisement" galleryimg="no"></a>');
+}}
+function getFlashVersion() {
+ var vfv="0,0,0";
+ try {
+  try {
+   var axo=new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");
+   try {
+    axo.AllowScriptAccess="always";
+   } catch(e) {
+    return "6";
+   }
+  } catch(e) {}
+  vfv=new ActiveXObject("ShockwaveFlash.ShockwaveFlash").GetVariable("$version");
+ } catch(e) {
+  try {
+   if(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin) {
+    vfv=navigator.plugins["Shockwave Flash"].description;
+   }
+  } catch(e) {}
+ }
+ return vfv.replace(/\D+/g,",").match(/^,?(.+),?$/)[1].split(',').shift();
+}
+var DCid=(isNaN("279400551"))?"DCF2":"DCF279400551";
+var pVM=getFlashVersion();
+eval("function "+DCid+"_DoFSCommand(c,a){if(c=='openWindow')o"+DCid+".FSWin();}o"+DCid+"=new DCFlash('"+DCid+"',pVM);");
+//-->
+</script><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="DCF279400551" width="300" height="250"><param name="movie" value="http://s1.2mdn.net/3569326/1-UCS_Intel_App-new_300x250_Standard_Flash.swf"><param name="flashvars" value="moviePath=http://s1.2mdn.net/3569326/&amp;moviepath=http://s1.2mdn.net/3569326/&amp;clickTag=http%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCIGzCGjAQU4nwE8rIlwen9IHQBITNk6gGAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9C8W64AAqzI40jdRHwwh3pWUK2wPxyuZFRuWfD3KezE3h1gGN-0b8LPW0u8MbmSr4lo9SebPJB15ChsihYqenvE5tUrNDMg0sAgY27fynRo1aXCn-XP8MsMi6ydEQrbiwAOgpBlKOTS5Tilzg91fLq1NZEBv733os70CQJTQCUYFn1vseKVKaaFTgeDMOO0nDUqxLtTPRXjC7Pq-GAajUopAM5RIuqlxVBQwlerxas9lgvVoaZSnQwrEzMA7Rq9VhKG-hLgBAGgBh4%26num%3D0%26sig%3DAOD64_3GME0sd0RrghsDMPW-tr6c0-bIng%26client%3Dca-pub-5505905579599905%26adurl%3Dhttp%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DB266xGjAQU7jPFNCblQe75YC4BgAAAAAQASAAOABQu726vQVY-Y-fG2DJtomHzKPAF4IBCWNhLWdvb2dsZbIBGHd3dy5ibGVlcGluZ2NvbXB1dGVyLmNvbcgBCdoBVmh0dHA6Ly93d3cuYmxlZXBpbmdjb21wdXRlci5jb20vdHV0b3JpYWxzL3dpbmRvd3MtcHJvZ3JhbS1hdXRvbWF0aWMtc3RhcnR1cC1sb2NhdGlvbnMvqAMB4AQCmgUZCJrwTRDDneIyGOegnYUBIPmPnxsoru3ZAdoFAggBoAYf4Aau7dkB%26num%3D0%26sig%3DAOD64_04ryWRwu7lUWxxwVYpKcoG4Q30ZQ%26client%3D%26adurl%3Dhttp%3A//d.agkn.com/pixel/2389/%253Fche%253D2493687064%2526col%253D8008525%2C1275930%2C106467011%2C279400551%2C57133049%2526l0%253Dhttp%3A//www.cisco.com/web/solutions/data_center/ucs_servers.html%253FPOSITION%253D3rd%25252bparty%25252bbanner%2526COUNTRY_SITE%253Dus%2526CAMPAIGN%253Ducs_servers%2526CREATIVE%253D106467011%257C279400551%257C57133049%2526REFERRING_SITE%253DN7442.8256.ZIFFDAVISMEDIANETWORK%2526CID%253D8008525%2526KEYCODE%253D"><param name="quality" value="high"><param name="wmode" value="opaque"><param name="base" value="http://s1.2mdn.net/3569326"><param name="AllowScriptAccess" value="always"><embed src="http://s1.2mdn.net/3569326/1-UCS_Intel_App-new_300x250_Standard_Flash.swf" flashvars="moviePath=http://s1.2mdn.net/3569326/&amp;moviepath=http://s1.2mdn.net/3569326/&amp;clickTag=http%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCIGzCGjAQU4nwE8rIlwen9IHQBITNk6gGAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9C8W64AAqzI40jdRHwwh3pWUK2wPxyuZFRuWfD3KezE3h1gGN-0b8LPW0u8MbmSr4lo9SebPJB15ChsihYqenvE5tUrNDMg0sAgY27fynRo1aXCn-XP8MsMi6ydEQrbiwAOgpBlKOTS5Tilzg91fLq1NZEBv733os70CQJTQCUYFn1vseKVKaaFTgeDMOO0nDUqxLtTPRXjC7Pq-GAajUopAM5RIuqlxVBQwlerxas9lgvVoaZSnQwrEzMA7Rq9VhKG-hLgBAGgBh4%26num%3D0%26sig%3DAOD64_3GME0sd0RrghsDMPW-tr6c0-bIng%26client%3Dca-pub-5505905579599905%26adurl%3Dhttp%3A//adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DB266xGjAQU7jPFNCblQe75YC4BgAAAAAQASAAOABQu726vQVY-Y-fG2DJtomHzKPAF4IBCWNhLWdvb2dsZbIBGHd3dy5ibGVlcGluZ2NvbXB1dGVyLmNvbcgBCdoBVmh0dHA6Ly93d3cuYmxlZXBpbmdjb21wdXRlci5jb20vdHV0b3JpYWxzL3dpbmRvd3MtcHJvZ3JhbS1hdXRvbWF0aWMtc3RhcnR1cC1sb2NhdGlvbnMvqAMB4AQCmgUZCJrwTRDDneIyGOegnYUBIPmPnxsoru3ZAdoFAggBoAYf4Aau7dkB%26num%3D0%26sig%3DAOD64_04ryWRwu7lUWxxwVYpKcoG4Q30ZQ%26client%3D%26adurl%3Dhttp%3A//d.agkn.com/pixel/2389/%253Fche%253D2493687064%2526col%253D8008525%2C1275930%2C106467011%2C279400551%2C57133049%2526l0%253Dhttp%3A//www.cisco.com/web/solutions/data_center/ucs_servers.html%253FPOSITION%253D3rd%25252bparty%25252bbanner%2526COUNTRY_SITE%253Dus%2526CAMPAIGN%253Ducs_servers%2526CREATIVE%253D106467011%257C279400551%257C57133049%2526REFERRING_SITE%253DN7442.8256.ZIFFDAVISMEDIANETWORK%2526CID%253D8008525%2526KEYCODE%253D" width="300" height="250" type="application/x-shockwave-flash" quality="high" swliveconnect="true" wmode="opaque" name="DCF279400551" base="http://s1.2mdn.net/3569326" allowscriptaccess="always"></object>
+<noscript>&lt;a target="_blank" href="http://adclick.g.doubleclick.net/aclk?sa=L&amp;ai=CIGzCGjAQU4nwE8rIlwen9IHQBITNk6gGAAAQASAAYMm2iYfMo8AXggEXY2EtcHViLTU1MDU5MDU1Nzk1OTk5MDXIAQngAgCoAwGqBMUBT9C8W64AAqzI40jdRHwwh3pWUK2wPxyuZFRuWfD3KezE3h1gGN-0b8LPW0u8MbmSr4lo9SebPJB15ChsihYqenvE5tUrNDMg0sAgY27fynRo1aXCn-XP8MsMi6ydEQrbiwAOgpBlKOTS5Tilzg91fLq1NZEBv733os70CQJTQCUYFn1vseKVKaaFTgeDMOO0nDUqxLtTPRXjC7Pq-GAajUopAM5RIuqlxVBQwlerxas9lgvVoaZSnQwrEzMA7Rq9VhKG-hLgBAGgBh4&amp;num=0&amp;sig=AOD64_3GME0sd0RrghsDMPW-tr6c0-bIng&amp;client=ca-pub-5505905579599905&amp;adurl=http://adclick.g.doubleclick.net/aclk?sa=L&amp;ai=B266xGjAQU7jPFNCblQe75YC4BgAAAAAQASAAOABQu726vQVY-Y-fG2DJtomHzKPAF4IBCWNhLWdvb2dsZbIBGHd3dy5ibGVlcGluZ2NvbXB1dGVyLmNvbcgBCdoBVmh0dHA6Ly93d3cuYmxlZXBpbmdjb21wdXRlci5jb20vdHV0b3JpYWxzL3dpbmRvd3MtcHJvZ3JhbS1hdXRvbWF0aWMtc3RhcnR1cC1sb2NhdGlvbnMvqAMB4AQCmgUZCJrwTRDDneIyGOegnYUBIPmPnxsoru3ZAdoFAggBoAYf4Aau7dkB&amp;num=0&amp;sig=AOD64_04ryWRwu7lUWxxwVYpKcoG4Q30ZQ&amp;client=&amp;adurl=http://d.agkn.com/pixel/2389/%3Fche%3D2493687064%26col%3D8008525,1275930,106467011,279400551,57133049%26l0%3Dhttp://www.cisco.com/web/solutions/data_center/ucs_servers.html%3FPOSITION%3D3rd%252bparty%252bbanner%26COUNTRY_SITE%3Dus%26CAMPAIGN%3Ducs_servers%26CREATIVE%3D106467011%7C279400551%7C57133049%26REFERRING_SITE%3DN7442.8256.ZIFFDAVISMEDIANETWORK%26CID%3D8008525%26KEYCODE%3D"&gt;&lt;img src="http://s1.2mdn.net/3569326/4-UCS_Intel_App-new_300x250_Standard_Gif.jpg" width="300" height="250" border="0" alt="Advertisement" galleryimg="no"&gt;&lt;/a&gt;</noscript>
+
+</div><script type="text/javascript">(function() {var avDiv = document.getElementById("DfaVisibilityIdentifier_730366121742794423");if (avDiv) {avDiv['_avi_'] = 'BzA-wGjAQU7jPFNCblQe75YC4BgAAAAAQATgByAEJ4AQCoAYf';avDiv['_avihost_'] = 'pagead2.googlesyndication.com';}var glidar = document.createElement('script');glidar.type = 'text/javascript';glidar.async = true;glidar.src = '//pagead2.googlesyndication.com/pagead/js/lidar.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(glidar, s);})();</script><img src="./Windows Program Automatic Startup Locations_files/saved_resource">
+<noscript>&lt;a href="http://ad4.netshelter.net/jump/ns.bleepingcomputer/tutorials;ppos=atf;kw=;tile=2;sz=300x250,300x600;ord=123456789?" target="_blank" &gt;&lt;img src="http://ad4.netshelter.net/ad/ns.bleepingcomputer/tutorials;ppos=atf;kw=;tile=2;sz=300x250,300x600;ord=123456789??" border="0" alt="" /&gt;&lt;/a&gt;</noscript>
+ </div>
+</div>
+ <div class="side_box">
+ <span class="side_box_title">Most Popular Tutorials</span>
+ <div class="side_box_cont">
+  <p><a href="http://www.bleepingcomputer.com/tutorials/how-to-start-windows-in-safe-mode/">How to start Windows in Safe Mode</a></p>
+<p><a href="http://www.bleepingcomputer.com/tutorials/how-to-remove-a-trojan-virus-worm-or-malware/">How to remove a Trojan, Virus, Worm, or other Malware</a></p>
+<p><a href="http://www.bleepingcomputer.com/tutorials/how-to-see-hidden-files-in-windows/">How to see hidden files in Windows</a></p>
+<p><a href="http://www.bleepingcomputer.com/tutorials/show-hidden-files-in-windows-7/">How to show hidden files in Windows 7</a></p>
+<p><a href="http://www.bleepingcomputer.com/tutorials/repair-windows-with-windows-startup-repair/">How to automatically repair Windows Vista using Startup Repair</a></p>
+
+ </div>
+</div>
+
+ <div class="side_box_a_cont">
+ <div class="side_box_ad">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3249370012249755";
+/* Tutorials - Tutorial Side 2 (BTF) */
+google_ad_slot = "2352196564";
+google_ad_width = 300;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent"><iframe width="300" height="600" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+ </div>
+</div>
+ 
+
+</div>
+
+		</td>
+
+		<!-- End Right Column -->
+	</tr>
+</tbody></table>
+
+ <div class="ban_cont">
+  <div id="bottom_ban">
+   
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3249370012249755";
+/* Tutorials - Bottom */
+google_ad_slot = "2212443844";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/show_ads.js">
+</script><ins style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins>
+  </div>
+ </div>
+
+<!-- End of Content Section -->
+<br>
+<table width="100%" border="0" cellspacing="4" cellpadding="0">
+  <tbody><tr>
+    <td align="center">
+                <a href="http://www.bleepingcomputer.com/advertise/" rel="nofollow">Advertise</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/about/" rel="nofollow">About Us</a>   
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/user-agreement/" rel="nofollow">User Agreement</a>            
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/privacy/" rel="nofollow">Privacy Policy</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/contact/" rel="nofollow">Contact Us</a>     
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/sitemap/">Sitemap</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/chat/" rel="nofollow">Chat</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/tutorials/">Tutorials</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/uninstall/">Uninstall List</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+                <a href="http://www.bleepingcomputer.com/forums/">Tech Support Forums</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/glossary/">The Computer Glossary</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/rss-feeds/">RSS Feeds</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/startups/">Startups</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/filedb/">The File Database</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/virus-removal/">Virus Removal Guides</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.bleepingcomputer.com/download/">Downloads</a>
+    </td>
+  </tr>
+</tbody></table>
+<br><br>
+<div align="center">
+ <font size="1">
+  
+  ©&nbsp;2003-2014 All Rights Reserved <a href="http://www.bleepingcomputer.com/"><b>Bleeping Computer LLC</b></a>.
+  
+ </font>
+</div>
+<br><br>
+<!--End of Footer-->
+
+
+
+<!-- End Wrapper -->
+</div><iframe name="oauth2relay1506226046" id="oauth2relay1506226046" src="./Windows Program Automatic Startup Locations_files/postmessageRelay.htm" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+<script type="text/javascript" src="./Windows Program Automatic Startup Locations_files/36a3d0d2-55d9-11e3-b314-22000a249aab.js"></script>
+
+
+<div class="hide_from_print" style="position: fixed; background-color: rgb(255, 255, 255); border: 2px solid rgb(57, 136, 166); z-index: 2147483646; box-shadow: rgb(13, 26, 49) 0px 0px 10px; transition: right 360ms; -webkit-transition: right 360ms; width: 582px; height: 266px; right: -600px; bottom: 280px; background-position: initial initial; background-repeat: initial initial;"><span style="position: absolute; bottom: 10px; left: 10px; font-size: 11px; color: rgb(57, 136, 166); cursor: pointer; display: block; background-color: rgb(255, 255, 255); width: 40px; height: 17px; line-height: 17px; text-align: center; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; overflow: visible; white-space: nowrap; background-position: initial initial; background-repeat: initial initial;">Close</span><iframe src="./Windows Program Automatic Startup Locations_files/36a3d0d2-55d9-11e3-b314-22000a249aab.scroll.en.htm" width="100%" height="100%" frameborder="0" scrolling="no"></iframe></div><iframe id="google_osd_static_frame_4334745614323" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

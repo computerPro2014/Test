@@ -1,0 +1,1759 @@
+/*  
+Theme Name: Petri New
+Theme URI: http://www.petri.co.il/
+Description: Petri wordpress theme.
+Version: 1.0 
+Author: Jason Morehouse, Diversion Marketing
+Author URI: http://www.monkeytreelabs.com/
+Tags: Three column fixed width, custom build.
+*/ 
+ 
+body {
+	margin:0;
+	padding:0;
+	border:0;			/* this removes the border around the viewport in old versions of IE */
+	width:100%;
+	background:#003e5e;
+	/* The min-width property does not work in old versions of Internet Explorer */
+/*	background: url('/background.jpg') #b1d0ed repeat-x;*/
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:62.5%;
+}
+a {
+	color:#1632B5;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+a:visited {
+	color: #4e16b5;
+}
+.sidebar a:visited {
+	color: #005699;
+}
+p {
+	font-size: 1.05em;
+}
+a img {
+	border: 0;
+}
+input[type=text],input[type=email], textarea {
+	font-size: 1em;
+	color: #444;
+	border: 1px solid #aaa;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+}
+input[type=text]:focus, textarea:focus {
+	border-color: #777;
+	border-right-color: #ccc;
+	border-bottom-color: #ccc;
+}
+h1 {
+	font-size:1.5em;
+	line-height:1.364em;
+	font-weight: bold;
+	color: #333;
+}
+.post h1 {
+	margin:0;
+}
+.authored {
+	color: #777;
+	font-size: .9em;
+}
+h2 {
+	color: #333;
+	font-size:1.3em;
+	font-weight: bold;
+	border-bottom: solid 1px #e9e9e9;
+	padding-top:10px;
+}
+h2 a {
+	color: #111;
+}
+h3 {
+	color: #333;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+/* header */
+#header #logo {
+	float: left;
+	padding-top: 15px;
+	padding-left: 10px;
+}
+#headerlp #logo {
+	float: left;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+#headerlp {
+	text-align: right;
+	background: #fff;
+	clear: both;
+	padding-top: 10px;
+	height: 90px
+}
+#header {
+	text-align: right;
+	background: #fff;
+	clear: both;
+	height: 110px;
+	padding-top: 10px;
+}
+* html #header {
+	height:100px;
+} /*min height for IE6*/
+* html #container {
+	height:400px;
+}
+#container {
+	margin: 0 auto;
+	width:1000px;
+	border:0;
+	border-right: 1px solid #999999;
+	border-left: 1px solid #999999;
+	background-color: #fff;
+}
+#containerlp {
+	margin: 0 auto;
+	width:800px;
+	border:0;
+	border-right: 1px solid #999999;
+	border-left: 1px solid #999999;
+	background-color: #fff;
+}
+#cobrandlp {
+	text-align:right;
+	float: none;
+	clear: none;
+}
+#wrap {
+	margin: 0 auto;
+	width:980px;
+	background-color: #fff;
+}
+#wraplp {
+	margin: 0 auto;
+	width:780px;
+	background: url('/media/bg.gif') repeat-y;
+	background-color: #fff;
+}
+#wraplp p {
+	font-size:11px
+}
+#wraplp li {
+	font-size:1.1em
+}
+#page {
+	margin-left:180px;
+	margin-right:180px;
+	background-color: #fff;
+	min-height: 1000px;
+}
+#innerwrap {
+	float:left;
+	width:100%;
+	position:relative;
+	background-color: #fff;
+}
+#content {
+	float:right;
+	width: 595px; /*450px with #container side borders*/
+	font-size: 1.1em;
+	line-height: 1.667em;
+	padding: 1em;
+	background-color: #fff;
+}
+#content ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	margin-left:2em;
+}
+#content ul li {
+	margin:0;
+	padding:0;
+}
+#contentlp {
+	font-size: 1.2em;
+	line-height: 1.667em;
+	padding: 1em 5em;
+	background-color: #fff;
+	border-top: #004a76 solid 4px;
+}
+#contentlp .post .entry h1 {
+	font-size: 1.8em;
+}
+#contentlp li {
+	font-size: 1.1em;
+}
+.sidebar {
+	background:#ffffe8;
+	position: relative;
+	width:180px;
+	height:100%;
+	padding-bottom:10px;
+	position:relative; /*IE6 needs this*/
+	padding-bottom:10px;
+}
+.sidebar.left {
+	float:left;
+	margin-left:-181px;
+}
+.sidebar.right {
+	float:right;
+	margin-right:-181px;
+}
+.sidebar div.block {
+	padding: 1em 1em .5em 1em;
+}
+.sidebar em {
+	text-align: left;
+	font-style: normal;
+	background: #feeecd;
+	font-weight: bold;
+	display: block;
+	padding: .3em;
+	color: #444;
+	margin-bottom: .5em;
+}
+.sidebar ul {
+	margin:0;
+	padding:0;
+}
+.sidebar.left input[type=text] {
+	font-size: 1em;
+	padding: 0.364em;
+	width: 90%;
+}
+.sidebar ul {
+	list-style: none;
+}
+.sidebar ul.menu li {
+	background: url('/bullet.gif') left 4px no-repeat;
+	margin: 0;
+	padding:0;
+	padding-left: 10px;
+}
+.sidebar ul.links li {
+	background: url('/bullet.gif') left 4px no-repeat;
+	margin: 0;
+	padding:0;
+	padding-left: 10px;
+}
+.category li {
+	line-height: 1.667em;
+}
+ul.category li a {
+	line-height: 1.667em;
+}
+/* footer */
+#footer {
+	padding: 1em;
+	text-align: center;
+	background: #fff;
+	color: #999;
+	border-top: solid 1px #dddddd;
+	margin-bottom:22px;
+}
+.clear {
+	clear: both;
+	background: none;
+}
+.category li {
+	list-style:none;
+}
+.category ul {
+	padding:0;
+	list-style:none;
+	padding-bottom: 1em;
+}
+.category li {
+}
+.format_text {
+	padding:0;
+	margin:0;
+}
+.clear {
+	clear:both
+}
+/* Postindex */
+.linkindex {
+	padding-bottom: 1em;
+}
+.postindex {
+/* padding-bottom: 1em; */
+}
+.postindex p {
+	margin: 10px 0 10px 0;
+}
+.postindex p a {
+	font-weight: bold;
+}
+.linkindex p {
+	margin: 10px 0 10px 0;
+}
+.linkindex p a {
+	font-weight: bold;
+}
+code {
+	display: block;
+	padding: 4px;
+	font: monospace larger;
+	margin:5px;
+	background: #f8f8f8;
+	border: solid 1px #e9e9e9;
+	overflow-x: auto;
+}
+code.cmd {
+	background: #000;
+	color: #fdfdfd;
+	font-weight: bold;
+}
+/* screenshot */
+.ss {
+	display: block;
+	clear: both;
+	border: solid 1px #efefef;
+	padding: 2px;
+	margin: 10px 0 10px 0;
+}
+.format_text #author_bio {
+	color: #555;
+	font-size: smaller;
+}
+.avatar {
+	float: left;
+	padding: 2px;
+	margin: 0;
+	border: 1px solid #ddd;
+	background: white;
+}
+/* MVP Programm Block*/
+#mvp {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+}
+#mvp:hover {
+	text-decoration: none;
+}
+#mvp:hover span {
+	text-decoration: underline;
+}
+#search {
+	border: 0;
+}
+#search div {
+	border: 1px solid #aaa;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	vertical-align:middle;
+}
+#q {
+	width: 130px;
+	font-size: 11px;
+	padding: 0.364em;
+	border:0;
+	vertical-align:middle;
+}
+#aq {
+	width:500px;
+	font-size: 11px;
+	padding: 0.364em;
+	border:0;
+	vertical-align:middle;
+	background-color: #ffffff;
+}
+#search input[type=image] {
+	vertical-align:middle;
+}
+#search input[type=image]:hover {
+	background-color: #efefef;
+}
+/* Main Tabs */
+#menu {
+	background: url('/media/bar.gif') #002847 repeat-x;
+	display: block;
+	clear: both;
+	height: 32px;
+	line-height: 32px;/* margin-bottom: 1em; */
+}
+#menu #newtab {
+	background: url('/wp-content/themes/petri/images/jbbar.gif') #1E8400 repeat-x;/* margin-bottom: 1em; */
+}
+#menu ul {
+	padding:0;
+	margin: 0;
+	font: 12px Verdana;
+	list-style-type: none;
+	text-align: left; /*set to left, center, or right to align the menu as desired*/
+	float: left;
+	position: relative;
+}
+#menu li {
+	margin: 0;
+	padding:0;
+	display: block;
+	float: left;
+	border-right: solid 1px #004071;
+}
+#menu li a {
+	text-decoration: none;
+	border-bottom: none;
+	color: #fff;
+	padding: 0 7px 0 7px;
+	margin:0;
+	text-align: center;
+	line-height: 32px;
+	display: block;
+}
+#menu li a:hover {
+	background: url('/media/bar2.gif') #0d3655 repeat-x;
+}
+#menu li#newtab a:hover {
+	background: url('/wp-content/themes/petri/images/jbbar2.gif') #239600 repeat-x;
+}
+#menu li a:active {
+	background: #005699;
+}
+#menu li.selected a { /*selected tab effect*/
+	background: #005699;
+	color: #fff;
+}
+#menu li.selected#newtab a { /*selected tab effect*/
+	background: #239600;
+	color: #fff;
+}
+#menu .hb a {
+	font-weight:normal;
+	border-right: none;
+}
+#content ul li {
+	padding:0;
+	margin: 0;
+	list-style: disc;
+}
+#content ol li {
+	font-size:1.1em;
+}
+#content ol {
+	padding:0;
+	padding-left: 20px;
+	margin:0;
+}
+#edit {
+	float: right;
+}
+#edit a {
+	font-size: smaller;
+	color: red;
+}
+.latestnews {
+	background: url('/media/news.png') no-repeat left center;
+	padding-left: 20px;
+}
+.download {
+	background: url('/media/download.png') no-repeat left center;
+	padding-left: 20px;
+}
+.latest {
+	background: url('/media/latest.png') no-repeat left center;
+	padding-left: 20px;
+}
+.site {
+	background: url('/media/sitemap.png') no-repeat left center;
+	padding-left: 20px;
+}
+ul.push li {
+	padding: 4px;
+}
+.sidebar form {
+	padding:0;
+	margin:0;
+}
+#optin {
+	display:none;
+	padding:0;
+	border:0;
+	margin:0;
+	padding-bottom: 5px;
+}
+#optin p {
+	width:146px;
+	padding:0;
+}
+#optin label {
+	padding:0;
+}
+#optin input[type=text] {
+	background: #fff;
+	width:146px;
+}
+#optin a {
+	color: #005699;
+	padding-left: 0px;
+}
+.optin {
+	margin: 1em;
+	padding: 1em;
+	border: dotted 1px #cccccc;
+}
+.optin legend {
+	background: #fff;
+	font-weight: bold;
+}
+.optin input[type=text] {
+	width:225px;
+	background: #fff;
+}
+#optin {
+	display:none;
+}
+.wp_syntax {
+	color: #100;
+	background-color: #f9f9f9;
+	border: 1px solid silver;
+	margin: 0 0 1.5em 0;
+	overflow: auto;
+}
+/* IE FIX */
+.wp_syntax {
+	overflow-x: auto;
+	overflow-y: hidden;
+ padding-bottom: expression(this.scrollWidth > this.offsetWidth ? 15 : 0);
+	width: 100%;
+}
+.wp_syntax table {
+	border-collapse: collapse;
+}
+.wp_syntax div, .wp_syntax td {
+	vertical-align: top;
+	padding: 2px 4px;
+}
+.wp_syntax .line_numbers {
+	text-align: right;
+	background-color: #def;
+	color: gray;
+	overflow: visible;
+}
+/* potential overrides for other styles */
+.wp_syntax pre {
+	margin: 0;
+	width: auto;
+	float: none;
+	clear: none;
+	overflow: visible;
+	font-size: 12px;
+	line-height: 1.333;
+}
+pre {
+	padding: .3em;
+	font-weight: normal;
+	width: auto;
+	float: none;
+	clear: none;
+	overflow-y: auto;
+	font-size: 13px;
+	line-height: 1.333;
+	background: #222;
+	color: #fff;
+}
+.wp_syntax pre {
+	color: #000;
+	background: #efefef;
+	font-weight: normal;
+}
+#author_bio {
+	color: #555;
+	font-style: italic;
+	font-size: .9em;
+	margin-top: .5em;
+}
+.avatar {
+	float: left;
+	padding: 2px;
+	margin: 0;
+	border: 1px solid #ddd;
+	background: white;
+	margin-right: 10px;
+}
+#share {
+	clear: both;
+}
+#related {
+	list-style:none;
+}
+.grid {
+	width: 100%;
+}
+.grid td {
+	padding: 2px;
+	border-bottom: solid 1px #e9e9e9;
+	border-right: solid 1px #e9e9e9;
+}
+.warning {
+	border: solid 1px #999;
+}
+.warning strong {
+	background: #ffdcce;
+	display: block;
+	padding-left:.5em;
+	border-bottom: solid 1px #ffd1ce;
+}
+.warning p {
+	color: #333;
+	margin:0;
+	padding:.5em;
+}
+/* adkit units */
+.adkit {
+	text-decoration: none;
+	list-style:none;
+}
+ul#adkit_html.adkit.html {
+	margin:0;
+	width:100%;
+}
+ul#adkit_html.adkit.html li {
+	list-style:none;
+	margin:0;
+}
+ul#adkit_html.adkit.html a {
+	text-decoration:none;
+	color:#000;
+}
+/* fb style */
+.adkit.fb a {
+	max-width: 180px;
+	display: block;
+	text-decoration: none;
+	border: solid 1px #ffffe8;
+	color: #333;
+}
+.adkit.fb a:hover {
+	border: solid 1px #efefef;
+}
+.adkit.fb a strong {
+	color: #3b5998;
+	font-size: 1.2em;
+	clear: right;
+	display: block;
+	padding-bottom:4px;
+}
+.adkit.fb a img {
+	padding-top: 4px;
+	clear: right;
+	display: block;
+}
+.adkit.fb li {
+	padding: 10px 0 10px 0;
+}
+.adkit.fb li a img {
+	margin:0;
+	padding-top:0;
+	padding-left:0;
+	padding-right:0;
+	padding-bottom:4px;
+	background: #fff9df;
+}
+.adkit.fb li a:hover {
+	text-decoration: none;
+}
+.adkit.fb li a:hover span {
+	color: #000;
+}
+.adkit.fb li a:hover strong {
+	text-decoration: underline;
+}
+.adkit.sky {
+	text-align: center;
+}
+#adkit_leader {
+	float: right;
+}
+#adkit_jobs-foot li {
+	display:block;
+}
+.adkit.content-block {
+	/* width: 539px; */
+ margin: 1.5em 1.3em 1.6em 1.3em;
+	padding:0;
+	border: 1px solid #555555;
+	background-color:#f9f9f9;
+	background-repeat:no-repeat;
+	background-position:bottom right;
+	clear: both;
+	display: block;
+}
+.adkit.content-block a strong {
+	width:100%;
+	height:25px;
+	background:url('/media/bar.gif') #005699;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.3em;
+	font-weight: bold;
+	display: block;
+}
+.adkit.content-block p {
+	font-size:12px;
+	line-height:14px;
+	margin:0;
+	padding:15px 10px 0 10px;
+	color: #000;
+}
+.adkit.content-block img {
+	margin: 5px;
+}
+.adkit.content-block a {
+	text-align: center;
+	display:block;
+	border-left:1px solid #dddddd;
+	border-right:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+	background-color:#e1e1e1;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.adkit.content-block a.link-title {
+	text-align: center;
+	display:block;
+	border-left:1px solid #dddddd;
+	border-right:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+	background-color:#e1e1e1;
+	font-weight: bold;
+	font-size: 1.3em;
+	padding:2px 8px;
+}
+.adkit {
+	list-style:none;
+}
+a[rel="nofollow external"] {
+	background:url(/media/link.gif) right center no-repeat;
+	padding-right: 14px;
+}
+.adkit.freestyle {
+	list-style:none;
+}
+.adkit.recommended li a {
+	color:#333333;
+	text-decoration: none;
+}
+.adkit.recommended a strong {
+	color:#1632b5;
+	display:block;
+}
+.adkit.dl li a {
+	color:#333333;
+	text-decoration: none;
+}
+.adkit.dl a strong {
+	color:#1632b5;
+}
+.adkit.virtual-lab li a {
+	color:#333333;
+	text-decoration: none;
+}
+.adkit.virtual-lab a strong {
+	color:#1632b5;
+	display:block;
+}
+ul#adkit_recommended li {
+	list-style:none;
+	margin:10px -0px 10px -20px;
+}
+div#div-gpt-ad-1364242594540-0 iframe, div#div-gpt-ad-1364242594540-1 iframe {
+	width:550px;
+	height:auto;
+}
+ul.ad.skyscraper li {
+	margin:5px 0px;
+}
+blockquote {
+	margin: 0;
+	padding: 0;
+	padding-left: 2em;
+	color:#222;
+	font-style: italic;
+}
+/*Featured Download Squares*/
+
+div#deploy.featured-dl-sq {
+	padding:0;
+	margin:0;
+	border:none;
+	margin-bottom:15px;
+}
+div#featured-dl-sq {
+	margin-left:15px;
+}
+
+div#featured-dl-sq  div.GoogleActiveViewClass{	
+	padding:0;
+}
+div#deploy.featured-dl-sq h2 {
+	margin:0;
+	width:564px;
+}
+div#featured-dl-sq div {
+	padding:5px 6px 10px 6px;
+	float:left;
+}
+.sql h2, h1.sql {
+	background: url('http://www.petri.co.il/wp-content/themes/Petri-Theme/images/cat.png');
+	margin: 0px -10px 5px -10px;
+	padding: 5px;
+	color: #fff;
+	font-weight: bold;
+	clear: both;
+	font-size: 1.3em;
+}
+/*Featured Download List*/
+ ul#featured-download {
+	display: block;
+	padding-left:0;
+	margin-left:0;
+}
+ul#featured-download li a strong {
+	display: block;
+}
+ul#featured-download {
+	background: url(http://www.petri.co.il/wp-content/uploads/dlarrow.jpg) left top no-repeat;
+	font-size:1.1em;
+	margin-bottom:8px;
+	list-style:none !important;
+	padding-left:30px;
+}
+/* Yellow drop box */
+#ytop {
+	display: none;
+	border-bottom: solid 1px #ffb2a0;
+	text-align: center;
+}
+#ytop a {
+	font-size: 12px;
+	color: #404040;
+	padding:3px;
+	display: block;
+	background: #fff5bd;
+}
+#ytop a u {
+	color: #005699;
+}
+#ytop a:hover {
+	color: #000;
+	background: #fff3ae;
+	text-decoration: none;
+}
+/* TechNet Featured Page */
+#technet h2 {
+	color:#fff;
+	background:url(/mstechnet/BG1.jpg);
+	line-height:1.5em;
+	padding:4px;
+	font-weight:normal;
+}
+#technet ul li {
+	line-height:1.5em;
+	padding:4px;
+	font-weight:normal;
+}
+#newtabtag {
+	font-size:1em;
+	color:red;
+}
+#dimmer {
+	display:none;
+	background-color: rgb(0, 0, 0);
+	opacity: 0.5; /* Safari, Opera */
+	-moz-opacity:0.50; /* FireFox */
+	-ms-filter: "alpha (opacity=75)";
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	filter: alpha(opacity = 50);
+	z-index: 4;
+	height: 100%;
+	width: 100%;
+	background-repeat:repeat;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+}
+#store del {
+	color: red;
+}
+#store .thumb {
+	float: left;
+	padding-right: 10px;
+}
+#netshelter {
+	background: #e1e1e1;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-align: center;
+}
+#technet {
+	background: #284155;
+	margin: 9px;
+	padding:1px;
+}
+#technet ul {
+	background: #e3ebf2;
+	color: #fff;
+	;
+	padding:0;
+}
+#technet li {
+	padding:0;
+}
+#technet a {
+	margin:0;
+	color:#335269;
+	border-bottom: solid 1px #c5dcf3;
+	padding: 2px;
+	display: block;
+}
+#technet a:hover {
+	text-decoration: none;
+	color: #243d51;
+	background: #c5dcf3;
+}
+.push a {
+	padding:  2px 15px 2px 20px;
+	color: #888;
+}
+.push a:hover {
+	color: #000;
+}
+.push a.feed {
+	background: url('/media/feed.png') no-repeat left center;
+}
+.push a.twitter {
+	background: url('/media/twitter.png') no-repeat left center;
+}
+.push a.reddit {
+	background: url('/media/reddit.png') no-repeat left center;
+}
+.push a.email {
+	background: url('/media/email.png') no-repeat left center;
+}
+.adkit.content-foot {
+	text-align: center;
+}
+.entry #adkit_rnav-fb {
+	list-style-type: none;
+	float:left;
+}
+ul#adkit_video {
+	list-style-type: none;
+	float:left;
+	text-decoration: none;
+	margin:0px;
+}
+ul#adkit_video a:hover {
+	text-decoration: none;
+}
+ul#adkit_video strong {
+	font-size:1.1em;
+}
+ul#adkit_video li {
+	list-style-type: none;
+	float:left;
+	width:175px;
+	margin-right:15px;
+}
+.print {
+	font-size: .9em;
+	padding: 3px;
+	background: url('/images/action_print.gif') left center no-repeat;
+	padding-left: 20px;
+}
+#content #videos ul li {
+	list-style-type:none;
+	border:none;
+	font-size:12px;
+}
+#content #videos a {
+	list-style-type:none;
+	border:none;
+	font-size:12px;
+	max-width: 168px;
+	list-style-position:inside;
+}
+/** Freestyle (training) ad zone **/
+#content ul#adkit_freestyle2 li {
+	list-style:none;
+	margin-left:0px;
+}
+#content ul#adkit_freestyle2 {
+	list-style:none;
+	margin-left:0px;
+}
+.downloadlink {
+	background: url(http://www.petri.co.il/wp-content/uploads/downloadsm.jpg) no-repeat;
+	padding-left:25px;
+	padding-bottom:6px;
+}
+#top-message-bar {
+	border-bottom: 1px solid #ffb2a0;
+	background: #fff5bd;
+	position: absolute;
+	top: -25px;
+	left: 0px;
+	height: 17px;
+	width: 100%;
+	padding: 4px 0px;
+	font-size:1.2em;
+}
+#like li {
+	display: inline;
+}
+dt {
+	font-weight:bold;
+	margin-bottom:10px;
+	font-size:1.1em;
+}
+dd {
+	margin-bottom: 15px;
+	font-size: 1.1em;
+}
+.sqltab .sidebar em {
+	background: #cfcfcf;
+}
+.sqltab .block em {
+	background: #cfcfcf;
+}
+#nslead {
+	float:right;
+}
+.twtr-hd {
+	color:blue !important;
+}
+#content .entry ul#adkit_dl.adkit {
+	display: block;
+	padding-left:0;
+	margin-left:0;
+}
+#content .entry ul#adkit_dl.adkit li a strong {
+	display: block;
+}
+#content .entry ul#adkit_dl.adkit li {
+	background: url(http://www.petri.co.il/wp-content/uploads/dlarrow.jpg) left top no-repeat;
+	font-size:1.1em;
+	margin-bottom:8px;
+	list-style:none !important;
+	padding-left:30px;
+}
+.cat-heading .cat-container {
+	border: #04051e 1px solid;
+	margin-top:5px;
+	margin-bottom:10px;
+	padding:0px 10px;
+	clear:both;
+	overflow:visible;
+}
+.cat-heading h2, h1.cat-heading {
+	background: url('images/cat.png');
+	margin:0px -10px 5px -10px;
+	padding:5px;
+	color:#fff;
+	font-weight:normal;
+	clear:both;
+	font-size:1.3em;
+}
+/** sql Computing Custom Tab **/
+
+.sql #discover {
+	border: #04051e 1px solid;
+	margin-top:5px;
+	margin-bottom:10px;
+	padding:0px 10px;
+	clear:both;
+	overflow:visible;
+}
+.sql #decide {
+	border: #04051e 1px solid;
+	margin-top:5px;
+	margin-bottom:10px;
+	padding:0px 10px;
+	clear:both;
+	overflow:visible;
+}
+.sql #develop {
+	border: #04051e 1px solid;
+	margin-top:5px;
+	margin-bottom:10px;
+	padding:0px 10px;
+	clear:both;
+	overflow:visible;
+}
+.sql #deploy {
+	border: #04051e 1px solid;
+	margin-top:5px;
+	margin-bottom:10px;
+	padding:0px 10px;
+	clear:both;
+	overflow:visible;
+}
+.sql h2, h1.sql {
+	background: url('images/cat.png');
+	margin:0px -10px 5px -10px;
+	padding:5px;
+	color:#fff;
+	font-weight:normal;
+	clear:both;
+	font-size:1.3em;
+}
+.sql h3 {
+	clear: both;
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	font-size: 1.1em;
+}
+.sql div.leftcol {
+	width:49%;
+	float:left;
+	margin-bottom:5px;
+}
+.sql div.rightcol {
+	width:49%;
+	float:right;
+	margin-bottom:5px;
+}
+.sql #deploy ul.silo, #decide ul.silo {
+	width:29%;
+	float:left;
+	margin:5px;
+	list-style-type: none;
+	display: inline;
+	background-color: #EDEDED;
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+}
+.sql #deploy ul.silo li, #decide ul.silo li {
+	list-style-type: none;
+	line-height: normal;
+	list-style-position: outside;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding: 3px;
+}
+.sql {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.sql p {
+	margin-top:0px;
+}
+.sql .clear {
+	color:#fff;
+}
+.sql #discover ul {
+	list-style-type:none;
+	float:left;
+	width:200px;
+}
+div#sqlnews ul li {
+	margin-top:6px;
+	margin-bottom:6px;
+	padding-left:15px;
+	background: url(http://www.petri.co.il/wp-content/uploads/info.png) no-repeat left 3px;
+	font-size:1.1em;
+}
+div#sqldownloads ul li {
+	margin-top:6px;
+	margin-bottom:6px;
+	padding-left:15px;
+	background: url(http://www.petri.co.il/wp-content/uploads/arrow.png) no-repeat left 4px;
+	font-size:1.1em;
+}
+#top-message-bar {
+	border-bottom: 1px solid #ffb2a0;
+	background: #fff5bd;
+	position: absolute;
+	top: -25px;
+	left: 0px;
+	height: 17px;
+	width: 100%;
+	padding: 4px 0px;
+	font-size:1.2em;
+}
+.sql #decide ul li {
+	list-style:square;
+	margin-bottom:5px;
+	font-size:1.1em;
+}
+.sqltab .sidebar em {
+	background: #cfcfcf;
+}
+.sqltab .block .textwidget em {
+	background: #cfcfcf;
+}
+#TM_FTR {
+	bottom: 0;
+	height: 28px;
+	left: 0;
+	margin: 0 1%;
+	position: fixed;
+	width: 98%;
+	z-index: 9996;
+}
+#TM_FTR .ftrWrap {
+	background: url(http://www.petri.co.il/images/ie9-orange.jpg) top repeat-x #EBEBEB;
+	border-color: #ff9900;
+	border-style: solid solid none;
+	border-width: 1px 1px 0;
+	color: #2C2C2C;
+	display: block;
+	font: 0.6875em/100% Arial, Tahoma, "Bitstream Vera Sans", Helvetica, sans-serif;
+	height: 28px;
+	overflow: visible;
+	padding: 0;
+	position: relative;
+}
+#TM_FTR .ftrWrap .ftrHero {
+	bottom: 0;
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	z-index: 9996;
+}
+.search-result h3 {
+	margin:0;
+}
+.search-result p {
+	margin:0 0 10px 0;
+	padding-bottom:10px;
+	border-bottom:solid 1px #E8E8E8;
+}
+p#sign_up_box {
+	margin-top:-15px;
+}
+
+/*Job Board*/
+div#job-board {
+	padding-top:30px;
+}
+/*Job Board Tags*/
+div#content .job_board_tags li {
+	display: inline;
+	margin-right: 15px;
+}
+#content div#job_tags ul {
+	margin:0;
+}
+/*Job Board Search Form*/
+#job-board-search {
+	padding:10px 10px 10px 0px;
+}
+.job-label {
+	font-weight:bold;
+}
+div#content div.job_search form div {
+	display:inline;
+}
+div#content div.job_search input {
+	display: inline;
+	width: 140px;
+	margin-right: 10px;
+	height: 17px;
+	margin-top: 2px;
+}
+div#content div.job_search input.submit {
+	background: #003e5e;
+	color: white;
+	font-weight: bold;
+	width:100px;
+	height:25px;
+	margin-top:15px;
+}
+div.job_search {
+	float:left;
+}
+div.job_search.distance, div.job_search.button {
+}
+.submit {
+	margin-left:10px;
+}
+/**Job Post Button**/
+divcat.png-job {
+	background-image: url("/wp-content/themes/petri/images/post-job.png");
+	display: block;
+	height: 46px;
+	text-align: center;
+	width: 148px;
+	margin: 0 auto;
+}
+divcat.png-job a {
+	color: #FFFFFF;
+	display: block;
+	height:46px;
+	font-size: 1.4em;
+	margin: 5px;
+	text-decoration: none;
+	padding-top:5px;
+}
+divcat.png-job:hover {
+	background-position:bottom;
+}
+divcat.png-job span.bold {
+	font-weight:bold;
+}
+divcat.png-job span.price {
+	font-size:.8em;
+}
+div#job_tags {
+	clear:both;
+}
+
+
+
+/*In content Premium Block*/
+
+div#in-content-premium-block {
+width:590px;
+}
+div#in-content-premium-block img {
+	width:220px;
+	margin-top:18px;
+	 -webkit-border-top-left-radius: 8px;
+    -moz-border-top-left-radius: 8px;
+    -khtml-border-top-left-radius: 8px;
+	position:relative;
+	float:left;
+}
+
+div#in-content-premium-block div.content{
+	position:relative;
+	float:right;
+	width:365px;
+	height:129px;
+	background:#FBFBFB;
+}
+div#in-content-premium-block span {
+	float:right;
+	color:#ccc;
+	font-style:italic;
+	font-size:.85em;
+}
+
+div#in-content-premium-block  div.content p {
+	font-size:1em;
+	padding-left:10px;
+	margin-top:3px;
+	line-height:15px;
+}
+div#in-content-premium-block div.content h3 a{
+	padding-left:10px;
+	margin-bottom:0px;
+	color:#000;
+}
+div#in-content-premium-block div.content h3{margin-top:0px;}
+div#in-content-premium-block  div.content a.call-to-action {
+	width:365px;
+	height:25px;
+	line-height:25px;
+	font-size:1.4em;
+	color:#fff;
+	background:#86ca32;
+	display:block;
+	text-align:center;
+	-moz-box-shadow:0px 1px 2px 0px #ccc;
+  	-webkit-box-shadow:0px 1px 2px 0px #ccc;
+	box-shadow: 0px 1px 2px 0px #ccc;
+}
+div#in-content-premium-block  div.content a.call-to-action:active{
+	position:relative;
+	top:1px;
+	left:1px;
+}
+
+/*Author Page Template*/
+div.excerpt.container {
+	border-bottom:dotted 1px #ccc;
+	display:block;
+	overflow:hidden;
+	position:relative;
+	min-height:90px;
+	margin-top:5px;
+}
+.excerpt.container p {
+	margin:0;
+}
+h3.excerpt {
+	font-size:1.1em;
+	margin-bottom:0px;
+}
+h2.article, h2.article a {
+	border:none !important;
+	color:#1632B5;
+	margin:0;
+}
+div.article.post p {
+	margin:0;
+	padding-bottom:5px;
+}
+ul.inline li {
+	list-style:none !important;
+	float:left;
+}
+div.fb-like.fb_edge_widget_with_comment.fb_iframe_widget {
+	width:90px;
+}
+div.social-buttons {
+	margin:10px 0;
+}
+#menu li {
+	position: relative;
+}
+#menu li ul {
+	position: absolute;
+	top: 32px;
+	z-index: 99999;
+	display: none;
+}
+#menu li ul li {
+	width: 200px;
+	text-align: left;
+	background: #002847;
+	position: relative;
+}
+#menu li ul li a {
+	text-align: left;
+}
+#menu li:hover ul {
+	display: block;
+}
+#menu ul.sub-menu li ul {
+	position: absolute !important;
+	left: 200px !important;
+	top: 0px !important;
+	display: none;
+}
+#menu ul.sub-menu li:hover ul {
+	display: block;
+}
+
+
+/*Site Takeover Overlay*/
+#site-takeover{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:10;
+	width:100%;
+	height:100%;
+}
+
+div#site-takeover div.content {
+	width:1000px;
+	height:950px;
+	margin:0 auto;
+}
+
+div#site-takeover div.close {
+	height: 45px;
+	width: 1000px;
+	margin: 0 auto;
+}
+div#site-takeover div.close span{
+	float:right;
+	height:45px;
+	line-height:75px;
+	font-size:1.3em;
+	font-weight:bold;
+}
+div#site-takeover div#site-takeover-header{
+	width:100%;
+	background:#fff;
+	border-bottom:1px dotted #CCC;
+}
+/*End Site Takeover Overlay*/
+
+
+/****overlay Email Signup*****/
+div#overlay{ 
+     position:fixed;
+     top:0;
+     left:0;
+     background:#000;
+     opacity:0.5;
+     z-index:1000;
+	 width:100%;
+	 height:100%;
+}
+
+div#overlay-close{
+     background:url(images/closeX.png) no-repeat ;
+     width:30px;
+     height:30px;
+     cursor:pointer;
+	 position:absolute;
+	 right:-15px;
+	 top:-15px;
+}
+
+div#overlay-close:hover{
+     background-position: 0px -30px;
+}
+
+div#overlay-emailSignup-container {
+     z-index:1100;
+     position:fixed;
+     left:0;
+     top:20%;
+     width:100%;
+     height:100%
+}
+
+div#overlay-email-form{
+     background:#fff;
+     width:275px;
+     height:340px;
+     margin:0 auto;
+     padding:5px 20px;
+	 position:relative;
+}
+
+div#overlay-email-form form {
+     display:block;
+}
+
+div#overlay-emailSignup-container.white p#attention {
+	color: #333;
+	font-size: 1.5em;
+	font-weight: bold;
+	border-bottom: solid 1px #e9e9e9;
+	padding-top: 10px;
+	text-align:center;
+}
+div#overlay-emailSignup-container.white p#call-to-action{
+	font-size:1.5em;
+	color:#003e5e;
+	font-weight:bold;
+	text-align:center;
+}
+
+div#email-overlay-content h3 {
+	display:none;
+}
+div#overlay-emailSignup-container.white div#email-overlay-content ul li{
+	text-align:left;
+	font-size:1.5em;
+}
+
+div#email-overlay-form{
+	width:200px;
+	margin:0 auto;
+}
+
+div#overlay-emailSignup-container.white form#mc-embedded-subscribe-form input {
+	width:200px;
+	height:30px;
+	font-size:1.5em;
+	text-align:center;
+	margin-top:15px;
+}
+div#overlay-emailSignup-container.white form#mc-embedded-subscribe-form .button {
+	background: #005699;
+	color: #fff;
+	font-weight: bold;
+	width: 200px;
+	height: 30px;
+	font-size: 1.5em;
+	cursor:pointer;
+}
+
+
+/*Cartoon Man*/
+div#overlay-emailSignup-container.cartoon-man div#overlay-email-form {
+	background:none;
+	width:450px;
+	height:500px;
+	background: url('http://www.petri.co.il/wp-content/uploads/cartoon-man.png') no-repeat;
+	margin:0 auto;
+	position:relative;
+}div#overlay-emailSignup-container.cartoon-man div#overlay-close {
+	right:30px;
+	top:-10px;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-content{
+	margin-top:-145px;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-background {
+	width:450px;
+	height:500px;
+	margin-top:130px;
+	background: url('http://www.petri.co.il/wp-content/uploads/cartoon-man.png') no-repeat;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-header {
+	width:450px;
+	height:327px;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-header p#call-to-action {
+	  color: #fff;
+	  font-weight: bold;
+	  padding-top: 120px;
+	  font-size: 1.6em;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-header p#attention {
+	  display:none;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-footer {
+	height: 32px;
+	width: 434px;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-footer p {
+	color: #fff;
+	padding-left: 65px;
+	margin-top: 18px;
+	font-size: 1em;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-content h3 {
+	font-weight: normal;
+	line-height: 10px;
+	padding-left: 15px;
+	font-size: 1.8em;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-content ul {
+	color: #fff;
+	list-style: none;
+	font-size: 1.4em;
+	line-height: 25px;
+	margin-left: 20px;
+	margin-top: 35px;
+	padding-top: 3px;
+}div#overlay-emailSignup-container.cartoon-man div#email-overlay-form {
+	width:395px;
+	margin-top:15px;
+	margin-left:10px;
+}div#overlay-emailSignup-container.cartoon-man form#mc-embedded-subscribe-form input {
+	width:381px;
+	font-size:1.8em;
+}div#overlay-emailSignup-container.cartoon-man form#mc-embedded-subscribe-form input.text {
+	height:30px;
+	margin:5px 0px 5px 0px;
+	;
+	color:#666;
+	border:solid 1px #79a3c1;
+	padding-left:10px;
+}div#overlay-emailSignup-container.cartoon-man form#mc-embedded-subscribe-form .button {
+	height:35px;
+	width:392px;
+	background:url('http://www.petri.co.il/wp-content/uploads/carton-email-submit-button.png') no-repeat scroll 0 0 transparent;
+	background-position:bottom;
+	color:#FFF;
+	font-size:2em;
+	font-weight:bold;
+	border:none;
+	cursor:pointer;
+}div#overlay-emailSignup-container.cartoon-man form#mc-embedded-subscribe-form .button:active {
+	background:url('http://www.petri.co.il/wp-content/uploads/carton-email-submit-button.png') no-repeat scroll 0 0 transparent;
+	line-height:37px;
+}
+
+/*Branded Email Overlay*/
+div#overlay-emailSignup-container.branded div#overlay-email-form {
+	background:none;
+	width:700px;
+	height:500px;
+	background: url('http://www.petri.co.il/wp-content/uploads/email-signup-branded.png') no-repeat;
+	margin:0 auto;
+	position:relative;
+}
+
+div#overlay-emailSignup-container.branded div#overlay-close {
+	position: absolute;
+	left: 675px;
+	top: -5px;
+}
+	
+}div#overlay-emailSignup-container.branded div#email-overlay-content{
+
+}div#overlay-emailSignup-container.branded div#email-overlay-background {
+	
+}div#overlay-emailSignup-container.branded div#email-overlay-header {
+	
+}div#overlay-emailSignup-container.branded div#email-overlay-header p#call-to-action {
+	font-size: 2.8em;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	word-spacing: 0px;
+	margin-left: 226px;
+	margin-top: 44px;
+}div#overlay-emailSignup-container.branded div#email-overlay-header p#attention {
+
+}div#overlay-emailSignup-container.branded div#email-overlay-footer {
+	
+}div#overlay-emailSignup-container.branded div#email-overlay-footer p {
+	display:none;
+	
+}div#overlay-emailSignup-container.branded div#email-overlay-content h3 {
+	
+}div#overlay-emailSignup-container.branded div#email-overlay-content ul {
+	color: #fff;
+	list-style: none;
+	margin-top: 55px;
+	line-height: 35px;
+	font-size: 1.3em;
+	margin-left: 10px;
+	
+}div#overlay-emailSignup-container.branded div#email-overlay-form {
+	margin-top: -160px;
+	margin-left: 310px;
+	
+}div#overlay-emailSignup-container.branded form#mc-embedded-subscribe-form input {
+	
+}div#overlay-emailSignup-container.branded form#mc-embedded-subscribe-form input.text {
+	width: 310px;
+	height: 40px;
+	margin-top: 35px;
+	border: solid 1px #666;
+	color:#333;
+	padding-left: 12px;
+	font-size: 1.3em;
+	font-style: italic;
+	
+}
+div#overlay-emailSignup-container.branded form#mc-embedded-subscribe-form input.text.email{
+	background: url("http://www.petri.co.il/wp-content/uploads/branded-envelope.png") no-repeat #fff right 12px top 12px;
+	
+}div#overlay-emailSignup-container.branded form#mc-embedded-subscribe-form input.text.fname{
+	background: url("http://www.petri.co.il/wp-content/uploads/branded-person.png") no-repeat #fff right 12px top 12px;
+	
+}div#overlay-emailSignup-container.branded form#mc-embedded-subscribe-form .button {
+	background: url('http://www.petri.co.il/wp-content/uploads/branded-button.png');
+	width: 264px;
+	height: 64px;
+	border: none;
+	margin-top: 90px;
+	margin-left: 35px;
+	color: #fff;
+	font-size: 2.5em;
+	text-transform: capitalize;
+	font-weight: bold;
+	cursor:pointer;
+		
+}div#overlay-emailSignup-container.branded form#mc-embedded-subscribe-form .button:active {
+	margin-top:92px;	
+}div#overlay-emailSignup-container.branded p#attention {
+	font-size: 2.5em;
+	padding-left: 222px;
+	font-weight: bold;
+	padding-top: 15px;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: #bda84b;
+}
+
+div#notice{
+	color:#ccc;
+	font-style:italic;
+	margin:5px 0px;
+	}
+

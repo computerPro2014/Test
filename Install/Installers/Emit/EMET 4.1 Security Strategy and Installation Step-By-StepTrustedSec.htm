@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0094)https://www.trustedsec.com/july-2013/emet-4-0-security-strategy-and-installation-step-by-step/ -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+<meta http-equiv="X-UA-Compatible" content="IE=100"> <!-- Force IE8 Compatibility mode OFF -->
+<title>EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://www.trustedsec.com/wp-content/themes/TrustedSec_2014/favicon.ico">
+<link rel="stylesheet" href="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/style.css" type="text/css">
+<link rel="stylesheet" href="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/custom.css" type="text/css">
+
+
+
+
+<!-- include jQuery library -->
+<script src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/cb=gapi.loaded_1" async=""></script><script src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/cb=gapi.loaded_0" async=""></script><script id="twitter-wjs" src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/widgets.js"></script><script type="text/javascript" async="" src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/plusone.js" gapi_processed="true"></script><script type="text/javascript" src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/jquery.cycle.all.latest.js"></script>
+<!-- include slider id -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#slider').cycle({
+		fx: 'scrollRight' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+});
+</script>
+
+
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.4.25 - http://yoast.com/wordpress/seo/ -->
+<meta name="description" content="EMET 4.1 is a security tool in stopping exploits from correctly working. This blog will walk you through the installation and a step-by-step tutorial.">
+<link rel="canonical" href="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec.htm">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="EMET 4.1 Security Strategy and Installation Step-By-Step">
+<meta property="og:description" content="EMET 4.1 is a security tool in stopping exploits from correctly working. This blog will walk you through the installation and a step-by-step tutorial.">
+<meta property="og:url" content="https://www.trustedsec.com/july-2013/emet-4-0-security-strategy-and-installation-step-by-step/">
+<meta property="og:site_name" content="TrustedSec">
+<meta property="article:section" content="July 2013">
+<meta property="article:published_time" content="2013-07-04T17:45:29+00:00">
+<meta property="article:modified_time" content="2014-01-21T14:09:33+00:00">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_1.png">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_2.png">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_3.png">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_4.png">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_5.png">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_6.png">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_7.png">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_8.png">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_9.png">
+<meta property="og:image" content="https://www.trustedsec.com/files/emet_adv_10.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@trustedsec">
+<meta name="twitter:domain" content="TrustedSec">
+<meta name="twitter:creator" content="@trustedsec">
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="stylesheet" id="crayon-css" href="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/crayon.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/jquery.js"></script>
+<script type="text/javascript" src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/jquery-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"2.5.0","is_admin":"0","ajaxurl":"https:\/\/www.trustedsec.com\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/crayon.min.js"></script>
+<meta name="generator" content="WordPress 3.8.1">
+</head>
+<body data-twttr-rendered="true" style="">
+
+
+<div id="header">
+
+	<div id="header-container">
+		
+		<div id="head-contact">
+			<h3 class="aligncenter"><a class="button-style" href="https://www.trustedsec.com/contact-us/">Call Us Today! (877) 550-4728</a></h3>
+			
+			<div class="right">
+				<div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 90px; height: 20px; background-position: initial initial; background-repeat: initial initial;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1393654836932" name="I0_1393654836932" src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/fastbutton.htm" data-gapiattached="true" title="+1"></iframe></div>
+				<!-- Place this tag after the last +1 button tag. -->
+				<script type="text/javascript">
+				  (function() {
+					var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+					po.src = 'https://apis.google.com/js/plusone.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				  })();
+				</script><iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/tweet_button.1392079123.htm" class="twitter-share-button twitter-tweet-button twitter-count-horizontal" title="Twitter Tweet Button" data-twttr-rendered="true" style="width: 110px; height: 20px;"></iframe><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
+		</div><!-- end head contact -->
+		
+		<div id="logo">
+			<a href="https://www.trustedsec.com/"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/logo.png" alt="logo" id="logo"></a>
+		</div>
+
+		<div id="digi-nav">
+			 <div class="menu-trustedsec-nav-container"><ul id="menu-trustedsec-nav" class="menu"><li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="https://www.trustedsec.com/">Home</a></li>
+<li id="menu-item-116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-116"><a href="https://www.trustedsec.com/solutions/">Solutions</a>
+<ul class="sub-menu">
+	<li id="menu-item-67" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-67"><a href="https://www.trustedsec.com/solutions/penetration-testing/">Penetration Testing / Red Teaming</a></li>
+	<li id="menu-item-91" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-91"><a href="https://www.trustedsec.com/solutions/application-security/">Application Security</a></li>
+	<li id="menu-item-414" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-414"><a href="https://www.trustedsec.com/solutions/technology-solutions/">Technology Solutions</a></li>
+	<li id="menu-item-460" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-460"><a href="https://www.trustedsec.com/solutions/mobile-security/">Mobile Security</a></li>
+	<li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="https://www.trustedsec.com/solutions/program-maturity/">Security Transformation</a></li>
+	<li id="menu-item-87" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87"><a href="https://www.trustedsec.com/solutions/risk-assessments/">Risk Assessments</a></li>
+	<li id="menu-item-88" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88"><a href="https://www.trustedsec.com/solutions/regulatory-and-compliance/">Regulatory/Compliance</a></li>
+	<li id="menu-item-1062" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1062"><a href="https://www.trustedsec.com/solutions/trustedscan/">TrustedScan</a></li>
+	<li id="menu-item-1802" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1802"><a href="https://www.trustedsec.com/solutions/computer-forensics/">Computer Forensics</a></li>
+	<li id="menu-item-1497" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1497"><a href="https://www.trustedsec.com/solutions/technical-surveillance-counter-measures-tscm/">Bug Sweeping (TSCM)</a></li>
+	<li id="menu-item-245" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-245"><a href="https://www.trustedsec.com/solutions/">Additional Services</a></li>
+</ul>
+</li>
+<li id="menu-item-1141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1141"><a href="https://www.trustedsec.com/solutions/training/">Training</a>
+<ul class="sub-menu">
+	<li id="menu-item-2136" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2136"><a href="https://www.trustedsec.com/solutions/training/bypassing-security-defenses/">Bypassing Security Defenses</a></li>
+	<li id="menu-item-2148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2148"><a href="https://www.trustedsec.com/solutions/training/advanced-penetration-testing/">Advanced Penetration Testing</a></li>
+</ul>
+</li>
+<li id="menu-item-121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-121"><a href="https://www.trustedsec.com/downloads/">Downloads</a>
+<ul class="sub-menu">
+	<li id="menu-item-505" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-505"><a href="https://www.trustedsec.com/downloads/presentations/">Presentations</a></li>
+	<li id="menu-item-123" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-123"><a href="https://www.trustedsec.com/downloads/social-engineer-toolkit/">Social-Engineer Toolkit</a></li>
+	<li id="menu-item-122" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-122"><a href="https://www.trustedsec.com/downloads/artillery/">Project Artillery</a></li>
+	<li id="menu-item-1813" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1813"><a href="https://www.trustedsec.com/downloads/conqr/">ConQR</a></li>
+	<li id="menu-item-1827" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1827"><a href="https://www.trustedsec.com/downloads/rid_enum/">RID_ENUM</a></li>
+	<li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="https://www.trustedsec.com/downloads/tools-download/">Tools and Exploits</a></li>
+</ul>
+</li>
+<li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-21"><a href="https://www.trustedsec.com/news-and-events/">Blog</a></li>
+<li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-120"><a href="https://www.trustedsec.com/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-256"><a href="https://www.trustedsec.com/about-us/">Company History</a></li>
+	<li id="menu-item-118" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-118"><a href="https://www.trustedsec.com/about-us/leadership/">Leadership</a></li>
+</ul>
+</li>
+<li id="menu-item-1586" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1586"><a href="https://www.trustedsec.com/careers/">Careers</a></li>
+<li id="menu-item-310" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-310"><a href="https://www.trustedsec.com/contact-us/">Contact</a></li>
+</ul></div> <!-- end menu -->
+		</div><!-- end nav -->
+		
+		
+		<h1><a rel="bookmark" href="https://www.trustedsec.com/">EMET 4.1 Security Strategy and Installation Step-By-StepInformation Security Made Simple</a></h1>
+
+	</div><!-- end header container -->
+	
+</div><!-- end header -->
+
+<div id="container">
+	<div id="content">
+	
+	<div id="sidebar">
+	<div class="sidebar-widget">
+		<h3>Search our site:</h3>
+		<br>
+		<form style="width:auto; margin:0 auto; display:table;" role="search" method="get" id="searchform" action="https://www.trustedsec.com/">
+			<input type="text" value="search" name="s" id="s" onfocus="if (this.value == &#39;search&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;search&#39;;}"><input type="submit" id="searchsubmit" value="Search">
+		</form>
+	</div>
+	
+			<div class="sidebar-widget">		<h3>Recent Posts</h3>		<ul>
+					<li>
+				<a href="https://www.trustedsec.com/february-2014/python-remote-code-execution-socket-recvfrom_into/">Python Remote Code Execution in socket.recvfrom_into()</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/february-2014/importance-documentation/">The Importance of Documentation</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/february-2014/social-engineering-abroad/">Social Engineering Abroad</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/february-2014/adrian-irongeek-crenshaw-joins-family/">Adrian “Irongeek” Crenshaw joins the family!</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/january-2014/introducing-wpupdate-automatic-updates-wordpress/">Introducing WPUpdate – Automatic Updates for WordPress</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/january-2014/rick-hayes-joins-trustedsec-family/">Rick Hayes joins the TrustedSec Family!</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/uncategorized/powershell-reconnaissance/">Powershell Reconnaissance</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/january-2014/explaining-security-issues-healthcare-gov/">Explaining security issues with healthcare.gov</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/january-2014/stand-one-change-infosec-now/">We stand as one. Change INFOSEC now.</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/january-2014/target-70-million-cards-compromised-payday-hackers-billions/">Target: 70 million cards compromised. Payday for Hackers? Billions.</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/january-2014/abusing-internet-facing-password-resets-0-day/">Abusing Internet Facing Password Resets (and a 0-day)</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/december-2013/healthcare-gov-operational-security-concerns-not-addressed/">Healthcare.gov Operational – Security concerns not addressed</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/november-2013/trustedsec-congressional-hearing-report/">TrustedSec Congressional Hearing Report</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/november-2013/david-kennedy-testifying-front-congress/">David Kennedy – Testifying in front of Congress</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/november-2013/perform-risk-assessment-trustedsec/">Why Perform a Risk Assessment with TrustedSec?</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/november-2013/snmp-can/">SNMP? How can this be?</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/october_2013/running-hyper-v-inside-vmware-fusion/">Running Hyper-V Inside of VMWare Fusion</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/october_2013/social-engineer-toolkit-set-v5-4-walkers-released/">The Social-Engineer Toolkit (SET) v5.4 “Walkers” Released</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/october_2013/derbycon-ctf/">DerbyCon 3.0 CTF Summary</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/october_2013/affordable-health-care-website-secure-probably/">Is the Affordable Health Care Website Secure? Probably not.</a>
+						</li>
+				</ul>
+		</div><!-- end sidebar widgets -->
+	
+</div>	
+			<div class="post-2085 post type-post status-publish format-standard hentry category-july-2013 blog" id="post-2085">
+			<div class="post-date">Thu July 4, 2013</div>
+			<h2><a href="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec.htm" rel="bookmark" title="Permanent Link to EMET 4.1 Security Strategy and Installation Step-By-Step">EMET 4.1 Security Strategy and Installation Step-By-Step</a></h2>
+
+			<div class="entry">
+			
+				<p>TrustedSec is a big fan of The Enhance Mitigation Experience Toolkit (EMET). If you haven’t already read up on the features, functionality, and huge benefits it adds towards strengthening security on servers and workstations, check out the previous two blog posts:</p>
+<p><a href="https://www.trustedsec.com/may-2013/emet-4-0-tutorial-and-overview/">EMET 4.0 Tutorial and Overview<br>
+</a><a href="https://www.trustedsec.com/june-2013/emet-4-0-released-new-gui-and-features/">EMET 4.0 release new GUI and features</a></p>
+<p>A quick summary of EMET, it’s a free tool provided by Microsoft which allows you to add additional checks and memory analysis of running processes in order to protect against things like zero days, exploits, certificate pinning (trusts), and more. Traditional exploit methods rely on several predefined behaviors (not always but mostly), EMET puts in a lot of checks and preventative measures in stopping these types of attacks in memory and remove the ability for remote code execution (RCE) to occur. An example on how EMET can work and wouldn’t work would be the following:</p>
+<p>A working example of EMET can be found in the latest Internet Explorer exploit (<a href="http://www.exploit-db.com/exploits/26175/">MS13-009</a>). An integer overflow exists inside vgx.dll and due to the handling of dashstyle.array lengths for vml which causes the bug. The exploit itself uses a common technique for bypassing Address Space Layout Randomization (ASLR), Data Execution Prevention (DEP), and more. The technique used in this attack uses a combination of a technique called a <a href="https://www.corelan.be/index.php/2011/12/31/exploit-writing-tutorial-part-11-heap-spraying-demystified/">heap spray</a> and return oriented programming (ROP) gadgets built on Java Runtime Environments (JRE6). The way EMET protects against this is through several techniques, the first is ROP mitigation attacks. In a ROP exploit, an attacker will use a series of returns already pieced together in memory (and not affected by ASLR) to put together a “gadget” which allows the ability to execute remote code (<a href="http://en.wikipedia.org/wiki/Executable_space_protection">Overview NX</a>). EMET works on a process by process basis and can monitor these type of techniques and stop the execution from occurring (if configured properly, more on that later).</p>
+<p>The second method of prevention is the heap protection aspects which pre-allocate popular portions of memory that are commonly used by attackers. When jumping to your <a href="http://en.wikipedia.org/wiki/NOP_slide">NOP slide</a> and <a href="http://en.wikipedia.org/wiki/Shellcode">shellcode</a> it isn’t there and the exploit isn’t successful. These two examples alone have the ability to prevent the exploit from functioning properly and eliminating the threat.</p>
+<p>An example where EMET would not work would be a sandbox escape attack in something like Java. Most recently, the <a href="http://www.exploit-db.com/exploits/26529/">Java Applet ProviderSkeleton Insecure Invoke Method</a> exploit was released within Metasploit. In this example, this is a flaw within how Java is designed and not using traditional in memory attacks. Instead this attack exploits an insecure invoke method inside the ProviderSkeleton class in Java update 21 and earlier. Since this isn’t a traditional exploit method, something like EMET wouldn’t save you from this type of attack. Something to be aware of, and something you should definitely be analyzing from what’s in the public.</p>
+<p>One word of caution, EMET isn’t a 100 percent method for preventative measures. Older versions had known bypass techniques, however the capabilities you get with EMET drastically increase the ability to withstand traditional exploits and relatively easily to deploy. On that note, let’s get into the installation of EMET 4.1.</p>
+<p>First, you will need to download EMET 4.1 which can be downloaded from here: <a href="http://www.microsoft.com/en-us/download/details.aspx?id=41138">http://www.microsoft.com/en-us/download/details.aspx?id=41138</a>. Select the MSI file below:</p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_1.png"></center><p></p>
+<p>This will download an MSI file which you can deploy systems. Conversely you could also deploy the MSI files through group policy on a much larger deployment. EMET does support group policy add-ons and can be centrally management through Active Directory. Note there is also a larger PDF that contains more information about EMET 4.1.</p>
+<p>Double click on the MSI file and follow the steps to install.</p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_2.png"></center><p></p>
+<p>Next, select the “use recommended settings” and finish the installation. </p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_3.png"></center><p></p>
+<p>Installation should finish below:</p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_4.png"></center><p></p>
+<p>Go to your start menu and locate the newly installed “EMET GUI”. Open up the EMET GUI  and get into the main console. The way EMET works is by running processes and protecting those processes. </p>
+<p>First, once inside the GUI, in the middle there’s a Quick Profile Name, select the drop down and select “Maximum security settings”. Then in the same GUI menu on the left hand side, select “Import”:</p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_5.png"></center><p></p>
+<p>Then select “Popular Software”: </p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_6.png"></center><p></p>
+<p>The popular software xml contains a few applications like 7-Zip, mIRC, Realplayer, VLC, WinZip, Chrome, Google Talk, Office, Live Essentials 2012, Lync Communicator, Skype, Windows Media Player, Wordpad, Adobe, Java, and Internet Explorer. Note that this is just a standard best practices for software that has been previously configured. When deploying this to a large scale enterprise, you will want to modify this XML file and add appropriate executables to protect in your environment. EMET will NOT protect against things that are not already defined in the XML.  Note that all applications on the operating system will have default mitigation scenarios placed on them if they are in %APPDATA%, %ProgramFiles(x86)%, %ProframFiles%, %Windir%, and %LOCALAPPDATA%. </p>
+<p>Next once that is configured, go to the main GUI menu and check to ensure that all of the protection mechanisms are set to “Always On”.</p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_7.png"></center><p></p>
+<p>If not, then select the drop down menu and select “Always On”, and select the always on feature.</p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_8.png"></center><p></p>
+<p>Lastly, from the main menu, select the “Apps” button on the top middle of the GUI and once in the main screen, ensure “deep hooks” is specified to on. Also, take a look at the application list and start to build your XML list with things that aren’t already included in the protection list.</p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_9.png"></center><p></p>
+<p>Next, if we want to integrate this within group policy, there are admx files that are included under your program files\EMET\Deployment\Group Policy folder. You need to copy the .admx files to your SYSTEMDRIVE\Windows\PolicyDefinitions folder and the .adml files to SYSTEMDRIVE\Windows\PolicyDefinitions\en-US. When you move them there you can get to the policies through Computer Configuration -&gt; Administrative Templates -&gt; Windows -&gt; Components -&gt; EMET GPO. Below is a screenshot of what options you have available:</p>
+<p></p><center><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/emet_adv_10.png"></center><p></p>
+<p>Once you’ve configured everything, there’s one last step you want to do, in the main menu area shown in the first image on the very top of this post, you will notice on the right hand side “Running EMET” in the Running Processes tab. Scroll through the applications that are listed there and ensure you have the major ones covered. For example, Excel, Adobe, etc. If there isn’t a green “Running EMET”, right click on it, and select “configure”. Once there, you can go back to that menu and it should now be green and protected by EMET.</p>
+<p>That is it! You should have EMET configured and ready to go.</p>
+
+			</div><!-- end entry -->
+			
+					
+				
+		</div><!-- end post -->
+	
+		<br class="clear">	
+
+	
+	</div><!-- end content -->
+</div><!-- end container -->
+
+
+<div id="footer">
+
+	<div id="footer-container">
+				<div class="footer-widget"><h4>Follow Us</h4>			<div class="textwidget"><p><a href="https://twitter.com/TrustedSec" title="Follow TrustedSEC on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @TrustedSec</a> </p>
+
+<p><a href="https://twitter.com/HackingDave" title="Follow HackingDave on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @HackingDave</a></p>
+
+<p><a href="https://twitter.com/MrsReL1K" title="Follow MrsReL1K on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @MrsReL1K</a></p>
+
+<p><a href="https://twitter.com/s4squatch" title="Follow s4squatch on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @s4squatch</a></p>
+
+<p><a href="https://twitter.com/Spoonman1091" title="Follow Spoonman1091 on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @Spoonman1091</a></p>
+
+<p><a href="https://twitter.com/isdpodcast" title="Follow ISDPodcast on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @ISDPodcast</a></p>
+
+<p><a href="https://twitter.com/ph4que" title="Follow ph4que on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @ph4que</a></p>
+
+<p><a href="https://twitter.com/nick8ch" title="Follow nick8ch on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @nick8ch</a></p>
+
+<p><a href="https://twitter.com/suzieques5" title="Follow suzieques5 on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @suzieques5</a></p>
+
+<p><a href="https://twitter.com/AIM9_X" title="Follow AIM9_X on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @AIM9_X</a></p>
+
+<p><a href="https://twitter.com/irongeek_adc" title="Follow irongeek_adc on Twitter"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-twitter.gif" alt="Twitter">&nbsp;&nbsp; @irongeek_adc</a></p></div>
+		</div><div class="footer-widget"><h4>About Us</h4>			<div class="textwidget"><ul>
+<li><a href="https://www.trustedsec.com/about-us/">About Us</a></li>
+<li><a href="https://www.trustedsec.com/privacy-policy/">Privacy Policy</a></li>
+<li><a href="https://www.trustedsec.com/contact-us/">Contact Us</a></li>
+</ul>
+<b>TrustedSec, LLC<br>
+11565 Pearl Rd. Suite 301<br>
+Strongsville, OH 44136<br><br>
+Phone: 1.877.550.4728<br>
+Email: info [at] trustedsec.com</b>
+<p><a href="https://www.trustedsec.com/feed/"><img src="./EMET 4.1 Security Strategy and Installation Step-By-StepTrustedSec_files/ico-rss.gif" alt="rss" title="RSS Feed">&nbsp;&nbsp; Site RSS Feed</a></p></div>
+		</div><div class="footer-widget"><h4>Solutions</h4>			<div class="textwidget"><ul>
+<li><a href="https://www.trustedsec.com/solutions/penetration-testing/">Penetration Testing / Red Teaming</a></li>
+<li><a href="https://www.trustedsec.com/solutions/application-security/">Application Security</a></li>
+<li><a href="https://www.trustedsec.com/solutions/technology-solutions/">Technology Solutions</a></li>
+<li><a href="https://www.trustedsec.com/solutions/mobile-security/">Mobile Security</a></li>
+<li><a href="https://www.trustedsec.com/solutions/program-maturity/">Security Transformation</a></li>
+<li><a href="https://www.trustedsec.com/solutions/risk-assessments/">Risk Assessments</a></li>
+<li><a href="https://www.trustedsec.com/solutions/regulatory-and-compliance/">Regulatory/Compliance</a></li>
+<li><a href="https://www.trustedsec.com/solutions/trustedscan/">TrustedScan</a></li>
+<li><a href="https://www.trustedsec.com/solutions/computer-forensics/">Computer Forensics</a></li>
+<li><a href="https://www.trustedsec.com/solutions/technical-surveillance-counter-measures-tscm/">Bug Sweeping (TSCM)</a></li>
+<li><a href="https://www.trustedsec.com/solutions/">Additional Services</a></li>
+</ul></div>
+		</div><div class="footer-widget"><h4>Training</h4>			<div class="textwidget"><ul>
+<li><a href="https://www.trustedsec.com/solutions/training/">Training Overview</a></li>
+<li><a href="https://www.trustedsec.com/solutions/training/bypassing-security-defenses/">Bypassing Security Defenses</a></li>
+<li><a href="https://www.trustedsec.com/solutions/training/advanced-penetration-testing/">Advanced Penetration Testing</a></li>
+</ul>	
+
+<h4>Downloads</h4>
+<ul>
+<li><a href="https://www.trustedsec.com/downloads/presentations/">Presentations</a></li>
+<li><a href="https://www.trustedsec.com/downloads/social-engineer-toolkit/">Social-Engineer Toolkit</a></li>
+<li><a href="https://www.trustedsec.com/downloads/artillery/">Project Artillery</a></li>
+<li><a href="https://www.trustedsec.com/downloads/conqr/">ConQR</a></li>
+<li><a href="https://www.trustedsec.com/downloads/rid_enum/">RID_ENUM</a></li>
+<li><a href="https://www.trustedsec.com/downloads/tools-download/">Tools and Exploits</a></li>
+</ul></div>
+		</div>		<div class="footer-widget">		<h4>Recent Posts</h4>		<ul>
+					<li>
+				<a href="https://www.trustedsec.com/february-2014/python-remote-code-execution-socket-recvfrom_into/">Python Remote Code Execution in socket.recvfrom_into()</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/february-2014/importance-documentation/">The Importance of Documentation</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/february-2014/social-engineering-abroad/">Social Engineering Abroad</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/february-2014/adrian-irongeek-crenshaw-joins-family/">Adrian “Irongeek” Crenshaw joins the family!</a>
+						</li>
+					<li>
+				<a href="https://www.trustedsec.com/january-2014/introducing-wpupdate-automatic-updates-wordpress/">Introducing WPUpdate – Automatic Updates for WordPress</a>
+						</li>
+				</ul>
+		</div><!-- end footer widgets -->
+		
+	</div><!-- end footer container -->
+	
+
+</div><!-- end footer -->
+	<div id="copyright">
+	© TrustedSec | <a title="Designs by DigiP" href="http://www.ticktockcomputers.com/" target="_blank">Theme by Tick Tock Computers LLC</a>
+	</div>
+
+
+
+<iframe name="oauth2relay858914998" id="oauth2relay858914998" src="about:blank" tabindex="-1" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe></body></html>

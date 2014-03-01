@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/ -->
+<html lang="en"><!--<![endif]--><!--
+	generated in 0.609 seconds
+	63978 bytes batcached for 300 seconds
+--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Making windows Firewall complete….. Block outgoing connections and get notified, Review of Binisoft’s Windows Firewall Control « Sekhar Padikkal's blog....</title>
+
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="http://sekharpadikkal.wordpress.com/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="http://s0.wp.com/wp-content/themes/pub/quintus/js/html5.js?m=1315596887g" type="text/javascript"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="Sekhar Padikkal&#39;s blog.... » Feed" href="http://sekharpadikkal.wordpress.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Sekhar Padikkal&#39;s blog.... » Comments Feed" href="http://sekharpadikkal.wordpress.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Sekhar Padikkal&#39;s blog.... » Making windows Firewall complete….. Block outgoing connections and get notified, Review of Binisoft’s Windows Firewall Control Comments Feed" href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel="stylesheet" id="all-css-0" href="./Firewall_files/saved_resource" type="text/css" media="all">
+<link rel="stylesheet" id="lato-css" href="./Firewall_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="all-css-2" href="./Firewall_files/saved_resource(1)" type="text/css" media="all">
+<link rel="stylesheet" id="print-css-2" href="./Firewall_files/global-print.css" type="text/css" media="print">
+<script type="text/javascript">
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Firewall_files/saved_resource(2)"></script>
+<link rel="stylesheet" id="all-css-0" href="./Firewall_files/style.css" type="text/css" media="all">
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://sekharpadikkal.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://sekharpadikkal.wordpress.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="Mozilla started metrofying firefox!" href="http://sekharpadikkal.wordpress.com/2012/03/10/mozilla-started-metrofying-firefox/">
+<link rel="next" title="14 Days With The Nokia Lumia 920 …." href="http://sekharpadikkal.wordpress.com/2013/06/15/14-days-with-the-nokia-lumia-920/">
+<meta name="generator" content="WordPress.com">
+<link rel="canonical" href="./Firewall_files/Firewall.htm">
+<link rel="shortlink" href="http://wp.me/pc3bR-8b">
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&url=http%3A%2F%2Fsekharpadikkal.wordpress.com%2F2013%2F04%2F12%2Fmaking-windows-firewall-complete-block-outgoing-connections-and-get-notified%2F&for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&url=http%3A%2F%2Fsekharpadikkal.wordpress.com%2F2013%2F04%2F12%2Fmaking-windows-firewall-complete-block-outgoing-connections-and-get-notified%2F&for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Making windows Firewall complete..... Block outgoing connections and get notified, Review of Binisoft&#39;s Windows Firewall Control">
+<meta property="og:url" content="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/">
+<meta property="og:description" content="Windows Firewall (old school internet connection firewall or ICF) is what is protecting most of us. More people are concerned with an antivirus and may opt one from a third party vendor.For most of...">
+<meta property="article:published_time" content="2013-04-11T19:06:45+00:00">
+<meta property="article:modified_time" content="2013-04-12T13:58:56+00:00">
+<meta property="article:author" content="https://www.facebook.com/profile.php?id=100000736118084">
+<meta property="og:site_name" content="Sekhar Padikkal&#39;s blog....">
+<meta property="og:image" content="http://sekharpadikkal.files.wordpress.com/2013/04/notification.jpg">
+<meta property="og:image" content="http://sekharpadikkal.files.wordpress.com/2013/04/filtering.jpg">
+<meta property="og:image" content="http://sekharpadikkal.files.wordpress.com/2013/04/wfn2.jpg">
+<meta property="og:image" content="http://sekharpadikkal.files.wordpress.com/2013/04/wfc1.jpg">
+<meta property="og:image" content="http://sekharpadikkal.files.wordpress.com/2013/04/untitled.jpg">
+<meta name="twitter:site" content="@sekharpadikkal">
+<meta name="twitter:image" content="http://sekharpadikkal.files.wordpress.com/2013/04/windows_firewall_vista_icon.png?w=240">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator" content="@sekharpadikkal">
+<meta property="fb:app_id" content="249643311490">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/2bce8e671dba13b0a7ac3e902534be6f?s=16" sizes="16x16">
+<link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/2bce8e671dba13b0a7ac3e902534be6f?s=16" sizes="16x16">
+<link rel="apple-touch-icon-precomposed" href="http://1.gravatar.com/blavatar/bf9106b8aa2ae1472754180bb600a007?s=114">
+<link rel="openid.server" href="http://sekharpadikkal.wordpress.com/?openidserver=1">
+<link rel="openid.delegate" href="http://sekharpadikkal.wordpress.com/">
+<link rel="search" type="application/opensearchdescription+xml" href="http://sekharpadikkal.wordpress.com/osd.xml" title="Sekhar Padikkal&#39;s blog....">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com">
+<style type="text/css">
+.widget_twitter li {
+	word-wrap: break-word;
+}
+</style>
+<meta name="application-name" content="Sekhar Padikkal&#39;s blog...."><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="My Passions...."><meta name="msapplication-task" content="name=Subscribe;action-uri=http://sekharpadikkal.wordpress.com/feed/;icon-uri=http://0.gravatar.com/blavatar/2bce8e671dba13b0a7ac3e902534be6f?s=16"><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico"><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico"><meta name="title" content="Making windows Firewall complete….. Block outgoing connections and get notified, Review of Binisoft’s Windows Firewall Control | Sekhar Padikkal&#39;s blog.... on WordPress.com">
+<meta name="description" content="Windows Firewall (old school internet connection firewall or ICF) is what is protecting most of us. More people are concerned with an antivirus and may opt one from a third party vendor.For most of them a firewall is something what comes with windows. A firewall can either be software-based or hardware-based and is used to help keep…">
+
+	<style type="text/css">
+		#ie7 .blog-header .site-branding {
+			display: block;
+		}
+	</style>
+	
+<script type="text/javascript" src="./Firewall_files/google_service.js">
+</script>
+<script type="text/javascript">
+if ( typeof GS_googleAddAdSenseService == 'function' ) { GS_googleAddAdSenseService("ca-pub-3443918307802676"); }
+if ( typeof GS_googleEnableAllServices == 'function' ) { GS_googleEnableAllServices() };
+</script><script src="./Firewall_files/google_ads.js"></script>
+<script type="text/javascript" src="./Firewall_files/amzn_ads.js"></script>
+<script type="text/javascript">
+try { amznads.getAds("3033","300x250"); } catch(e) { /* ignore */ }
+</script><script type="text/javascript" src="./Firewall_files/bid"></script>
+<script type="text/javascript">
+var amznKeys = amznads.getKeys();
+if (typeof amznKeys != "undefined" && amznKeys != "") { for (var i =0; i < amznKeys.length; i++) { var key = amznKeys[i]; GA_googleAddAttr("amzn", key);} }
+document.close();
+</script>
+<script type="text/javascript">
+if ( typeof GA_googleAddSlot == 'function' ) { GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post"); }
+</script>
+<script type="text/javascript">
+if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
+</script>
+
+<script type="text/javascript">
+var wpcom_ads = { bid: 2872203, pt: 'permalink', wa: 0, as: 0, domain: 'sekharpadikkal.wordpress.com', url: 'http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/', gid: '', };
+</script>
+<style id="syntaxhighlighteranchor"></style>
+<script type="text/javascript">
+	window.google_analytics_uacct = "UA-52447-2";
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script><script type="text/javascript" async="" src="./Firewall_files/ga.js"></script>
+<script type="text/javascript" async="" src="./Firewall_files/saved_resource(3)"></script></head>
+
+<body class="single single-post postid-507 single-format-standard mp6 color-default highlander-enabled highlander-light" data-twttr-rendered="true">
+
+<div id="page" class="hfeed">
+		<header class="blog-header" role="banner">
+		<div class="site-branding">
+			<h1 id="site-title"><a href="http://sekharpadikkal.wordpress.com/" title="Sekhar Padikkal&#39;s blog…." rel="home" sl-processed="1">Sekhar Padikkal's blog….</a></h1>
+			<h2 id="site-description">My Passions….</h2>
+		</div>
+	</header>
+
+	<nav id="access" role="navigation">
+		<form method="get" id="searchform" action="http://sekharpadikkal.wordpress.com/">
+	<input type="text" class="field" name="s" id="s" placeholder="Search">
+	<label for="s" class="assistive-text">Search</label>
+	<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search">
+</form>		<div class="menu"><ul><li><a href="http://sekharpadikkal.wordpress.com/" sl-processed="1">Home</a></li><li class="page_item page-item-2"><a href="http://sekharpadikkal.wordpress.com/about/" sl-processed="1">About&nbsp;Me</a></li></ul></div>
+	</nav>
+
+	<div id="main">
+		<div id="primary">
+			<div class="content" id="content" role="main">
+
+			
+				<nav id="nav-above">
+					<span class="permalink">
+					Bookmark the <a href="./Firewall_files/Firewall.htm" title="Permalink to Making windows Firewall complete….. Block outgoing connections and get notified, Review of Binisoft’s Windows Firewall Control" rel="bookmark" sl-processed="1">permalink</a>.					</span>
+				</nav><!-- #nav-above -->
+
+				
+<article id="post-507" class="post-507 post type-post status-publish format-standard hentry category-computer-tips tag-block-windows-firewall-outbound-connection tag-windows-firewall-control-notify-outbound tag-windows-firewall-outbound-notify tag-windows-firewall-outgoing-block">
+	<header class="entry-header">
+		<h1 class="entry-title">Making windows Firewall complete….. Block outgoing connections and get notified, Review of Binisoft’s Windows Firewall&nbsp;Control</h1>
+		<div class="entry-meta">
+			<a class="entry-date" title="April 12 2013" href="./Firewall_files/Firewall.htm" sl-processed="1">
+				<time datetime="2013-04-12T00:36:45+00:00">Apr<b>12</b></time>
+			</a>
+			<span class="entry-byline">
+			by <span class="author vcard"><a class="url fn n" href="http://sekharpadikkal.wordpress.com/author/sekharpadikkal/" title="View all posts by sekharpadikkal" sl-processed="1">sekharpadikkal</a></span>			</span>
+		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p><a href="http://sekharpadikkal.files.wordpress.com/2013/04/windows_firewall_vista_icon.png" sl-processed="1"><img class="aligncenter size-full wp-image-524" alt="Windows_Firewall_Vista_icon" src="./Firewall_files/windows_firewall_vista_icon.png"></a></p>
+<p><strong>Windows Firewall</strong> (old school internet connection firewall or ICF) is what is protecting most of us. More people are concerned with an antivirus and may opt one from a third party vendor.For most of them a firewall is something what comes with windows.</p>
+<p>A&nbsp;<b>firewall</b>&nbsp;can either be software-based or hardware-based and is used to help keep a network secure (in this case a workstation/pc). Its primary objective is to control the incoming and outgoing network traffic by analyzing the data packets and determining whether it should be allowed through or not, based on a predetermined rule set. Windows firewall is a software based firewall that protects the workstation it resides on.</p>
+<p><strong>Background</strong>:</p>
+<p>During the xp days windows firewall (ICF) didn’t&nbsp;have the ability to block the outbound connection, while it provided fair bit of protection for the pc by blocking incoming connections ( that are not in the allowed rule).</p>
+<p>Windows firewall had a complete makeover when windows vista was released and gradual incremental evolution when time took us through windows 7 and windows 8.</p>
+<p><a href="http://sekharpadikkal.files.wordpress.com/2013/04/windows-firewall.jpg" sl-processed="1"><img class="aligncenter size-large wp-image-526" alt="windows firewall" src="./Firewall_files/windows-firewall.jpg" width="640" height="448"></a></p>
+<p>The firewall blocks/allows are based on the predetermined rule set. There are rules for inbound connections and outbound connections separately or can be for both. We can block/allow both the inbound connection and outbound connection in Windows firewall based on rules. For the Inbound connection when the Windows firewall is set to “block” (which is the default setting) and then an application needs inbound connection we are notified and yes we can allow or deny based on the common sense.</p>
+<p><a href="http://sekharpadikkal.files.wordpress.com/2013/04/outbound.jpg" sl-processed="1"><img class="aligncenter size-large wp-image-529" alt="outbound" src="./Firewall_files/outbound.jpg" width="640" height="385"></a></p>
+<p>For outbound connections its a completely different story, windows firewall lets you block outbound connection but will not give a notification , when an application needs internet access. So initially when you set the outbound connections to block , its like all the applications (applications that are not already explicitly allowed by a outbound rule) are forbidden to go out, its actually a daunting task to go to the windows firewall advanced setting (which is&nbsp;surprisingly&nbsp;powerful) and select an application and open the communication door for it.So&nbsp;Microsoft’s&nbsp;answer keep the door opened! Yes the default setting for your windows firewall is Allow all. Microsoft took this decision , so that it will be less&nbsp;intrusive to the user.</p>
+<p>On&nbsp;Screenshot&nbsp;below the outbound connections are set to “block”, which is not the default windows firewall setting.</p>
+<p><a href="http://sekharpadikkal.files.wordpress.com/2013/04/blk.jpg" sl-processed="1"><img class="aligncenter size-full wp-image-528" alt="blk" src="./Firewall_files/blk.jpg"></a></p>
+<p>Firewall is like a security officer at the gate and will allow only those people that are in his list to go out. But there is a security manager that is us , who decide&nbsp;whom&nbsp;to let through based on request. In windows firewall there is no request so the manager is now in the sweet spot to find and make the list.</p>
+<p><strong>Why do we need outbound filtering?</strong></p>
+<p>Reflecting increasing concerns about&nbsp;spyware&nbsp;and&nbsp;viruses&nbsp;that attempt to “<strong>phone home</strong>“. Outbound rules came into place in windows firewall from windows vista onwards. Notifications are not shown however for outbound connections on windows firewall.</p>
+<p><b>Phoning home</b>, in computing, refers to an act of&nbsp;client&nbsp;to&nbsp;server&nbsp;communication which is undesirable to the user and/or proprietor of the device or software. It is often used to refer to the behavior of security systems which report network location, username, or other sensitive&nbsp;data to another computer.There are many&nbsp;Malware&nbsp;applications that “phone home” to gather and store information about a person’s machine. Then there are legal phoning home , that is when applications try to validate its serial with a server each time the application is opened.</p>
+<p>It is just not about phoning home or application validating or anything ,&nbsp;ability&nbsp;to get notified when an application tries for an outbound connection/and having visibility gives user more control and informed about what is happening with his workstation.</p>
+<p><strong>How to&nbsp;Block outgoing connections and get notified?</strong></p>
+<p>Some will go in the direction of getting a third party firewall. Installing one will mostly disable your windows firewall.</p>
+<p>There are products like</p>
+<p>1) Checkpoint’s Zone Alarm Firewall</p>
+<p>2) Comodo Firewall</p>
+<p>3) Internet security suites from antivirus vendors like avira,avast &nbsp;etc (end of thinking capacity)</p>
+<p>The above mentioned products will be in command when you so with the third party route. I am not commenting on how good they are, &nbsp;but some of the above mentioned&nbsp;definitely&nbsp;have followers.</p>
+<p>My route is a much leaner solution , if you are after this , only this feature of &nbsp;the ability to get notified and to have visibility&nbsp;to outbound connections that makes you feel that you are in control of the windows pc.</p>
+<p><strong>Windows Firewall Control</strong>:</p>
+<p>Windows firewall control (WFC) is a front end to our beloved Windows Firewall , Its using the firewall api’s provided by microsoft to offer just what we need. By going the WFC way offers a much needed leaner solution. Its &nbsp;our windows firewall itself that protects us. Microsoft will also be looking after your windows firewall as part of patches(windows update).&nbsp;Just that we will be notified so we can easily create rules for better protection.</p>
+<p>Windows firewall control is from Binisoft. The software is under active development which is what makes this attractive.</p>
+<p>You can follow the development how it has been unwinding @&nbsp;<a href="http://www.wilderssecurity.com/showthread.php?t=293143&page=67" sl-processed="1">http://www.wilderssecurity.com/showthread.php?t=293143&amp;page=67</a></p>
+<p>In the first page of the thread you can see Alexandru Dicu’s (the creator of Windows Firewall Control)&nbsp; humble&nbsp;beginning&nbsp;. Being his first project in c# and now grown into the best front end for windows firewall. Thanks Alex.</p>
+<p><strong>Using the amazing WFC</strong> :</p>
+<p>It runs in the system tray and allows user to control the Windows firewall easily.</p>
+<p><a href="http://sekharpadikkal.files.wordpress.com/2013/04/filtering.jpg" sl-processed="1"><img class="aligncenter size-full wp-image-536" alt="Filtering" src="./Firewall_files/filtering.jpg"></a></p>
+<p><b>High Filtering</b>&nbsp;- All outbound and inbound connections are blocked. This setting blocks all attempts to connect to and from your computer. No communication whatsoever. Its just like pulling the&nbsp;Ethernet&nbsp;cable.<br>
+<b>Medium Filtering</b>&nbsp;- Outbound connections that do not match a rule are blocked. Only programs you allow can initiate outbound connections. This setting is our favorite part. that changes the windows firewall setting from outgoing to blocked from the allow status. This is just what we need.<br>
+<b>Low Filtering</b>&nbsp;- Outbound connections that do not match a rule are allowed. The user can block the programs he doesn’t want to initiate outbound connections. &nbsp;This is our Windows firewall default setting now.<br>
+<b>No Filtering</b>&nbsp;- Windows Firewall is turned off. Avoid using this setting unless you have another firewall running on your computer.</p>
+<p><strong>Recommended System Rules:</strong></p>
+<p>The setup will create some recommended rules at installation&nbsp;<strong>Internet Control Message Protocol,<strong>&nbsp;Windows Time Service,<strong>Windows Update.</strong></strong></strong>&nbsp;The rest will learned based on how you respond to the notifications.</p>
+<p><strong>Learning Mode/ Notifications:</strong></p>
+<p>This provides notifications for outgoing blocked connections. Four modes are available:</p>
+<p><a href="http://sekharpadikkal.files.wordpress.com/2013/04/notification.jpg" sl-processed="1"><img class="aligncenter size-full wp-image-537" alt="Notification" src="./Firewall_files/notification.jpg"></a></p>
+<p><strong>High</strong>&nbsp;- Display notifications for all outgoing connections that were blocked by Windows Firewall, including System and Svchost.exe<br>
+<strong>Medium</strong>&nbsp;- Display notifications only for regular programs, without notifications for System and Svchost.exe.<br>
+<strong>Low</strong>&nbsp;- Automatically allow digitally signed programs without notifications, but show notifications for unsigned programs.<br>
+<strong>Disabled</strong>&nbsp;- Notifications are disabled.</p>
+<p><strong>Notifications we get :</strong></p>
+<p>The feature we longed for , for the windows firewall..</p>
+<p>Here is the notification i got for firefox, when i first opened it. Allow the program to access internet, done… a new rule is created. How easy is that.</p>
+<p><a href="http://sekharpadikkal.files.wordpress.com/2013/04/wfc1.jpg" sl-processed="1"><img class="aligncenter size-full wp-image-533" alt="WFC1" src="./Firewall_files/wfc1.jpg"></a></p>
+<p>If you want to be more specific in the port you open / restricting to a particular remote ip,protocol etc you can click “customize this rule before creating it” &nbsp;, that way you have even more of a tighter rule.</p>
+<p><a href="http://sekharpadikkal.files.wordpress.com/2013/04/wfn2.jpg" sl-processed="1"><img class="aligncenter size-full wp-image-534" alt="WFN2" src="./Firewall_files/wfn2.jpg"></a></p>
+<p><strong>Manage Rules:</strong></p>
+<p>One intuitive interface where we can search, see the firewall rules at a single glance. This view gives sufficient information to satisfy us completely.</p>
+<p><a href="http://sekharpadikkal.files.wordpress.com/2013/04/untitled.jpg" sl-processed="1"><img class="aligncenter size-large wp-image-531" alt="Untitled" src="./Firewall_files/untitled.jpg" width="640" height="380"></a></p>
+<p>Managing rules in WFC is a breeze, compared to what can be&nbsp;achieved&nbsp;with windows firewall.</p>
+<p><strong>Getting Windows Firewall Control</strong>:</p>
+<p>We can get the <strong>Windows Firewall Control</strong> from&nbsp; <a href="http://www.binisoft.org/" sl-processed="1"><strong>http://www.binisoft.org/</strong></a></p>
+<p>Follow the Development&nbsp;evolution&nbsp;@ wilders :&nbsp;<a href="http://www.wilderssecurity.com/showthread.php?t=293143&page=67" sl-processed="1">http://www.wilderssecurity.com/showthread.php?t=293143&amp;page=67</a></p>
+
+<div class="wpa" style="position: relative; width:300px; text-align: center; padding: 0; margin: 10px auto; overflow: hidden; clear: both;">
+<a style="position: absolute; text-align: left; display: block; font: 9px/1 sans-serif; text-decoration: underline;" href="http://en.wordpress.com/about-these-ads/" rel="nofollow" sl-processed="1">About these ads</a>
+<script type="text/javascript">
+		var wpcom_adclk_hovering = false;
+		var wpcom_adclk_recorded = false;
+		var wpcom_adclk_theme = "Quintus";
+		var wpcom_adclk_slot = "wpcom_below_post";
+		var wpcom_adclk_network = ( typeof wpcom_adclk_network === "undefined" ) ? "" : wpcom_adclk_network ;
+
+		jQuery(document).ready( function() {
+			function wpcom_adclk_hover_yes() { wpcom_adclk_hovering = true; }
+			function wpcom_adclk_hover_no() { wpcom_adclk_hovering = false; }
+			jQuery(".wpa").click(wpcom_adclk_click);
+			jQuery(".wpa iframe").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+			jQuery(".wpa object").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+
+			jQuery(window).blur( function() {
+				if ( wpcom_adclk_hovering ) { wpcom_adclk_click(); }
+			});
+		});
+
+		function wpcom_adclk_impression() {
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_imp_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_imp_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_imp_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_imp_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			return true;
+		}
+
+		function wpcom_adclk_click() {
+			if (wpcom_adclk_recorded) { return true; } // no double counting
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_click_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_click_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_click_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_click_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			wpcom_adclk_recorded = true;
+			var now=new Date(); var end=now.getTime()+250;
+			while(true){now=new Date();if(now.getTime()>end){break;}}
+			return true;
+		}
+	
+if ( typeof GA_googleAddAttr == 'function' ) {
+GA_googleAddAttr("AdOpt", "1");
+GA_googleAddAttr("Origin", "extsearch");
+GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Domain", "sekharpadikkal.wordpress.com");
+GA_googleAddAttr("BlogId", "2872203");
+GA_googleAddAttr("PageURL", "http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/");
+GA_googleAddAttr("Autotag", "technology");
+GA_googleAddAttr("Autotag", "gadgets");
+GA_googleAddAttr("Tag", "computer-tips");
+GA_googleAddAttr("Tag", "block-windows-firewall-outbound-connection");
+GA_googleAddAttr("Tag", "windows-firewall-control-notify-outbound");
+GA_googleAddAttr("Tag", "windows-firewall-outbound-notify");
+GA_googleAddAttr("Tag", "windows-firewall-outgoing-block");
+GA_googleAddAttr("theme_bg", "f7f3ee");
+GA_googleAddAttr("theme_border", "e9e0d1");
+GA_googleAddAttr("theme_text", "333333");
+GA_googleAddAttr("theme_link", "5e191a");
+GA_googleAddAttr("theme_url", "dac490");
+GA_googleAddAdSensePageAttr("google_page_url", "http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/");
+GA_googleFillSlot("wpcom_below_post");
+}
+</script>
+</div>
+<style type="text/css">
+div.wpa>div { margin-top: 1em; } #google_ads_div_wpcom_below_post_adsafe_ad_container { display: block !important; }
+</style>
+<script type="text/javascript">
+jQuery( window ).load( function() {
+    if ( jQuery(".wpa script[src*='shareth.ru']").length > 0 || jQuery(".wpa iframe[src*='boomvideo.tv']").length > 0 || jQuery(".wpa iframe[src*='viewablemedia.net']").length > 0 || jQuery(".wpa .sharethrough-placement").length > 0 ) {
+        jQuery( '.wpa' ).css( 'width', '400px' );
+    }
+setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//stats.wordpress.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
+} );
+</script>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled"><div class="sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded" id="like-post-wrapper-2872203-507-5310372abe895" data-src="//widgets.wp.com/likes/#blog_id=2872203&amp;post_id=507&amp;origin=sekharpadikkal.wordpress.com&amp;obj_id=2872203-507-5310372abe895" data-name="like-post-frame-2872203-507-5310372abe895"><h3 class="sd-title">Like this:</h3><div class="likes-widget-placeholder post-likes-widget-placeholder" style="height:55px"><span class="button"><span>Like</span></span> <span class="loading">Loading...</span></div><span class="sd-text-color"></span><a class="sd-link-color"></a></div>
+<div id="jp-relatedposts" class="jp-relatedposts">
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		This entry was posted in <a href="http://sekharpadikkal.wordpress.com/category/computer-tips/" title="View all posts in COMPUTER TIPS" rel="category tag" sl-processed="1">COMPUTER TIPS</a> and tagged <a href="http://sekharpadikkal.wordpress.com/tag/block-windows-firewall-outbound-connection/" rel="tag" sl-processed="1">Block windows firewall outbound connection</a>, <a href="http://sekharpadikkal.wordpress.com/tag/windows-firewall-control-notify-outbound/" rel="tag" sl-processed="1">Windows firewall control notify outbound</a>, <a href="http://sekharpadikkal.wordpress.com/tag/windows-firewall-outbound-notify/" rel="tag" sl-processed="1">windows firewall outbound notify</a>, <a href="http://sekharpadikkal.wordpress.com/tag/windows-firewall-outgoing-block/" rel="tag" sl-processed="1">windows firewall outgoing block</a>.
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+				<nav id="nav-below">
+					<h1 class="section-heading">Post navigation</h1>
+					<div class="nav-previous"><a href="http://sekharpadikkal.wordpress.com/2012/03/10/mozilla-started-metrofying-firefox/" rel="prev" sl-processed="1"><span class="meta-nav">←</span> Mozilla started metrofying&nbsp;firefox!</a></div>
+					<div class="nav-next"><a href="http://sekharpadikkal.wordpress.com/2013/06/15/14-days-with-the-nokia-lumia-920/" rel="next" sl-processed="1">14 Days With The Nokia Lumia 920&nbsp;…. <span class="meta-nav">→</span></a></div>
+				</nav><!-- #nav-below -->
+
+				
+<div id="comments">
+
+	
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/#respond" style="display:none;" sl-processed="1">Cancel reply</a></small></h3>
+									<form action="http://sekharpadikkal.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="017837d37d"><input type="hidden" name="_wp_http_referer" value="/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/">
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest">
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/#comment-form-guest" id="postas-guest" title="Guest" sl-processed="1">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com" sl-processed="1">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter" sl-processed="1">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook" sl-processed="1">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="./Firewall_files/saved_resource.htm" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank" sl-processed="1">				<img src="./Firewall_files/ad516503a11cd5ca435acc9bb6523536" alt="Gravatar" width="25" class="no-grav">
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value=""></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value=""></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Firewall_files/wplogo.png" alt="WordPress.com Logo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="">
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="">
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );" sl-processed="1">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/#" onclick="javascript:HighlanderComments.switchAccount();return false;" sl-processed="1">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Firewall_files/ad516503a11cd5ca435acc9bb6523536" alt="Twitter picture" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="">
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="">
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );" sl-processed="1">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/#" onclick="javascript:HighlanderComments.switchAccount();return false;" sl-processed="1">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Firewall_files/ad516503a11cd5ca435acc9bb6523536" alt="Facebook photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="">
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="">
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );" sl-processed="1">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/#" onclick="javascript:HighlanderComments.switchAccount();return false;" sl-processed="1">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="./Firewall_files/ad516503a11cd5ca435acc9bb6523536" alt="Google+ photo" width="25" class="no-grav">
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="">
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="">
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );" sl-processed="1">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/#" onclick="javascript:HighlanderComments.switchAccount();return false;" sl-processed="1">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();" sl-processed="1">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of follow-up comments via email.</label></p></div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" value="Post Comment">
+							<input type="hidden" name="comment_post_ID" value="507" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+						</p>
+						
+<input type="hidden" name="genseq" value="1393571626">
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="594d997643"></p><script type="text/javascript" src="./Firewall_files/form.js"></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="42"></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>
+</div><!-- #comments -->
+			
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+<div id="secondary" class="widget-area" role="complementary">
+		<aside id="image-2" class="widget widget_image"><h1 class="widget-title">Author</h1><div style="overflow:hidden;"><a href="http://sekharpadikkal.wordpress.com/about/" sl-processed="1"><img src="./Firewall_files/22665_100445766656627_100000736118084_10712_3802159_n.jpg" title="Sekhar Padikkal" class="alignnone" width="604" height="453"></a></div>
+</aside><aside id="categories-3" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+	<li class="cat-item cat-item-61333"><a href="http://sekharpadikkal.wordpress.com/category/computer-tips/" title="Trouble shooting ubuntu,Vista,Xp" sl-processed="1">COMPUTER TIPS</a> (33)
+<ul class="children">
+	<li class="cat-item cat-item-729864"><a href="http://sekharpadikkal.wordpress.com/category/computer-tips/windows-7/" title="The Windows 7 guide!" sl-processed="1">WINDOWS 7</a> (8)
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-5264"><a href="http://sekharpadikkal.wordpress.com/category/general-info/" title="View all posts filed under GENERAL INFO" sl-processed="1">GENERAL INFO</a> (5)
+</li>
+	<li class="cat-item cat-item-108436"><a href="http://sekharpadikkal.wordpress.com/category/internet-tips/" title="View all posts filed under INTERNET TIPS" sl-processed="1">INTERNET TIPS</a> (2)
+</li>
+	<li class="cat-item cat-item-120"><a href="http://sekharpadikkal.wordpress.com/category/mobile/" title="View all posts filed under MOBILE" sl-processed="1">MOBILE</a> (6)
+</li>
+	<li class="cat-item cat-item-205245"><a href="http://sekharpadikkal.wordpress.com/category/my-movie-reviews/" title="Movie Reviews of my favorite ones" sl-processed="1">MY MOVIE REVIEWS</a> (8)
+</li>
+	<li class="cat-item cat-item-309"><a href="http://sekharpadikkal.wordpress.com/category/reviews/" title="View all posts filed under Reviews" sl-processed="1">Reviews</a> (1)
+</li>
+	<li class="cat-item cat-item-22191316"><a href="http://sekharpadikkal.wordpress.com/category/the-king-of-pop-michael-jackson/" title="View all posts filed under THE KING OF POP – MICHAEL JACKSON" sl-processed="1">THE KING OF POP – MICHAEL JACKSON</a> (1)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://sekharpadikkal.wordpress.com/category/uncategorized/" title="View all posts filed under Uncategorized" sl-processed="1">Uncategorized</a> (2)
+</li>
+	<li class="cat-item cat-item-16872499"><a href="http://sekharpadikkal.wordpress.com/category/windows-phone/" title="View all posts filed under Windows Phone" sl-processed="1">Windows Phone</a> (1)
+</li>
+		</ul>
+</aside><aside id="search-2" class="widget widget_search"><h1 class="widget-title">Search my blog</h1><form method="get" id="searchform" action="http://sekharpadikkal.wordpress.com/">
+	<input type="text" class="field" name="s" id="s" placeholder="Search">
+	<label for="s" class="assistive-text">Search</label>
+	<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search">
+</form></aside><aside id="blog-stats-2" class="widget widget_blog-stats"><h1 class="widget-title">Blog Stats</h1>		<ul>
+			<li>90,071 hits</li>
+		</ul>
+		</aside><aside id="linkcat-1356" class="widget widget_links"><h1 class="widget-title">Blogroll</h1>
+	<ul class="xoxo blogroll">
+<li><a href="http://jaisantonyk.wordpress.com/" title="This geeks blog is worth a click!!" sl-processed="1">Jais’s Blog</a></li>
+<li><a href="http://manuknkra.wordpress.com/" sl-processed="1">MaNU's New Universe</a></li>
+
+	</ul>
+</aside>
+<aside id="meta-3" class="widget widget_meta"><h1 class="widget-title">Meta</h1>			<ul>
+			<li><a href="http://wordpress.com/signup/?ref=wplogin" sl-processed="1">Register</a></li>			<li><a href="http://sekharpadikkal.wordpress.com/wp-login.php" sl-processed="1">Log in</a></li>
+			<li><a href="http://sekharpadikkal.wordpress.com/feed/" title="Syndicate this site using RSS 2.0" sl-processed="1">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://sekharpadikkal.wordpress.com/comments/feed/" title="The latest comments to all posts in RSS" sl-processed="1">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform." sl-processed="1">WordPress.com</a></li>						</ul>
+</aside><aside id="twitter-3" class="widget widget_twitter"><h1 class="widget-title"><a href="http://twitter.com/sekharpadikkal" sl-processed="1">Sekhar Padikkal Tweets</a></h1><ul class="tweets">
+			<li>
+				All the wishes for the new venture. Good work Rajith Menon :) :) :) <a href="http://fb.me/6r6wLqCni" sl-processed="1"> fb.me/6r6wLqCni</a> 				<a href="http://twitter.com/sekharpadikkal/statuses/434323816362565632" class="timesince" sl-processed="1">1&nbsp;week&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				all the wished to the new venture.... good work Rajith Menon <a href="http://fb.me/2apO9e3HJ" sl-processed="1"> fb.me/2apO9e3HJ</a> 				<a href="http://twitter.com/sekharpadikkal/statuses/434323052693037056" class="timesince" sl-processed="1">1&nbsp;week&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				2010 Andoid 2.2: JIT – no lags! Finally!
+2011 Android 4.0 Hardware acceleration of the UI! No lags! Finally!
+2012... <a href="http://fb.me/6CPWrViQo" sl-processed="1"> fb.me/6CPWrViQo</a> 				<a href="http://twitter.com/sekharpadikkal/statuses/432635224879812608" class="timesince" sl-processed="1">2&nbsp;weeks&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				RT @<a href="http://twitter.com/MohanArjun7" sl-processed="1">MohanArjun7</a>: Beautiful Photography by my friend @<a href="http://twitter.com/joepriski" sl-processed="1">joepriski</a> <a href="http://twitter.com/search?q=%23spices" sl-processed="1">#spices</a> <a href="http://instagram.com/p/j8l8onRqBZ/" sl-processed="1"> instagram.com/p/j8l8onRqBZ/</a> 				<a href="http://twitter.com/sekharpadikkal/statuses/431366732486172673" class="timesince" sl-processed="1">3&nbsp;weeks&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				Satya Nadella.....! Proud moment for all :) <a href="http://fb.me/1BYy5nYS7" sl-processed="1"> fb.me/1BYy5nYS7</a> 				<a href="http://twitter.com/sekharpadikkal/statuses/430819273414438912" class="timesince" sl-processed="1">3&nbsp;weeks&nbsp;ago</a>
+			</li>
+
+			</ul></aside></div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<footer class="blog-footer" id="colophon" role="contentinfo">
+		<div id="site-generator">
+			<a href="http://wordpress.com/?ref=footer" sl-processed="1">Blog at WordPress.com</a>.<span class="sep"> | </span><a href="http://theme.wordpress.com/themes/quintus/" title="Learn more about this theme" sl-processed="1">The Quintus Theme</a>.		</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type="text/javascript" src="./Firewall_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Firewall_files/wpgroho.js"></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/sekharpadikkal.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/sekharpadikkal.wordpress.com\/wp-login.php?action=logout&_wpnonce=cf77c96366","homeURL":"http:\/\/sekharpadikkal.wordpress.com\/","postID":"507","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./Firewall_files/saved_resource(4)"></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)" sl-processed="1"><span id="bsub-text">Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow “Sekhar Padikkal's blog....”</label></h3>
+
+			<form action="https://subscribe.wordpress.com/" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+						<p class="bit-follow-count">Join 492 other followers</p>
+			<p><input type="email" name="email" value="Enter your email address" onfocus="this.value=(this.value==&quot;Enter your email address&quot;) ? &quot;&quot; : this.value;" onblur="this.value=(this.value==&quot;&quot;) ? &quot;Enter email address&quot; : this.value;" id="loggedout-follow-field"></p>
+
+			<input type="hidden" name="action" value="subscribe">
+			<input type="hidden" name="blog_id" value="2872203">
+			<input type="hidden" name="source" value="http://sekharpadikkal.wordpress.com/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/">
+			<input type="hidden" name="sub-type" value="loggedout-follow">
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="98ea4a85b6"><input type="hidden" name="_wp_http_referer" value="/2013/04/12/making-windows-firewall-complete-block-outgoing-connections-and-get-notified/">
+			<p id="bsub-subscribe-button"><input type="submit" value="Sign me up"></p>
+			</form>
+					<div id="bsub-credit"><a href="http://wordpress.com/signup/?ref=lof" sl-processed="1">Powered by WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "sekharpadikkal.wordpress.com";
+	</script>
+	<script type="text/javascript" src="./Firewall_files/725X1342.skimlinks.js"></script>		<iframe src="./Firewall_files/master.htm" scrolling="no" id="likes-master" name="likes-master" style="display:none;"></iframe>
+		<div id="likes-other-gravatars"><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesWidgetBatch = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesBatchHandler() {
+				var requests = [];
+				jQuery( 'div.jetpack-likes-widget-unloaded' ).each( function( i ) {
+					if ( jetpackLikesWidgetBatch.indexOf( this.id ) > -1 )
+						return;
+					jetpackLikesWidgetBatch.push( this.id );
+					var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+					var match = regex.exec( this.id );
+					if ( ! match || match.length != 5 )
+						return;
+
+					var info = {
+						blog_id: match[2],
+						width:   this.width
+					};
+
+					if ( 'post' == match[1] ) {
+						info.post_id = match[3];
+					} else if ( 'comment' == match[1] ) {
+						info.comment_id = match[3];
+					}
+
+					info.obj_id = match[4];
+
+					requests.push( info );
+				});
+
+				if ( requests.length > 0 ) {
+					JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+				}
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' ),
+								isRtl: ( 'rtl' == jQuery( '#wpadminbar' ).css( 'direction' ) )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						JetpackLikesBatchHandler();
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'clickReblogFlair' == event.event ) {
+					wpcom_reblog.toggle_reblog_box_flair( event.obj_id );
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Grab any unloaded widgets for a batch request
+					JetpackLikesBatchHandler();
+
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				if ( 'undefined' === typeof wrapperID ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type="text/javascript" src="./Firewall_files/widgets.js"></script>
+<script type="text/javascript" src="./Firewall_files/devicepx.js"></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="./Firewall_files/w.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'2872203','v':'wpcom','tz':'5','user_id':'0','post':'507','subd':'sekharpadikkal'});
+ex_go({'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWpYP2xZaVBVeHZiOUhkaixZNmFbZU9LX1JpbmhKSH5WdzU2XXlDdEdJRWZiOVJ2NzB0N0J6aVExU3NGTEhOU3hUOXx2ZktoSUJfUFs0MnMlbUNWVXx5UDFlc05wVzdEP1h8dGhWWXlldCVdRkdqbTBlK2JtQzZ2els4YjhpR0gvVkdHQyYvVmlaTl1IdGhlWmVuQS5EeVFXdjVCQXY/ZG84SX5EdkdEZ1R0TWxLcHhoLWlnbk45aVo/Mlp4MDQufHllVGVHQnBbdl1YLk5SeXpsW2N4dUosK35Rc0IwWiZOSll3TnJ6ZFZ8bWRbODRJYi0vLHNfeXg3NXJpM2tLcmVGcW5veFREbkNDXVg3WG18YS1PMlQ/bFlFbmlMN3laSlgmSGRIbTNm'});
+addLoadEvent(function(){linktracker_init('2872203',507);});
+	</script><img id="wpstats" src="./Firewall_files/g.gif" alt=""><img id="wpstats2" src="./Firewall_files/g(1).gif" alt="" style="display:none">
+<noscript>&lt;img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /&gt;</noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+
+</body></html>
